@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  WordsGame
+
+  Created by Sergey Lobanov on 26.06.2022.
+  
+*/
+
+// MARK: - Main View
+
+"MAIN_PLACEHOLDER" = "Введите большое слово";
+"PLAYER_1" = "Игрок 1";
+"PLAYER_2" = "Игрок 2";
+"PLAYER_3" = "Игрок 3";
+"PLAYER_4" = "Игрок 4";
+"START" = "Старт";
+
+// MARK: - Game View
