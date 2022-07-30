@@ -22,7 +22,7 @@ extension Localizable {
     var localized: String {
         return NSLocalizedString(self.rawValue, comment: "")
     }
-    
+
     func localizedWithParametr(_ parametr: String) -> String {
         return String(format: self.localized, parametr)
     }

@@ -10,7 +10,7 @@ import SwiftUI
 struct StartButtonView: View {
     var title: Localizable
     var action: () -> Void
-    
+
     var body: some View {
         Button {
             action()
