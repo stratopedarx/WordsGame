@@ -14,5 +14,7 @@
 "PLAYER_3" = "Игрок 3";
 "PLAYER_4" = "Игрок 4";
 "START" = "Старт";
+"GAME_TAB_TITLE" = "Игра";
+"SETTINGS_TAB_TITLE" = "Настройки";
 
 // MARK: - Game View
