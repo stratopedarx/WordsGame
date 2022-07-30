@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import NeedleFoundation
 
 struct MainView: View {
     @State var mainWord = ""
