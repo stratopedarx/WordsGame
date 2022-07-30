@@ -1,20 +1,24 @@
 //
-//  ContentView.swift
+//  GameTab.swift
 //  WordsGame
 //
 //  Created by Sergey Lobanov on 25.06.2022.
 //
 
 import SwiftUI
-import NeedleFoundation
 
-struct MainView: View {
+struct GameTabView: View {
+    @ObservedObject private var viewModel: GameTabViewModel
     @State var mainWord = ""
     @State var player1Name = ""
     @State var player2Name = ""
     @State var player3Name = ""
     @State var player4Name = ""
     @State var isShowGameView = false
+    
+    init(viewModel: GameTabViewModel) {
+        self.viewModel = viewModel
+    }
 
     var body: some View {
         VStack {
@@ -27,11 +31,5 @@ struct MainView: View {
         .fullScreenCover(isPresented: $isShowGameView) {
             GameView()
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
     }
 }

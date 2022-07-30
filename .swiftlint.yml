@@ -13,6 +13,9 @@ opt_in_rules:
 
 warning_threshold: 1
 
+excluded:
+    WordsGame/NeedleGenerated.swift
+
 custom_rules:
 #    print_using:
 #        name: "Print using"

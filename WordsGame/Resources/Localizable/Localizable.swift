@@ -14,6 +14,8 @@ enum Localizable: String {
     case player3 = "PLAYER_3"
     case player4 = "PLAYER_4"
     case start = "START"
+    case gameTabTitle = "GAME_TAB_TITLE"
+    case settingsTabTitle = "SETTINGS_TAB_TITLE"
 }
 
 // MARK: - Localized string

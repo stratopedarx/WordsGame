@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import NeedleFoundation
 
 @main
 struct WordsGameApp: App {
+    init() {
+        registerProviderFactories()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            MainView()
+            BasicComponent().mainView
         }
     }
 }
