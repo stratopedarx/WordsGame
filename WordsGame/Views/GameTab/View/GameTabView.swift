@@ -15,6 +15,7 @@ struct GameTabView: View {
     @State var player3Name = ""
     @State var player4Name = ""
     @State var isShowGameView = false
+    @State var quantityOfPlayers: Int = 2
     
     init(viewModel: GameTabViewModel) {
         self.viewModel = viewModel
@@ -22,14 +23,29 @@ struct GameTabView: View {
 
     var body: some View {
         VStack {
-            GameTextView(placeholder: .mainPlaceholder, text: $mainWord, topPadding: MagicNumber.x8)
+            GameTextView(placeholder: .enterBigWord, text: $mainWord, topPadding: MagicNumber.x8)
             GameTextView(placeholder: .player1, text: $player1Name)
             GameTextView(placeholder: .player2, text: $player1Name, topPadding: MagicNumber.x2)
-            StartButtonView(title: .start, action: { isShowGameView = true })
+            
+            VStack(spacing: MagicNumber.x) {
+                QuantityOfPlayersView(
+                    quantityOfPlayers: $viewModel.quantityOfPlayers,
+                    isDisabledMinusButton: $viewModel.isDisabledMinusButton,
+                    isDisabledPlusButton: $viewModel.isDisabledPlusButton,
+                    onIncrement: viewModel.onIncrementPlayers,
+                    onDecrement: viewModel.onDecrementPlayers
+                )
+                .padding(.top, MagicNumber.x)
+                
+                StartButtonView(title: .start, action: { isShowGameView = true })
+            }
         }
-        .background(Image("background"))
         .fullScreenCover(isPresented: $isShowGameView) {
             GameView()
         }
+        .commonAlert(
+            isPresented: $viewModel.isError,
+            errorDescription: viewModel.errorDescription
+        )
     }
 }

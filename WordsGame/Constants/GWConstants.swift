@@ -7,4 +7,6 @@
 
 struct GWConstants {
     static let initialSelectedTab: MainTabsSelection = .game
+    static let maxNumberOfPlayers = 4
+    static let minNumberOfPlayers = 2
 }
