@@ -30,6 +30,9 @@ enum Localizable: String {
     case currentNumberOfPlayers = "CURRENT_NUMBER_OF_PLAYERS"
     case numberOfPlayersExceeded = "NUMBER_OF_PLAYERS_EXCEEDED"
     case minimumNumberOfPlayers = "MINIMUM_NUMBER_OF_PLAYERS"
+    case mainWordInfo = "MAIN_WORD_INFO"
+    case minimumWordLengthInfo = "MINIMUM_WORD_LENGTH_INFO"
+    case enterPlayerNames = "ENTER_PLAYER_NAMES"
     
     // MARK: - Settings Tab View
 

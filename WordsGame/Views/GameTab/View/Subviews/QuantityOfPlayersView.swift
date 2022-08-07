@@ -18,9 +18,8 @@ private struct StepButton: View {
         } label: {
             IconView(iconName: iconName)
                 .scaleEffect(2)
-                .opacity(isDisabled ? 0.2 : 1)
         }
-        .disabled(isDisabled)
+        .modifier(Disabled(disabled: isDisabled))
     }
 }
 

@@ -9,9 +9,6 @@ import SwiftUI
 
 struct GameTabView: View {
     @StateObject private var viewModel: GameTabViewModel
-    @State var mainWord = ""
-    @State var placeholderNames = [String](repeating: "", count: GWConstants.maxNumberOfPlayers)
-    @State var isShowGameView = false
     
     init(viewModel: GameTabViewModel) {
         self._viewModel = StateObject(wrappedValue: viewModel)
@@ -20,9 +17,15 @@ struct GameTabView: View {
     var body: some View {
         VStack {
             TitleText()
-            GameTextView(placeholder: Localizable.enterBigWord.localized, text: $mainWord)
+            GameTextView(
+                placeholder: Localizable.enterBigWord.localized,
+                text: $viewModel.mainWord
+            )
             ForEach(Array(viewModel.players.enumerated()), id: \.offset) { index, player in
-                GameTextView(placeholder: player.placeholder, text: $placeholderNames[index])
+                GameTextView(
+                    placeholder: player.placeholder,
+                    text: $viewModel.placeholderNames[index]
+                )
             }
             
             VStack(spacing: MagicNumber.x) {
@@ -35,11 +38,11 @@ struct GameTabView: View {
                 )
                 .padding(.top, MagicNumber.x)
                 
-                StartButtonView(title: .start, action: { isShowGameView = true })
+                StartButtonView(title: .start, action: viewModel.startButtonAction)
             }
         }
         .wrapInScroll()
-        .fullScreenCover(isPresented: $isShowGameView) {
+        .fullScreenCover(isPresented: $viewModel.isShowGameView) {
             GameView()
         }
         .commonAlert(
