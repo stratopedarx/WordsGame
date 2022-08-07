@@ -12,17 +12,9 @@ struct StartButtonView: View {
     var action: () -> Void
 
     var body: some View {
-        Button {
+        Button(title.localized) {
             action()
-        } label: {
-            Text(title.localized)
-                .font(.custom("AvenirNext-Bold", size: MagicNumber.x4))
-                .foregroundColor(.white)
-                .padding()
-                .padding(.horizontal, MagicNumber.x8)
-                .background(.blue)
-                .cornerRadius(MagicNumber.x8)
-                .padding(.top, MagicNumber.x4)
         }
+        .buttonStyle(PrimaryButtonStyle())
     }
 }

@@ -17,9 +17,6 @@ struct MainView: View {
     }
     
     var body: some View {
-        GeneralTabView(
-            selectedTab: GWConstants.initialSelectedTab,
-            tabComponents: tabComponents
-        )
+        GeneralTabView(tabComponents: tabComponents)
     }
 }

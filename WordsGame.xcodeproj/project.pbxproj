@@ -28,6 +28,10 @@
 		74C5E478289590F400E26C18 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5E477289590F400E26C18 /* IconView.swift */; };
 		74C5E47A289592D600E26C18 /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5E479289592D600E26C18 /* NeedleGenerated.swift */; };
 		74C5E47D2895933D00E26C18 /* GWConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5E47C2895933D00E26C18 /* GWConstants.swift */; };
+		74D850C4289FBFA10035AB52 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D850C3289FBFA10035AB52 /* PrimaryButtonStyle.swift */; };
+		74D850C6289FC1160035AB52 /* GWConstantsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D850C5289FC1160035AB52 /* GWConstantsUI.swift */; };
+		74D850C9289FC1ED0035AB52 /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D850C8289FC1ED0035AB52 /* Font+.swift */; };
+		74D850CC289FC5460035AB52 /* Disabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D850CB289FC5460035AB52 /* Disabled.swift */; };
 		74EF702B28684DCA00DB0220 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF702A28684DCA00DB0220 /* GameView.swift */; };
 		74EF703028684EDE00DB0220 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74EF702F28684EDE00DB0220 /* Localizable.strings */; };
 		74EF703228684EF000DB0220 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF703128684EF000DB0220 /* Localizable.swift */; };
@@ -58,6 +62,10 @@
 		74C5E477289590F400E26C18 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		74C5E479289592D600E26C18 /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		74C5E47C2895933D00E26C18 /* GWConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWConstants.swift; sourceTree = "<group>"; };
+		74D850C3289FBFA10035AB52 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		74D850C5289FC1160035AB52 /* GWConstantsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWConstantsUI.swift; sourceTree = "<group>"; };
+		74D850C8289FC1ED0035AB52 /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
+		74D850CB289FC5460035AB52 /* Disabled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disabled.swift; sourceTree = "<group>"; };
 		74EF702A28684DCA00DB0220 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		74EF702F28684EDE00DB0220 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		74EF703128684EF000DB0220 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
@@ -100,6 +108,7 @@
 				74C5E479289592D600E26C18 /* NeedleGenerated.swift */,
 				747FC82D28678FAC00DFB23B /* WordsGameApp.swift */,
 				74C5E47B2895931B00E26C18 /* Constants */,
+				74D850C7289FC1DD0035AB52 /* Extensions */,
 				74C5E4572895859B00E26C18 /* DI */,
 				74EF702428684D4F00DB0220 /* Views */,
 				74EF70332868500900DB0220 /* UIComponents */,
@@ -233,8 +242,41 @@
 			isa = PBXGroup;
 			children = (
 				74C5E47C2895933D00E26C18 /* GWConstants.swift */,
+				74D850C5289FC1160035AB52 /* GWConstantsUI.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		74D850C1289FBF390035AB52 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				74D850C2289FBF890035AB52 /* Button */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		74D850C2289FBF890035AB52 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				74D850C3289FBFA10035AB52 /* PrimaryButtonStyle.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		74D850C7289FC1DD0035AB52 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74D850C8289FC1ED0035AB52 /* Font+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		74D850CA289FC5260035AB52 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				74D850CB289FC5460035AB52 /* Disabled.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		74EF702428684D4F00DB0220 /* Views */ = {
@@ -320,7 +362,9 @@
 			isa = PBXGroup;
 			children = (
 				74EF70372868507100DB0220 /* CustomViews */,
+				74D850CA289FC5260035AB52 /* Modifiers */,
 				74EF70342868501700DB0220 /* Shared */,
+				74D850C1289FBF390035AB52 /* Styles */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -474,7 +518,9 @@
 				74C5E478289590F400E26C18 /* IconView.swift in Sources */,
 				747FC83028678FAC00DFB23B /* GameTabView.swift in Sources */,
 				74C5E452289582C700E26C18 /* MainView.swift in Sources */,
+				74D850C9289FC1ED0035AB52 /* Font+.swift in Sources */,
 				74EF70392868508500DB0220 /* GameTextView.swift in Sources */,
+				74D850CC289FC5460035AB52 /* Disabled.swift in Sources */,
 				747FC82E28678FAC00DFB23B /* WordsGameApp.swift in Sources */,
 				74EF70362868502200DB0220 /* MagicNumber.swift in Sources */,
 				74C5E47428958F5B00E26C18 /* GeneralTabView.swift in Sources */,
@@ -482,6 +528,7 @@
 				74EF703228684EF000DB0220 /* Localizable.swift in Sources */,
 				74C5E47A289592D600E26C18 /* NeedleGenerated.swift in Sources */,
 				74C5E47D2895933D00E26C18 /* GWConstants.swift in Sources */,
+				74D850C4289FBFA10035AB52 /* PrimaryButtonStyle.swift in Sources */,
 				74C5E4652895890500E26C18 /* MainViewModel.swift in Sources */,
 				74C5E46728958B1500E26C18 /* GameTabComponent.swift in Sources */,
 				74EF702B28684DCA00DB0220 /* GameView.swift in Sources */,
@@ -492,6 +539,7 @@
 				74C5E45C289585E700E26C18 /* TabComponentProtocol.swift in Sources */,
 				74C5E45F289586B500E26C18 /* MainTabsSelection.swift in Sources */,
 				74C5E46C28958C2700E26C18 /* GameTabViewModel.swift in Sources */,
+				74D850C6289FC1160035AB52 /* GWConstantsUI.swift in Sources */,
 				74C5E4612895872300E26C18 /* IconName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
