@@ -21,10 +21,7 @@
 // MARK: - Game Tab View
 
 "ENTER_BIG_WORD" = "Введите большое слово";
-"PLAYER_1" = "Игрок 1";
-"PLAYER_2" = "Игрок 2";
-"PLAYER_3" = "Игрок 3";
-"PLAYER_4" = "Игрок 4";
+"PLAYER" = "Игрок";
 "START" = "Старт";
 "QUANTITY_OF_PLAYERS" = "Количество игроков";
 "CURRENT_NUMBER_OF_PLAYERS" = "Текущее количество игроков";

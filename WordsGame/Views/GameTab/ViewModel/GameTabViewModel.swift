@@ -8,7 +8,8 @@
 import SwiftUI
 
 class GameTabViewModel: ObservableObject {
-    @Published var quantityOfPlayers: Int = 2
+    @Published var players = [Player(), Player()]
+    @Published var quantityOfPlayers: Int = GWConstants.minNumberOfPlayers
     @Published var isDisabledMinusButton: Bool = false
     @Published var isDisabledPlusButton: Bool = false
     @Published var isError = false

@@ -10,10 +10,7 @@ import SwiftUI
 struct GameTabView: View {
     @ObservedObject private var viewModel: GameTabViewModel
     @State var mainWord = ""
-    @State var player1Name = ""
-    @State var player2Name = ""
-    @State var player3Name = ""
-    @State var player4Name = ""
+    @State var placeholderNames = [String](repeating: "", count: GWConstants.maxNumberOfPlayers)
     @State var isShowGameView = false
     @State var quantityOfPlayers: Int = 2
     
@@ -23,9 +20,14 @@ struct GameTabView: View {
 
     var body: some View {
         VStack {
-            GameTextView(placeholder: .enterBigWord, text: $mainWord, topPadding: MagicNumber.x8)
-            GameTextView(placeholder: .player1, text: $player1Name)
-            GameTextView(placeholder: .player2, text: $player1Name, topPadding: MagicNumber.x2)
+            GameTextView(
+                placeholder: Localizable.enterBigWord.localized,
+                text: $mainWord,
+                topPadding: MagicNumber.x8
+            )
+            ForEach(Array(viewModel.players.enumerated()), id: \.offset) { index, player in
+                GameTextView(placeholder: player.placeholder, text: $placeholderNames[index])
+            }
             
             VStack(spacing: MagicNumber.x) {
                 QuantityOfPlayersView(

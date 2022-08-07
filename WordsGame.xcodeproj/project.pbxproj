@@ -10,6 +10,7 @@
 		74516923289FCCE400AA0A48 /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74516922289FCCE400AA0A48 /* FontStyles.swift */; };
 		74516925289FCEF000AA0A48 /* QuantityOfPlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74516924289FCEF000AA0A48 /* QuantityOfPlayersView.swift */; };
 		74516927289FE57900AA0A48 /* CommonAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74516926289FE57900AA0A48 /* CommonAlert.swift */; };
+		7451692A289FEB6B00AA0A48 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74516929289FEB6B00AA0A48 /* Player.swift */; };
 		747FC82E28678FAC00DFB23B /* WordsGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747FC82D28678FAC00DFB23B /* WordsGameApp.swift */; };
 		747FC83028678FAC00DFB23B /* GameTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747FC82F28678FAC00DFB23B /* GameTabView.swift */; };
 		747FC83228678FAE00DFB23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747FC83128678FAE00DFB23B /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		74516922289FCCE400AA0A48 /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
 		74516924289FCEF000AA0A48 /* QuantityOfPlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityOfPlayersView.swift; sourceTree = "<group>"; };
 		74516926289FE57900AA0A48 /* CommonAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAlert.swift; sourceTree = "<group>"; };
+		74516929289FEB6B00AA0A48 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		747FC82A28678FAC00DFB23B /* WordsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		747FC82D28678FAC00DFB23B /* WordsGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsGameApp.swift; sourceTree = "<group>"; };
 		747FC82F28678FAC00DFB23B /* GameTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 				74516922289FCCE400AA0A48 /* FontStyles.swift */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		74516928289FEB5B00AA0A48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74516929289FEB6B00AA0A48 /* Player.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		747FC82128678FAC00DFB23B = {
@@ -309,6 +319,7 @@
 		74EF702528684D6800DB0220 /* GameTab */ = {
 			isa = PBXGroup;
 			children = (
+				74516928289FEB5B00AA0A48 /* Models */,
 				74C5E46A28958C1A00E26C18 /* ViewModel */,
 				74EF702828684DA800DB0220 /* View */,
 			);
@@ -544,6 +555,7 @@
 				74C5E47428958F5B00E26C18 /* GeneralTabView.swift in Sources */,
 				74C5E46928958B2100E26C18 /* SettingsTabComponent.swift in Sources */,
 				74EF703228684EF000DB0220 /* Localizable.swift in Sources */,
+				7451692A289FEB6B00AA0A48 /* Player.swift in Sources */,
 				74516927289FE57900AA0A48 /* CommonAlert.swift in Sources */,
 				74C5E47A289592D600E26C18 /* NeedleGenerated.swift in Sources */,
 				74C5E47D2895933D00E26C18 /* GWConstants.swift in Sources */,

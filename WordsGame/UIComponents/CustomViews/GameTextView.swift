@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct GameTextView: View {
-    var placeholder: Localizable
+    var placeholder: String
     @Binding var text: String
     var topPadding: CGFloat = MagicNumber.x4
     private let horizontalPadding: CGFloat = MagicNumber.x3
     private let cornerRadius: CGFloat = MagicNumber.x2
 
     var body: some View {
-        TextField(placeholder.localized, text: $text)
+        TextField(placeholder, text: $text)
             .font(.title2)
             .padding()
             .background(.white)

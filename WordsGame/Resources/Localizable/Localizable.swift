@@ -23,10 +23,7 @@ enum Localizable: String {
     // MARK: - Game Tab View
     
     case enterBigWord = "ENTER_BIG_WORD"
-    case player1 = "PLAYER_1"
-    case player2 = "PLAYER_2"
-    case player3 = "PLAYER_3"
-    case player4 = "PLAYER_4"
+    case player = "PLAYER"
     case start = "START"
     case quantityOfPlayers = "QUANTITY_OF_PLAYERS"
     case currentNumberOfPlayers = "CURRENT_NUMBER_OF_PLAYERS"
