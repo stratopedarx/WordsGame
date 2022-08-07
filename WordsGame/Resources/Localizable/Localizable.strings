@@ -8,6 +8,7 @@
 
 // MARK: - General
 
+"WORDS_GAME" =  "Words Game";
 "ERROR_TITLE" = "Ошибка";
 "RETRY" = "Повторить";
 "OK" = "Окей";

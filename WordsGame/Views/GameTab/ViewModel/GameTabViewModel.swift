@@ -8,13 +8,26 @@
 import SwiftUI
 
 class GameTabViewModel: ObservableObject {
-    @Published var players = [Player(), Player()]
+    @Published var players: [Player] = []
     @Published var quantityOfPlayers: Int = GWConstants.minNumberOfPlayers
     @Published var isDisabledMinusButton: Bool = false
     @Published var isDisabledPlusButton: Bool = false
     @Published var isError = false
     var errorDescription = ""
+    
+    init() {
+        print("!!! init GameTabViewModel")
+        for _ in 0..<GWConstants.minNumberOfPlayers {
+            players.append(Player())
+        }
+    }
+    
+    deinit {
+        print("!!! deinit GameTabViewModel")
+    }
 }
+
+// MARK: - Increment/Decrement functions for number of players
 
 extension GameTabViewModel {
     func onIncrementPlayers() {
@@ -25,6 +38,7 @@ extension GameTabViewModel {
             errorDescription = Localizable.numberOfPlayersExceeded.localized
         } else {
             quantityOfPlayers += 1
+            players.append(Player())
         }
     }
     
@@ -36,6 +50,8 @@ extension GameTabViewModel {
             errorDescription = Localizable.minimumNumberOfPlayers.localized
         } else {
             quantityOfPlayers -= 1
+            players.removeLast()
+            Player.decreaseCountPlayers()
         }
     }
 }

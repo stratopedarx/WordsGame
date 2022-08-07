@@ -10,6 +10,7 @@ import Foundation
 enum Localizable: String {
     // MARK: - General
     
+    case wordsGameTitle = "WORDS_GAME"
     case errorTitle = "ERROR_TITLE"
     case retry = "RETRY"
     case ok = "OK"

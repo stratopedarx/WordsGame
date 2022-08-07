@@ -8,23 +8,19 @@
 import SwiftUI
 
 struct GameTabView: View {
-    @ObservedObject private var viewModel: GameTabViewModel
+    @StateObject private var viewModel: GameTabViewModel
     @State var mainWord = ""
     @State var placeholderNames = [String](repeating: "", count: GWConstants.maxNumberOfPlayers)
     @State var isShowGameView = false
-    @State var quantityOfPlayers: Int = 2
     
     init(viewModel: GameTabViewModel) {
-        self.viewModel = viewModel
+        self._viewModel = StateObject(wrappedValue: viewModel)
     }
 
     var body: some View {
         VStack {
-            GameTextView(
-                placeholder: Localizable.enterBigWord.localized,
-                text: $mainWord,
-                topPadding: MagicNumber.x8
-            )
+            TitleText()
+            GameTextView(placeholder: Localizable.enterBigWord.localized, text: $mainWord)
             ForEach(Array(viewModel.players.enumerated()), id: \.offset) { index, player in
                 GameTextView(placeholder: player.placeholder, text: $placeholderNames[index])
             }
@@ -42,6 +38,7 @@ struct GameTabView: View {
                 StartButtonView(title: .start, action: { isShowGameView = true })
             }
         }
+        .wrapInScroll()
         .fullScreenCover(isPresented: $isShowGameView) {
             GameView()
         }
