@@ -24,6 +24,7 @@ struct GeneralTabView: View {
                     TabButtonView(iconName: tabComponent.tabIcon, title: tabComponent.tabTitle)
                 }
                 .tag(tabComponent.tag)
+                .background(Image("background"))
             }
         }
         .accentColor(.blue)

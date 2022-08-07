@@ -8,28 +8,46 @@
 import SwiftUI
 
 struct GameTabView: View {
-    @ObservedObject private var viewModel: GameTabViewModel
-    @State var mainWord = ""
-    @State var player1Name = ""
-    @State var player2Name = ""
-    @State var player3Name = ""
-    @State var player4Name = ""
-    @State var isShowGameView = false
+    @StateObject private var viewModel: GameTabViewModel
     
     init(viewModel: GameTabViewModel) {
-        self.viewModel = viewModel
+        self._viewModel = StateObject(wrappedValue: viewModel)
     }
 
     var body: some View {
         VStack {
-            GameTextView(placeholder: .mainPlaceholder, text: $mainWord, topPadding: MagicNumber.x8)
-            GameTextView(placeholder: .player1, text: $player1Name)
-            GameTextView(placeholder: .player2, text: $player1Name, topPadding: MagicNumber.x2)
-            StartButtonView(title: .start, action: { isShowGameView = true })
+            TitleText()
+            GameTextView(
+                placeholder: Localizable.enterBigWord.localized,
+                text: $viewModel.mainWord
+            )
+            ForEach(Array(viewModel.players.enumerated()), id: \.offset) { index, player in
+                GameTextView(
+                    placeholder: player.placeholder,
+                    text: $viewModel.placeholderNames[index]
+                )
+            }
+            
+            VStack(spacing: MagicNumber.x) {
+                QuantityOfPlayersView(
+                    quantityOfPlayers: $viewModel.quantityOfPlayers,
+                    isDisabledMinusButton: $viewModel.isDisabledMinusButton,
+                    isDisabledPlusButton: $viewModel.isDisabledPlusButton,
+                    onIncrement: viewModel.onIncrementPlayers,
+                    onDecrement: viewModel.onDecrementPlayers
+                )
+                .padding(.top, MagicNumber.x)
+                
+                StartButtonView(title: .start, action: viewModel.startButtonAction)
+            }
         }
-        .background(Image("background"))
-        .fullScreenCover(isPresented: $isShowGameView) {
+        .wrapInScroll()
+        .fullScreenCover(isPresented: $viewModel.isShowGameView) {
             GameView()
         }
+        .commonAlert(
+            isPresented: $viewModel.isError,
+            errorDescription: viewModel.errorDescription
+        )
     }
 }
