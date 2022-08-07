@@ -16,6 +16,6 @@ struct TabButtonView: View {
             IconView(iconName: iconName, fontSize: MagicNumber.x3)
             Text(title.localized)
         }
-//        .environment(\.symbolVariants, .none)  // Todo check
+        .environment(\.symbolVariants, .none)
     }
 }

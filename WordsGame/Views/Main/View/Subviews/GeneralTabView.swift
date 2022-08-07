@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct GeneralTabView: View {
-    @State var selectedTab: MainTabsSelection
+    @State var selectedTab: MainTabsSelection = GWConstants.initialSelectedTab
     var tabComponents: [TabComponentProtocol]
+    
+    init(tabComponents: [TabComponentProtocol]) {
+        self.tabComponents = tabComponents
+        UITabBar.appearance().backgroundColor = UIColor.white
+    }
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -21,5 +26,6 @@ struct GeneralTabView: View {
                 .tag(tabComponent.tag)
             }
         }
+        .accentColor(.blue)
     }
 }
