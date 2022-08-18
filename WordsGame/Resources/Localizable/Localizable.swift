@@ -36,6 +36,16 @@ enum Localizable: String {
     
     // MARK: - Settings Tab View
 
+    
+    // MARK: - General Network Errors
+    case alamofireError = "ALAMOFIRE_ERROR"
+    case custom = "CUSTOM"
+    case internalServerError = "INTERNAL_SERVER_ERROR"
+    case invalidJSON = "INVALID_JSON"
+    case invalidRequest = "INVALID_REQUEST"
+    case noConnection = "NO_CONNECTION"
+    case unknown = "UNKNOWN"
+    case unknownCode = "UNKNOWN_CODE"
 }
 
 // MARK: - Localized string
