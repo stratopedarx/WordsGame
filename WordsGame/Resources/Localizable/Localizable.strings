@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  WordsGame
+
+  Created by Sergey Lobanov on 26.06.2022.
+  
+*/
+
+// MARK: - General
+
+"WORDS_GAME" =  "Words Game";
+"ERROR_TITLE" = "Ошибка";
+"RETRY" = "Повторить";
+"OK" = "Окей";
+"CANCEL" = "Отмена";
+
+// MARK: - Main View
+
+"GAME_TAB_TITLE" = "Игра";
+"SETTINGS_TAB_TITLE" = "Настройки";
+
+// MARK: - Game Tab View
+
+"ENTER_BIG_WORD" = "Введите большое слово";
+"PLAYER" = "Игрок";
+"START" = "Старт";
+"QUANTITY_OF_PLAYERS" = "Количество игроков";
+"CURRENT_NUMBER_OF_PLAYERS" = "Текущее количество игроков";
+"NUMBER_OF_PLAYERS_EXCEEDED" = "Количество игроков не может быть больше 4";
+"MINIMUM_NUMBER_OF_PLAYERS" = "Количество игроков не может быть меньше 2";
+"MAIN_WORD_INFO" = "Введите, пожалуйста, длинное слово для продолжения игры";
+"MINIMUM_WORD_LENGTH_INFO" = "Слишком короткое слово. Для иинтересной игры придумайте, пожалуйста, слово длиной длиной минимум 8 символов";
+"ENTER_PLAYER_NAMES" = "Заполните, пожалуйста, имена игроков";
+
+// MARK: - Settings Tab View
+
+// MARK: - General Network Errors
+
+"ALAMOFIRE_ERROR" = "Alamofire error: ";
+"CUSTOM" = "Custom error: ";
+"INTERNAL_SERVER_ERROR" = "Internal Server Error";
+"INVALID_JSON" = "Invalid JSON format";
+"INVALID_REQUEST" = "Incorrect request format";
+"NO_CONNECTION" = "Your network is unavailable. Check your internet connection";
+"UNKNOWN" = "Unknown error";
+"UNKNOWN_CODE" = "Unknown response code: ";
