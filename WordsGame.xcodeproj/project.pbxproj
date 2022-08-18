@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7438DF5028AEB30900A4DF88 /* NetworkAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF4F28AEB30900A4DF88 /* NetworkAdapterProtocol.swift */; };
+		7438DF5228AEB39200A4DF88 /* BaseRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5128AEB39200A4DF88 /* BaseRequestProtocol.swift */; };
+		7438DF5428AEB75400A4DF88 /* NetworkGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5328AEB75400A4DF88 /* NetworkGatewayProtocol.swift */; };
+		7438DF5628AEB7D500A4DF88 /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5528AEB7D500A4DF88 /* NetworkRequestProtocol.swift */; };
+		7438DF5828AEB83C00A4DF88 /* RequestDescriptorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5728AEB83C00A4DF88 /* RequestDescriptorProtocol.swift */; };
+		7438DF5B28AEB8B800A4DF88 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7438DF5A28AEB8B800A4DF88 /* Alamofire */; };
+		7438DF5F28AEB9DA00A4DF88 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5E28AEB9DA00A4DF88 /* NetworkError.swift */; };
+		7438DF6128AEBA9A00A4DF88 /* NetworkSuccessCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF6028AEBA9A00A4DF88 /* NetworkSuccessCodes.swift */; };
 		74516923289FCCE400AA0A48 /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74516922289FCCE400AA0A48 /* FontStyles.swift */; };
 		74516925289FCEF000AA0A48 /* QuantityOfPlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74516924289FCEF000AA0A48 /* QuantityOfPlayersView.swift */; };
 		74516927289FE57900AA0A48 /* CommonAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74516926289FE57900AA0A48 /* CommonAlert.swift */; };
@@ -48,6 +56,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7438DF4F28AEB30900A4DF88 /* NetworkAdapterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapterProtocol.swift; sourceTree = "<group>"; };
+		7438DF5128AEB39200A4DF88 /* BaseRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestProtocol.swift; sourceTree = "<group>"; };
+		7438DF5328AEB75400A4DF88 /* NetworkGatewayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGatewayProtocol.swift; sourceTree = "<group>"; };
+		7438DF5528AEB7D500A4DF88 /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
+		7438DF5728AEB83C00A4DF88 /* RequestDescriptorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDescriptorProtocol.swift; sourceTree = "<group>"; };
+		7438DF5E28AEB9DA00A4DF88 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		7438DF6028AEBA9A00A4DF88 /* NetworkSuccessCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSuccessCodes.swift; sourceTree = "<group>"; };
 		74516922289FCCE400AA0A48 /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
 		74516924289FCEF000AA0A48 /* QuantityOfPlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityOfPlayersView.swift; sourceTree = "<group>"; };
 		74516926289FE57900AA0A48 /* CommonAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAlert.swift; sourceTree = "<group>"; };
@@ -94,12 +109,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				74C5E44B28957E2F00E26C18 /* NeedleFoundation in Frameworks */,
+				7438DF5B28AEB8B800A4DF88 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7438DF4C28AEB20000A4DF88 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7438DF4D28AEB27500A4DF88 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7438DF4D28AEB27500A4DF88 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7438DF4E28AEB2A300A4DF88 /* Protocols */,
+				7438DF5E28AEB9DA00A4DF88 /* NetworkError.swift */,
+				7438DF6028AEBA9A00A4DF88 /* NetworkSuccessCodes.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7438DF4E28AEB2A300A4DF88 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7438DF5128AEB39200A4DF88 /* BaseRequestProtocol.swift */,
+				7438DF5528AEB7D500A4DF88 /* NetworkRequestProtocol.swift */,
+				7438DF5728AEB83C00A4DF88 /* RequestDescriptorProtocol.swift */,
+				7438DF4F28AEB30900A4DF88 /* NetworkAdapterProtocol.swift */,
+				7438DF5328AEB75400A4DF88 /* NetworkGatewayProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		74516921289FCCD600AA0A48 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,11 +184,12 @@
 				74C5E479289592D600E26C18 /* NeedleGenerated.swift */,
 				747FC82D28678FAC00DFB23B /* WordsGameApp.swift */,
 				74C5E47B2895931B00E26C18 /* Constants */,
-				74D850C7289FC1DD0035AB52 /* Extensions */,
 				74C5E4572895859B00E26C18 /* DI */,
-				74EF702428684D4F00DB0220 /* Views */,
-				74EF70332868500900DB0220 /* UIComponents */,
+				74D850C7289FC1DD0035AB52 /* Extensions */,
 				74EF702728684D9200DB0220 /* Resources */,
+				7438DF4C28AEB20000A4DF88 /* Services */,
+				74EF70332868500900DB0220 /* UIComponents */,
+				74EF702428684D4F00DB0220 /* Views */,
 				747FC83328678FAE00DFB23B /* Preview Content */,
 			);
 			path = WordsGame;
@@ -452,6 +499,7 @@
 			name = WordsGame;
 			packageProductDependencies = (
 				74C5E44A28957E2F00E26C18 /* NeedleFoundation */,
+				7438DF5A28AEB8B800A4DF88 /* Alamofire */,
 			);
 			productName = WordsGame;
 			productReference = 747FC82A28678FAC00DFB23B /* WordsGame.app */;
@@ -484,6 +532,7 @@
 			mainGroup = 747FC82128678FAC00DFB23B;
 			packageReferences = (
 				74C5E44928957E2F00E26C18 /* XCRemoteSwiftPackageReference "needle" */,
+				7438DF5928AEB8B800A4DF88 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 747FC82B28678FAC00DFB23B /* Products */;
 			projectDirPath = "";
@@ -553,12 +602,17 @@
 			files = (
 				7451692C28A03FA800AA0A48 /* View.swift in Sources */,
 				7451693028A0452A00AA0A48 /* TitleText.swift in Sources */,
+				7438DF5228AEB39200A4DF88 /* BaseRequestProtocol.swift in Sources */,
 				74C5E47028958DE600E26C18 /* SettingsTabView.swift in Sources */,
 				74C5E478289590F400E26C18 /* IconView.swift in Sources */,
+				7438DF5428AEB75400A4DF88 /* NetworkGatewayProtocol.swift in Sources */,
 				74516923289FCCE400AA0A48 /* FontStyles.swift in Sources */,
 				747FC83028678FAC00DFB23B /* GameTabView.swift in Sources */,
 				7451692E28A03FBE00AA0A48 /* WrapInScrollWiewModifier.swift in Sources */,
+				7438DF5F28AEB9DA00A4DF88 /* NetworkError.swift in Sources */,
 				74C5E452289582C700E26C18 /* MainView.swift in Sources */,
+				7438DF5628AEB7D500A4DF88 /* NetworkRequestProtocol.swift in Sources */,
+				7438DF6128AEBA9A00A4DF88 /* NetworkSuccessCodes.swift in Sources */,
 				74D850C9289FC1ED0035AB52 /* Font+.swift in Sources */,
 				74EF70392868508500DB0220 /* GameTextView.swift in Sources */,
 				74D850CC289FC5460035AB52 /* Disabled.swift in Sources */,
@@ -576,10 +630,12 @@
 				74C5E46728958B1500E26C18 /* GameTabComponent.swift in Sources */,
 				74EF702B28684DCA00DB0220 /* GameView.swift in Sources */,
 				74C5E4762895903900E26C18 /* TabButtonView.swift in Sources */,
+				7438DF5828AEB83C00A4DF88 /* RequestDescriptorProtocol.swift in Sources */,
 				74EF703C2868546100DB0220 /* StartButtonView.swift in Sources */,
 				74C5E463289588A600E26C18 /* BasicComponent.swift in Sources */,
 				74C5E47228958E2100E26C18 /* SettingsTabViewModel.swift in Sources */,
 				74C5E45C289585E700E26C18 /* TabComponentProtocol.swift in Sources */,
+				7438DF5028AEB30900A4DF88 /* NetworkAdapterProtocol.swift in Sources */,
 				74516925289FCEF000AA0A48 /* QuantityOfPlayersView.swift in Sources */,
 				74C5E45F289586B500E26C18 /* MainTabsSelection.swift in Sources */,
 				74C5E46C28958C2700E26C18 /* GameTabViewModel.swift in Sources */,
@@ -793,6 +849,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7438DF5928AEB8B800A4DF88 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		74C5E44928957E2F00E26C18 /* XCRemoteSwiftPackageReference "needle" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/uber/needle.git";
@@ -804,6 +868,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7438DF5A28AEB8B800A4DF88 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7438DF5928AEB8B800A4DF88 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		74C5E44A28957E2F00E26C18 /* NeedleFoundation */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 74C5E44928957E2F00E26C18 /* XCRemoteSwiftPackageReference "needle" */;
