@@ -15,6 +15,10 @@
 		7438DF5B28AEB8B800A4DF88 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7438DF5A28AEB8B800A4DF88 /* Alamofire */; };
 		7438DF5F28AEB9DA00A4DF88 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5E28AEB9DA00A4DF88 /* NetworkError.swift */; };
 		7438DF6128AEBA9A00A4DF88 /* NetworkSuccessCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF6028AEBA9A00A4DF88 /* NetworkSuccessCodes.swift */; };
+		7438DF6428AEBDB600A4DF88 /* BaseDataResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF6328AEBDB600A4DF88 /* BaseDataResponseSerializer.swift */; };
+		7438DF6628AEBFA300A4DF88 /* NetworkGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF6528AEBFA300A4DF88 /* NetworkGateway.swift */; };
+		7438DF6828AEC07300A4DF88 /* RequestDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF6728AEC07300A4DF88 /* RequestDescriptor.swift */; };
+		7438DF6A28AEC55300A4DF88 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF6928AEC55300A4DF88 /* Connectivity.swift */; };
 		74516923289FCCE400AA0A48 /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74516922289FCCE400AA0A48 /* FontStyles.swift */; };
 		74516925289FCEF000AA0A48 /* QuantityOfPlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74516924289FCEF000AA0A48 /* QuantityOfPlayersView.swift */; };
 		74516927289FE57900AA0A48 /* CommonAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74516926289FE57900AA0A48 /* CommonAlert.swift */; };
@@ -63,6 +67,10 @@
 		7438DF5728AEB83C00A4DF88 /* RequestDescriptorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDescriptorProtocol.swift; sourceTree = "<group>"; };
 		7438DF5E28AEB9DA00A4DF88 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		7438DF6028AEBA9A00A4DF88 /* NetworkSuccessCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSuccessCodes.swift; sourceTree = "<group>"; };
+		7438DF6328AEBDB600A4DF88 /* BaseDataResponseSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataResponseSerializer.swift; sourceTree = "<group>"; };
+		7438DF6528AEBFA300A4DF88 /* NetworkGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGateway.swift; sourceTree = "<group>"; };
+		7438DF6728AEC07300A4DF88 /* RequestDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDescriptor.swift; sourceTree = "<group>"; };
+		7438DF6928AEC55300A4DF88 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		74516922289FCCE400AA0A48 /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
 		74516924289FCEF000AA0A48 /* QuantityOfPlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityOfPlayersView.swift; sourceTree = "<group>"; };
 		74516926289FE57900AA0A48 /* CommonAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAlert.swift; sourceTree = "<group>"; };
@@ -130,6 +138,10 @@
 				7438DF4E28AEB2A300A4DF88 /* Protocols */,
 				7438DF5E28AEB9DA00A4DF88 /* NetworkError.swift */,
 				7438DF6028AEBA9A00A4DF88 /* NetworkSuccessCodes.swift */,
+				7438DF6528AEBFA300A4DF88 /* NetworkGateway.swift */,
+				7438DF6328AEBDB600A4DF88 /* BaseDataResponseSerializer.swift */,
+				7438DF6728AEC07300A4DF88 /* RequestDescriptor.swift */,
+				7438DF6928AEC55300A4DF88 /* Connectivity.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -602,6 +614,7 @@
 			files = (
 				7451692C28A03FA800AA0A48 /* View.swift in Sources */,
 				7451693028A0452A00AA0A48 /* TitleText.swift in Sources */,
+				7438DF6A28AEC55300A4DF88 /* Connectivity.swift in Sources */,
 				7438DF5228AEB39200A4DF88 /* BaseRequestProtocol.swift in Sources */,
 				74C5E47028958DE600E26C18 /* SettingsTabView.swift in Sources */,
 				74C5E478289590F400E26C18 /* IconView.swift in Sources */,
@@ -618,12 +631,14 @@
 				74D850CC289FC5460035AB52 /* Disabled.swift in Sources */,
 				747FC82E28678FAC00DFB23B /* WordsGameApp.swift in Sources */,
 				74EF70362868502200DB0220 /* MagicNumber.swift in Sources */,
+				7438DF6828AEC07300A4DF88 /* RequestDescriptor.swift in Sources */,
 				74C5E47428958F5B00E26C18 /* GeneralTabView.swift in Sources */,
 				74C5E46928958B2100E26C18 /* SettingsTabComponent.swift in Sources */,
 				74EF703228684EF000DB0220 /* Localizable.swift in Sources */,
 				7451692A289FEB6B00AA0A48 /* Player.swift in Sources */,
 				74516927289FE57900AA0A48 /* CommonAlert.swift in Sources */,
 				74C5E47A289592D600E26C18 /* NeedleGenerated.swift in Sources */,
+				7438DF6628AEBFA300A4DF88 /* NetworkGateway.swift in Sources */,
 				74C5E47D2895933D00E26C18 /* GWConstants.swift in Sources */,
 				74D850C4289FBFA10035AB52 /* PrimaryButtonStyle.swift in Sources */,
 				74C5E4652895890500E26C18 /* MainViewModel.swift in Sources */,
@@ -634,6 +649,7 @@
 				74EF703C2868546100DB0220 /* StartButtonView.swift in Sources */,
 				74C5E463289588A600E26C18 /* BasicComponent.swift in Sources */,
 				74C5E47228958E2100E26C18 /* SettingsTabViewModel.swift in Sources */,
+				7438DF6428AEBDB600A4DF88 /* BaseDataResponseSerializer.swift in Sources */,
 				74C5E45C289585E700E26C18 /* TabComponentProtocol.swift in Sources */,
 				7438DF5028AEB30900A4DF88 /* NetworkAdapterProtocol.swift in Sources */,
 				74516925289FCEF000AA0A48 /* QuantityOfPlayersView.swift in Sources */,
