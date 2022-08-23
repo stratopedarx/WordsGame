@@ -41,11 +41,18 @@ extension GameTabViewModel {
             return
         }
         
+        guard mainWord.first(where: { !$0.isLetter }) == nil else {
+            isError = true
+            errorDescription = Localizable.bigWordContainsOnlyLettersInfo.localized
+            return
+        }
+        
         guard !placeholderNames.contains("") else {
             isError = true
             errorDescription = Localizable.enterPlayerNames.localized
             return
         }
+
         isShowGameView = true
     }
 }
