@@ -12,6 +12,9 @@ struct Player: Identifiable, Equatable {
     static func decreaseCountPlayers() {
         countPlayers -= 1
     }
+    static func resetCountPlayers() {
+        countPlayers = 1
+    }
     
     var id = UUID()
     var name = ""

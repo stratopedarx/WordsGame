@@ -37,7 +37,7 @@
 
 "SAVE_GAME_ALERT" = "Сохранить игру?";
 "SAVE_GAME" = "Сохранить";
-"DOES_NOT_SAVE_GAME" "Не сохранять";
+"DOES_NOT_SAVE_GAME" = "Не сохранять";
 
 // MARK: - Settings Tab View
 

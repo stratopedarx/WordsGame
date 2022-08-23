@@ -44,12 +44,14 @@ struct GameTabView: View {
             }
         }
         .wrapInScroll()
+        .onDisappear(perform: viewModel.resetState)
         .fullScreenCover(isPresented: $viewModel.isShowGameView) {
             gameComponent.buildView(
                 gameWord: viewModel.mainWord,
                 players: viewModel.players,
                 placeholderNames: viewModel.placeholderNames
             )
+            .onAppear(perform: viewModel.resetState)
         }
         .commonAlert(
             isPresented: $viewModel.isError,

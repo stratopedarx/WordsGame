@@ -24,6 +24,19 @@ class GameTabViewModel: ObservableObject {
             placeholderNames.append("")
         }
     }
+    
+    func resetState() {
+        mainWord = ""
+        quantityOfPlayers = GWConstants.minNumberOfPlayers
+        placeholderNames.removeAll()
+        
+        players.removeAll()
+        Player.resetCountPlayers()
+        for _ in 0..<GWConstants.minNumberOfPlayers {
+            players.append(Player())
+            placeholderNames.append("")
+        }
+    }
 }
 
 // MARK: - startButtonAction
