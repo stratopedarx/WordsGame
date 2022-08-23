@@ -8,10 +8,12 @@
 import SwiftUI
 
 class GameViewModel: ObservableObject {
+    var gameWord: String
     var players: [Player]
     var placeholderNames: [String]
     
-    init(players: [Player], placeholderNames: [String]) {
+    init(gameWord: String, players: [Player], placeholderNames: [String]) {
+        self.gameWord = gameWord
         self.players = players
         self.placeholderNames = placeholderNames
     }

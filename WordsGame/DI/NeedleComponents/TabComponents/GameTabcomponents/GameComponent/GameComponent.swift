@@ -9,17 +9,21 @@ import NeedleFoundation
 import SwiftUI
 
 protocol GameComponentProtocol {
-    func buildView(players: [Player], placeholderNames: [String]) -> AnyView
+    func buildView(gameWord: String, players: [Player], placeholderNames: [String]) -> AnyView
 }
 
 protocol GameDependency: Dependency {
 }
 
 final class GameComponent: Component<GameDependency>, GameComponentProtocol {
-    func buildView(players: [Player], placeholderNames: [String]) -> AnyView {
+    func buildView(gameWord: String, players: [Player], placeholderNames: [String]) -> AnyView {
         AnyView(
             GameView(
-                viewModel: GameViewModel(players: players, placeholderNames: placeholderNames)
+                viewModel: GameViewModel(
+                    gameWord: gameWord,
+                    players: players,
+                    placeholderNames: placeholderNames
+                )
             )
         )
     }
