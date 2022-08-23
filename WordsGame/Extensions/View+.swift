@@ -14,3 +14,11 @@ extension View {
         self.modifier(WrapInScrollWiewModifier(showsIndicators: showsIndicators))
     }
 }
+
+// MARK: - Add clear button to TextField
+
+extension View {
+    func showClearButton(_ text: Binding<String>) -> some View {
+        self.modifier(TextFieldClearButton(fieldText: text))
+    }
+}

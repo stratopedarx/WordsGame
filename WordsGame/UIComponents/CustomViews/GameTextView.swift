@@ -16,6 +16,7 @@ struct GameTextView: View {
 
     var body: some View {
         TextField(placeholder, text: $text)
+            .showClearButton($text)
             .font(.title2)
             .padding(.all, MagicNumber.x)
             .background(.white)

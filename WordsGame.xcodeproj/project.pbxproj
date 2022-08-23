@@ -10,6 +10,7 @@
 		742D76A028B564C500773191 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D769F28B564C500773191 /* GameViewModel.swift */; };
 		742D76A428B5653000773191 /* GameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A328B5653000773191 /* GameComponent.swift */; };
 		742D76A828B56B4900773191 /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A728B56B4900773191 /* NeedleGenerated.swift */; };
+		742D76AA28B56FD000773191 /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A928B56FD000773191 /* TextFieldClearButton.swift */; };
 		7438DF5028AEB30900A4DF88 /* NetworkAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF4F28AEB30900A4DF88 /* NetworkAdapterProtocol.swift */; };
 		7438DF5228AEB39200A4DF88 /* BaseRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5128AEB39200A4DF88 /* BaseRequestProtocol.swift */; };
 		7438DF5428AEB75400A4DF88 /* NetworkGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5328AEB75400A4DF88 /* NetworkGatewayProtocol.swift */; };
@@ -26,7 +27,7 @@
 		74516925289FCEF000AA0A48 /* QuantityOfPlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74516924289FCEF000AA0A48 /* QuantityOfPlayersView.swift */; };
 		74516927289FE57900AA0A48 /* CommonAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74516926289FE57900AA0A48 /* CommonAlert.swift */; };
 		7451692A289FEB6B00AA0A48 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74516929289FEB6B00AA0A48 /* Player.swift */; };
-		7451692C28A03FA800AA0A48 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7451692B28A03FA800AA0A48 /* View.swift */; };
+		7451692C28A03FA800AA0A48 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7451692B28A03FA800AA0A48 /* View+.swift */; };
 		7451692E28A03FBE00AA0A48 /* WrapInScrollWiewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7451692D28A03FBE00AA0A48 /* WrapInScrollWiewModifier.swift */; };
 		7451693028A0452A00AA0A48 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7451692F28A0452A00AA0A48 /* TitleText.swift */; };
 		747FC82E28678FAC00DFB23B /* WordsGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747FC82D28678FAC00DFB23B /* WordsGameApp.swift */; };
@@ -65,6 +66,7 @@
 		742D769F28B564C500773191 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		742D76A328B5653000773191 /* GameComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameComponent.swift; sourceTree = "<group>"; };
 		742D76A728B56B4900773191 /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
+		742D76A928B56FD000773191 /* TextFieldClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
 		7438DF4F28AEB30900A4DF88 /* NetworkAdapterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapterProtocol.swift; sourceTree = "<group>"; };
 		7438DF5128AEB39200A4DF88 /* BaseRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestProtocol.swift; sourceTree = "<group>"; };
 		7438DF5328AEB75400A4DF88 /* NetworkGatewayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGatewayProtocol.swift; sourceTree = "<group>"; };
@@ -80,7 +82,7 @@
 		74516924289FCEF000AA0A48 /* QuantityOfPlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityOfPlayersView.swift; sourceTree = "<group>"; };
 		74516926289FE57900AA0A48 /* CommonAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAlert.swift; sourceTree = "<group>"; };
 		74516929289FEB6B00AA0A48 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		7451692B28A03FA800AA0A48 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		7451692B28A03FA800AA0A48 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		7451692D28A03FBE00AA0A48 /* WrapInScrollWiewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapInScrollWiewModifier.swift; sourceTree = "<group>"; };
 		7451692F28A0452A00AA0A48 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
 		747FC82A28678FAC00DFB23B /* WordsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -378,7 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				74D850C8289FC1ED0035AB52 /* Font+.swift */,
-				7451692B28A03FA800AA0A48 /* View.swift */,
+				7451692B28A03FA800AA0A48 /* View+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -389,6 +391,7 @@
 				74D850CB289FC5460035AB52 /* Disabled.swift */,
 				74516926289FE57900AA0A48 /* CommonAlert.swift */,
 				7451692D28A03FBE00AA0A48 /* WrapInScrollWiewModifier.swift */,
+				742D76A928B56FD000773191 /* TextFieldClearButton.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -634,7 +637,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7451692C28A03FA800AA0A48 /* View.swift in Sources */,
+				7451692C28A03FA800AA0A48 /* View+.swift in Sources */,
+				742D76AA28B56FD000773191 /* TextFieldClearButton.swift in Sources */,
 				7451693028A0452A00AA0A48 /* TitleText.swift in Sources */,
 				7438DF6A28AEC55300A4DF88 /* Connectivity.swift in Sources */,
 				7438DF5228AEB39200A4DF88 /* BaseRequestProtocol.swift in Sources */,

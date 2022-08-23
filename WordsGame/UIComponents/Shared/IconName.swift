@@ -14,6 +14,7 @@ enum IconName: String {
     case gamecontroller
     case gear
     case minus = "minus.circle"
+    case multiply_circle_fill = "multiply.circle.fill"
     case plus = "plus.circle"
     
     var type: IconType {
@@ -21,6 +22,7 @@ enum IconName: String {
         case .gamecontroller,
             .gear,
             .minus,
+            .multiply_circle_fill,
             .plus:
             return .system
         }
