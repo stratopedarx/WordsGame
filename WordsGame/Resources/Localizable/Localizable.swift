@@ -36,7 +36,6 @@ enum Localizable: String {
     
     // MARK: - Settings Tab View
 
-    
     // MARK: - General Network Errors
     case alamofireError = "ALAMOFIRE_ERROR"
     case custom = "CUSTOM"

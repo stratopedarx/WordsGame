@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		742D76A028B564C500773191 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D769F28B564C500773191 /* GameViewModel.swift */; };
+		742D76A428B5653000773191 /* GameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A328B5653000773191 /* GameComponent.swift */; };
+		742D76A628B5699A00773191 /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A528B5699A00773191 /* NeedleGenerated.swift */; };
 		7438DF5028AEB30900A4DF88 /* NetworkAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF4F28AEB30900A4DF88 /* NetworkAdapterProtocol.swift */; };
 		7438DF5228AEB39200A4DF88 /* BaseRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5128AEB39200A4DF88 /* BaseRequestProtocol.swift */; };
 		7438DF5428AEB75400A4DF88 /* NetworkGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5328AEB75400A4DF88 /* NetworkGatewayProtocol.swift */; };
@@ -45,7 +48,6 @@
 		74C5E47428958F5B00E26C18 /* GeneralTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5E47328958F5B00E26C18 /* GeneralTabView.swift */; };
 		74C5E4762895903900E26C18 /* TabButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5E4752895903900E26C18 /* TabButtonView.swift */; };
 		74C5E478289590F400E26C18 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5E477289590F400E26C18 /* IconView.swift */; };
-		74C5E47A289592D600E26C18 /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5E479289592D600E26C18 /* NeedleGenerated.swift */; };
 		74C5E47D2895933D00E26C18 /* GWConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5E47C2895933D00E26C18 /* GWConstants.swift */; };
 		74D850C4289FBFA10035AB52 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D850C3289FBFA10035AB52 /* PrimaryButtonStyle.swift */; };
 		74D850C6289FC1160035AB52 /* GWConstantsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D850C5289FC1160035AB52 /* GWConstantsUI.swift */; };
@@ -60,6 +62,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		742D769F28B564C500773191 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		742D76A328B5653000773191 /* GameComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameComponent.swift; sourceTree = "<group>"; };
+		742D76A528B5699A00773191 /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		7438DF4F28AEB30900A4DF88 /* NetworkAdapterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapterProtocol.swift; sourceTree = "<group>"; };
 		7438DF5128AEB39200A4DF88 /* BaseRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestProtocol.swift; sourceTree = "<group>"; };
 		7438DF5328AEB75400A4DF88 /* NetworkGatewayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGatewayProtocol.swift; sourceTree = "<group>"; };
@@ -97,7 +102,6 @@
 		74C5E47328958F5B00E26C18 /* GeneralTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTabView.swift; sourceTree = "<group>"; };
 		74C5E4752895903900E26C18 /* TabButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButtonView.swift; sourceTree = "<group>"; };
 		74C5E477289590F400E26C18 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
-		74C5E479289592D600E26C18 /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		74C5E47C2895933D00E26C18 /* GWConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWConstants.swift; sourceTree = "<group>"; };
 		74D850C3289FBFA10035AB52 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		74D850C5289FC1160035AB52 /* GWConstantsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWConstantsUI.swift; sourceTree = "<group>"; };
@@ -124,6 +128,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		742D76A128B564F700773191 /* GameTabcomponents */ = {
+			isa = PBXGroup;
+			children = (
+				742D76A228B5651400773191 /* GameComponent */,
+				74C5E46628958B1500E26C18 /* GameTabComponent.swift */,
+			);
+			path = GameTabcomponents;
+			sourceTree = "<group>";
+		};
+		742D76A228B5651400773191 /* GameComponent */ = {
+			isa = PBXGroup;
+			children = (
+				742D76A328B5653000773191 /* GameComponent.swift */,
+			);
+			path = GameComponent;
+			sourceTree = "<group>";
+		};
 		7438DF4C28AEB20000A4DF88 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +214,7 @@
 		747FC82C28678FAC00DFB23B /* WordsGame */ = {
 			isa = PBXGroup;
 			children = (
-				74C5E479289592D600E26C18 /* NeedleGenerated.swift */,
+				742D76A528B5699A00773191 /* NeedleGenerated.swift */,
 				747FC82D28678FAC00DFB23B /* WordsGameApp.swift */,
 				74C5E47B2895931B00E26C18 /* Constants */,
 				74C5E4572895859B00E26C18 /* DI */,
@@ -289,7 +310,7 @@
 		74C5E45A289585D000E26C18 /* TabComponents */ = {
 			isa = PBXGroup;
 			children = (
-				74C5E46628958B1500E26C18 /* GameTabComponent.swift */,
+				742D76A128B564F700773191 /* GameTabcomponents */,
 				74C5E46828958B2100E26C18 /* SettingsTabComponent.swift */,
 			);
 			path = TabComponents;
@@ -432,6 +453,7 @@
 		74EF702C28684DCF00DB0220 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				742D769F28B564C500773191 /* GameViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -623,6 +645,7 @@
 				747FC83028678FAC00DFB23B /* GameTabView.swift in Sources */,
 				7451692E28A03FBE00AA0A48 /* WrapInScrollWiewModifier.swift in Sources */,
 				7438DF5F28AEB9DA00A4DF88 /* NetworkError.swift in Sources */,
+				742D76A428B5653000773191 /* GameComponent.swift in Sources */,
 				74C5E452289582C700E26C18 /* MainView.swift in Sources */,
 				7438DF5628AEB7D500A4DF88 /* NetworkRequestProtocol.swift in Sources */,
 				7438DF6128AEBA9A00A4DF88 /* NetworkSuccessCodes.swift in Sources */,
@@ -637,13 +660,14 @@
 				74EF703228684EF000DB0220 /* Localizable.swift in Sources */,
 				7451692A289FEB6B00AA0A48 /* Player.swift in Sources */,
 				74516927289FE57900AA0A48 /* CommonAlert.swift in Sources */,
-				74C5E47A289592D600E26C18 /* NeedleGenerated.swift in Sources */,
 				7438DF6628AEBFA300A4DF88 /* NetworkGateway.swift in Sources */,
+				742D76A628B5699A00773191 /* NeedleGenerated.swift in Sources */,
 				74C5E47D2895933D00E26C18 /* GWConstants.swift in Sources */,
 				74D850C4289FBFA10035AB52 /* PrimaryButtonStyle.swift in Sources */,
 				74C5E4652895890500E26C18 /* MainViewModel.swift in Sources */,
 				74C5E46728958B1500E26C18 /* GameTabComponent.swift in Sources */,
 				74EF702B28684DCA00DB0220 /* GameView.swift in Sources */,
+				742D76A028B564C500773191 /* GameViewModel.swift in Sources */,
 				74C5E4762895903900E26C18 /* TabButtonView.swift in Sources */,
 				7438DF5828AEB83C00A4DF88 /* RequestDescriptorProtocol.swift in Sources */,
 				74EF703C2868546100DB0220 /* StartButtonView.swift in Sources */,

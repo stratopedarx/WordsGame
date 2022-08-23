@@ -9,9 +9,11 @@ import SwiftUI
 
 struct GameTabView: View {
     @StateObject private var viewModel: GameTabViewModel
+    private let gameComponent: GameComponentProtocol
     
-    init(viewModel: GameTabViewModel) {
+    init(viewModel: GameTabViewModel, gameComponent: GameComponentProtocol) {
         self._viewModel = StateObject(wrappedValue: viewModel)
+        self.gameComponent = gameComponent
     }
 
     var body: some View {
@@ -43,7 +45,7 @@ struct GameTabView: View {
         }
         .wrapInScroll()
         .fullScreenCover(isPresented: $viewModel.isShowGameView) {
-            GameView()
+            gameComponent.buildView(players: viewModel.players, placeholderNames: viewModel.placeholderNames)
         }
         .commonAlert(
             isPresented: $viewModel.isError,

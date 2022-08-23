@@ -22,7 +22,12 @@ final class GameTabComponent: Component<GameTabDependency>, GameTabComponentProt
     }
     
     var gameTabView: AnyView {
-        AnyView(GameTabView(viewModel: gameTabViewModel))
+        AnyView(
+            GameTabView(
+                viewModel: gameTabViewModel,
+                gameComponent: GameComponent(parent: self)
+            )
+         )
     }
 }
 

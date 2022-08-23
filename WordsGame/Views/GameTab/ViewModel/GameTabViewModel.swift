@@ -19,15 +19,10 @@ class GameTabViewModel: ObservableObject {
     var errorDescription = ""
     
     init() {
-        print("!!! init GameTabViewModel")
         for _ in 0..<GWConstants.minNumberOfPlayers {
             players.append(Player())
             placeholderNames.append("")
         }
-    }
-    
-    deinit {
-        print("!!! deinit GameTabViewModel")
     }
 }
 
