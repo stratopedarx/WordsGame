@@ -9,12 +9,32 @@ import SwiftUI
 
 struct GameView: View {
     @StateObject private var viewModel: GameViewModel
+    @Environment(\.presentationMode) var presentationMode
     
     init(viewModel: GameViewModel) {
         self._viewModel = StateObject(wrappedValue: viewModel)
     }
     
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            HeaderGameView(action: viewModel.cancelAction)
+
+        }
+        .wrapInScroll()
+        .background(Image("background"))
+        .edgesIgnoringSafeArea(.all)
+        .commonAlert(
+            isPresented: $viewModel.showCloseAlert,
+            errorDescription: Localizable.saveGameAlert.localized,
+            actionButtonTitle: Localizable.saveGame.localized,
+            cancelButtonTitle: Localizable.doesNotSaveGame.localized,
+            action: {
+                viewModel.saveGame()
+                presentationMode.wrappedValue.dismiss()
+            },
+            cancel: {
+                presentationMode.wrappedValue.dismiss()
+            }
+        )
     }
 }

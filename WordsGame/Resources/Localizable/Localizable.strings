@@ -33,6 +33,12 @@
 "BIG_WORD_CONTAINS_ONLY_LETTERS_INFO" = "Большое слово должно содержать только буквы";
 "ENTER_PLAYER_NAMES" = "Заполните, пожалуйста, имена игроков";
 
+// MARK: - Game View
+
+"SAVE_GAME_ALERT" = "Сохранить игру?";
+"SAVE_GAME" = "Сохранить";
+"DOES_NOT_SAVE_GAME" "Не сохранять";
+
 // MARK: - Settings Tab View
 
 // MARK: - General Network Errors

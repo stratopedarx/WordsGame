@@ -11,6 +11,7 @@
 		742D76A428B5653000773191 /* GameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A328B5653000773191 /* GameComponent.swift */; };
 		742D76A828B56B4900773191 /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A728B56B4900773191 /* NeedleGenerated.swift */; };
 		742D76AA28B56FD000773191 /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A928B56FD000773191 /* TextFieldClearButton.swift */; };
+		742D76AD28B57B0100773191 /* HeaderGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76AC28B57B0100773191 /* HeaderGameView.swift */; };
 		7438DF5028AEB30900A4DF88 /* NetworkAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF4F28AEB30900A4DF88 /* NetworkAdapterProtocol.swift */; };
 		7438DF5228AEB39200A4DF88 /* BaseRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5128AEB39200A4DF88 /* BaseRequestProtocol.swift */; };
 		7438DF5428AEB75400A4DF88 /* NetworkGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5328AEB75400A4DF88 /* NetworkGatewayProtocol.swift */; };
@@ -67,6 +68,7 @@
 		742D76A328B5653000773191 /* GameComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameComponent.swift; sourceTree = "<group>"; };
 		742D76A728B56B4900773191 /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		742D76A928B56FD000773191 /* TextFieldClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
+		742D76AC28B57B0100773191 /* HeaderGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderGameView.swift; sourceTree = "<group>"; };
 		7438DF4F28AEB30900A4DF88 /* NetworkAdapterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapterProtocol.swift; sourceTree = "<group>"; };
 		7438DF5128AEB39200A4DF88 /* BaseRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestProtocol.swift; sourceTree = "<group>"; };
 		7438DF5328AEB75400A4DF88 /* NetworkGatewayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGatewayProtocol.swift; sourceTree = "<group>"; };
@@ -145,6 +147,14 @@
 				742D76A328B5653000773191 /* GameComponent.swift */,
 			);
 			path = GameComponent;
+			sourceTree = "<group>";
+		};
+		742D76AB28B57AEE00773191 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				742D76AC28B57B0100773191 /* HeaderGameView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		7438DF4C28AEB20000A4DF88 /* Services */ = {
@@ -448,6 +458,7 @@
 		74EF702928684DBD00DB0220 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				742D76AB28B57AEE00773191 /* Subviews */,
 				74EF702A28684DCA00DB0220 /* GameView.swift */,
 			);
 			path = View;
@@ -664,6 +675,7 @@
 				74EF703228684EF000DB0220 /* Localizable.swift in Sources */,
 				7451692A289FEB6B00AA0A48 /* Player.swift in Sources */,
 				74516927289FE57900AA0A48 /* CommonAlert.swift in Sources */,
+				742D76AD28B57B0100773191 /* HeaderGameView.swift in Sources */,
 				7438DF6628AEBFA300A4DF88 /* NetworkGateway.swift in Sources */,
 				742D76A828B56B4900773191 /* NeedleGenerated.swift in Sources */,
 				74C5E47D2895933D00E26C18 /* GWConstants.swift in Sources */,

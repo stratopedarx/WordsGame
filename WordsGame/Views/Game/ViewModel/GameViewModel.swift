@@ -7,14 +7,24 @@
 
 import SwiftUI
 
-class GameViewModel: ObservableObject {
+final class GameViewModel: ObservableObject {
     var gameWord: String
     var players: [Player]
     var placeholderNames: [String]
+    
+    @Published var showCloseAlert = false
     
     init(gameWord: String, players: [Player], placeholderNames: [String]) {
         self.gameWord = gameWord
         self.players = players
         self.placeholderNames = placeholderNames
+    }
+    
+    func cancelAction() {
+        showCloseAlert = true
+    }
+    
+    func saveGame() {
+        // Todo need to implement saving the game
     }
 }

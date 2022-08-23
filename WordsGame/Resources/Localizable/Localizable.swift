@@ -35,6 +35,12 @@ enum Localizable: String {
     case bigWordContainsOnlyLettersInfo = "BIG_WORD_CONTAINS_ONLY_LETTERS_INFO"
     case enterPlayerNames = "ENTER_PLAYER_NAMES"
     
+    // MARK: - Game View
+
+    case saveGameAlert = "SAVE_GAME_ALERT"
+    case saveGame = "SAVE_GAME"
+    case doesNotSaveGame = "DOES_NOT_SAVE_GAME"
+    
     // MARK: - Settings Tab View
 
     // MARK: - General Network Errors
