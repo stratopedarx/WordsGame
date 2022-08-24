@@ -22,3 +22,11 @@ extension View {
         self.modifier(TextFieldClearButton(fieldText: text))
     }
 }
+
+// MARK: - Add style for Text
+
+extension View {
+    func gameWordStyle() -> some View {
+        modifier(CharacterModifier())
+    }
+}

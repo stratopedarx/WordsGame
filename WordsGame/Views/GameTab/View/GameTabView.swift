@@ -47,7 +47,7 @@ struct GameTabView: View {
         .onDisappear(perform: viewModel.resetState)
         .fullScreenCover(isPresented: $viewModel.isShowGameView) {
             gameComponent.buildView(
-                gameWord: viewModel.mainWord,
+                gameWord: viewModel.mainWord.uppercased(),
                 players: viewModel.players,
                 placeholderNames: viewModel.placeholderNames
             )

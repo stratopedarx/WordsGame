@@ -60,7 +60,7 @@ extension GameTabViewModel {
             return
         }
         
-        guard !placeholderNames.contains("") else {
+        guard !placeholderNames.contains("") else {  // check
             isError = true
             errorDescription = Localizable.enterPlayerNames.localized
             return
@@ -98,5 +98,27 @@ extension GameTabViewModel {
             placeholderNames.removeLast()
             Player.decreaseCountPlayers()
         }
+    }
+}
+
+// MARK: - helper functions
+
+extension GameTabViewModel {
+    /// not used at the moment
+    func prepare(word: String) -> String {
+        var preparedWord = word
+        var indexes: [Int] = []
+        let length = word.count
+        if length > 17 {
+            indexes = [8, 17]
+        } else if length > 8 {
+            indexes = [8]
+        }
+        
+        for i in indexes {
+            let index = preparedWord.index(preparedWord.startIndex, offsetBy: i)
+            preparedWord.insert("-", at: index)
+        }
+        return preparedWord.uppercased()
     }
 }
