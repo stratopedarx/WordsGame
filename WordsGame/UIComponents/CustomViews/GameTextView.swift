@@ -16,6 +16,10 @@ struct GameTextView: View {
 
     var body: some View {
         TextField(placeholder, text: $text)
+            .placeholder(when: text.isEmpty) {
+                Text(placeholder).foregroundColor(.gray)
+            }
+            .foregroundColor(Color.black)
             .showClearButton($text)
             .font(.title2)
             .padding(.all, MagicNumber.x)

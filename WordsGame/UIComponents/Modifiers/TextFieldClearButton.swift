@@ -21,7 +21,7 @@ struct TextFieldClearButton: ViewModifier {
                         } label: {
                             IconView(iconName: .multiply_circle_fill)
                         }
-                        .foregroundColor(.secondary)
+                        .foregroundColor(.gray)
                         .padding(.trailing, 4)
                     }
                 }

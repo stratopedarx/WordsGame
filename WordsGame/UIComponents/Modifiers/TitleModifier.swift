@@ -16,6 +16,7 @@ struct TitleModifier: ViewModifier {
             .padding(.vertical, MagicNumber.x/2)
             .background(
                 RoundedRectangle(cornerRadius: 5)
+                    .fill(.black)
                     .shadow(color: .blue.opacity(0.8), radius: 6)
             )
             .padding(.horizontal, MagicNumber.x)
