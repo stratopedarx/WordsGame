@@ -33,6 +33,7 @@
 "MAXIMUM_WORD_LENGTH_INFO" = "Слишком длинное слово. Максимальное количество символов 25";
 "BIG_WORD_CONTAINS_ONLY_LETTERS_INFO" = "Большое слово должно содержать только буквы";
 "ENTER_PLAYER_NAMES" = "Заполните, пожалуйста, имена игроков";
+"CURRENT_PLAYER_INFO" = "Ходит";
 
 // MARK: - Game View
 

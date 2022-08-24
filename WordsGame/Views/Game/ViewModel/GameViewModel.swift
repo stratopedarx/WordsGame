@@ -12,6 +12,11 @@ final class GameViewModel: ObservableObject {
     var players: [Player]
     var placeholderNames: [String]
     
+    private var currentPlayerIndex: Int = 0
+    var currentPlayer: Player {
+        players[currentPlayerIndex]
+    }
+    
     @Published var showCloseAlert = false
     
     init(gameWord: String, players: [Player], placeholderNames: [String]) {

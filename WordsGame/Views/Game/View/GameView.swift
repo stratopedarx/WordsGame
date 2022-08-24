@@ -19,6 +19,7 @@ struct GameView: View {
         VStack {
             HeaderGameView(action: viewModel.cancelAction)
             GameWordView(gameWord: viewModel.gameWord)
+            CurrentPlayerView(name: viewModel.currentPlayer.name)
         }
         .wrapInScroll()
         .background(Image("background"))

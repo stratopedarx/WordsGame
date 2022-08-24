@@ -35,6 +35,7 @@ enum Localizable: String {
     case maximumWordLengthInfo = "MAXIMUM_WORD_LENGTH_INFO"
     case bigWordContainsOnlyLettersInfo = "BIG_WORD_CONTAINS_ONLY_LETTERS_INFO"
     case enterPlayerNames = "ENTER_PLAYER_NAMES"
+    case currentPlayerInfo = "CURRENT_PLAYER_INFO"
     
     // MARK: - Game View
 

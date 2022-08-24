@@ -30,3 +30,17 @@ extension View {
         modifier(CharacterModifier())
     }
 }
+
+extension View {
+    func titleStyle() -> some View {
+        modifier(TitleModifier())
+    }
+}
+
+// MARK: - View's gradient method
+
+extension View {
+    @ViewBuilder func backgroundGradient(colors: [Color] = [.red, .gray.opacity(0.5)]) -> some View {
+        self.modifier(GradientBackgroundModifier(colors: colors))
+    }
+}
