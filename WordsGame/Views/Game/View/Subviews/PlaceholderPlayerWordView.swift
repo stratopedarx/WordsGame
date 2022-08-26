@@ -11,12 +11,10 @@ struct PlaceholderPlayerWordView: View {
     var placeholder: String
     
     var body: some View {
-        if !placeholder.isEmpty {
-            Text(placeholder)
-                .titleStyle(
-                    fontSize: MagicNumber.x2,
-                    colorShadow: placeholder == Localizable.allIsGood.localized ? .green : .red
-                )
-        }
+        Text(placeholder)
+            .titleStyle(
+                fontSize: MagicNumber.x2,
+                colorShadow: placeholder == Localizable.allIsGood.localized ? .green : .red
+            )
     }
 }

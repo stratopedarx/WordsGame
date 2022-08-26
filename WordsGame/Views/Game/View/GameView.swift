@@ -22,6 +22,11 @@ struct GameView: View {
     @Environment(\.presentationMode) var presentationMode
     var cacheManager: CacheManager
     
+    // ToDo: try to fix runtime bug
+    var displayPlaceholder: Bool {
+        return !viewModel.placeholderPlayerWord.isEmpty
+    }
+    
     init(viewModel: GameViewModel) {
         self._viewModel = StateObject(wrappedValue: viewModel)
         self.cacheManager = CacheManager.shared
@@ -38,7 +43,10 @@ struct GameView: View {
                 .onChange(of: viewModel.playerWord) { newWord in
                     viewModel.validate(newWord)
                 }
-            PlaceholderPlayerWordView(placeholder: viewModel.placeholderPlayerWord)
+            
+            if displayPlaceholder {
+                PlaceholderPlayerWordView(placeholder: viewModel.placeholderPlayerWord)
+            }
             CheckPlayerWordView(
                 placeholderWord: viewModel.placeholderPlayerWord,
                 isDisabled: viewModel.isLoading,
