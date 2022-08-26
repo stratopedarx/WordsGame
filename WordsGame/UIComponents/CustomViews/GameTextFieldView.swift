@@ -1,5 +1,5 @@
 //
-//  GameTextView.swift
+//  GameTextFieldView.swift
 //  WordsGame
 //
 //  Created by Sergey Lobanov on 26.06.2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GameTextView: View {
+struct GameTextFieldView: View {
     var placeholder: String
     @Binding var text: String
     var topPadding: CGFloat = MagicNumber.x

@@ -7,12 +7,24 @@
 
 import SwiftUI
 
+typealias PlayerName = String
+typealias PlayerWords = [String]
+typealias CurrunetGame = [PlayerName: PlayerWords]
+
+final class CacheManager {
+    static let shared = CacheManager()
+
+    var currentGame: CurrunetGame = [:]
+}
+
 struct GameView: View {
     @StateObject private var viewModel: GameViewModel
     @Environment(\.presentationMode) var presentationMode
+    var cacheManager: CacheManager
     
     init(viewModel: GameViewModel) {
         self._viewModel = StateObject(wrappedValue: viewModel)
+        self.cacheManager = CacheManager.shared
     }
     
     var body: some View {
@@ -20,6 +32,12 @@ struct GameView: View {
             HeaderGameView(action: viewModel.cancelAction)
             GameWordView(gameWord: viewModel.gameWord)
             CurrentPlayerView(name: viewModel.currentPlayer.name)
+            
+            GameTextFieldView(placeholder: Localizable.playerWordPlaceholder.localized, text: $viewModel.playerWord)
+                .onChange(of: viewModel.playerWord) { newWord in
+                    viewModel.validate(newWord)
+                }
+            PlaceholderPlayerWordView(placeholder: $viewModel.placeholderPlayerWord)
         }
         .wrapInScroll()
         .background(Image("background"))

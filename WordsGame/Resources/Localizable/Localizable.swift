@@ -42,6 +42,10 @@ enum Localizable: String {
     case saveGameAlert = "SAVE_GAME_ALERT"
     case saveGame = "SAVE_GAME"
     case doesNotSaveGame = "DOES_NOT_SAVE_GAME"
+    case playerWordPlaceholder = "PLAYER_WORD_PLACEHOLDER"
+    case minimumTwoLetters = "MINIMUM_TWO_LETTERS"
+    case allIsGood = "ALL_IS_GOOD"
+    case areYouReady = "ARE_YOU_READY"
     
     // MARK: - Settings Tab View
 

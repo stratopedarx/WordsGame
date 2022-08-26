@@ -64,8 +64,9 @@
 		74EF703028684EDE00DB0220 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74EF702F28684EDE00DB0220 /* Localizable.strings */; };
 		74EF703228684EF000DB0220 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF703128684EF000DB0220 /* Localizable.swift */; };
 		74EF70362868502200DB0220 /* MagicNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF70352868502200DB0220 /* MagicNumber.swift */; };
-		74EF70392868508500DB0220 /* GameTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF70382868508500DB0220 /* GameTextView.swift */; };
+		74EF70392868508500DB0220 /* GameTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF70382868508500DB0220 /* GameTextFieldView.swift */; };
 		74EF703C2868546100DB0220 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF703B2868546100DB0220 /* StartButtonView.swift */; };
+		74FB86D028B909A4001BAA62 /* PlaceholderPlayerWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB86CF28B909A4001BAA62 /* PlaceholderPlayerWordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,8 +126,9 @@
 		74EF702F28684EDE00DB0220 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		74EF703128684EF000DB0220 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		74EF70352868502200DB0220 /* MagicNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicNumber.swift; sourceTree = "<group>"; };
-		74EF70382868508500DB0220 /* GameTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTextView.swift; sourceTree = "<group>"; };
+		74EF70382868508500DB0220 /* GameTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTextFieldView.swift; sourceTree = "<group>"; };
 		74EF703B2868546100DB0220 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		74FB86CF28B909A4001BAA62 /* PlaceholderPlayerWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderPlayerWordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				742D76AC28B57B0100773191 /* HeaderGameView.swift */,
 				748902F828B6AF11004C0423 /* GameWordView.swift */,
 				7489030028B6C6CC004C0423 /* CurrentPlayerView.swift */,
+				74FB86CF28B909A4001BAA62 /* PlaceholderPlayerWordView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -526,7 +529,7 @@
 		74EF70372868507100DB0220 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				74EF70382868508500DB0220 /* GameTextView.swift */,
+				74EF70382868508500DB0220 /* GameTextFieldView.swift */,
 				74C5E477289590F400E26C18 /* IconView.swift */,
 				7451692F28A0452A00AA0A48 /* TitleText.swift */,
 			);
@@ -682,7 +685,7 @@
 				7438DF5628AEB7D500A4DF88 /* NetworkRequestProtocol.swift in Sources */,
 				7438DF6128AEBA9A00A4DF88 /* NetworkSuccessCodes.swift in Sources */,
 				74D850C9289FC1ED0035AB52 /* Font+.swift in Sources */,
-				74EF70392868508500DB0220 /* GameTextView.swift in Sources */,
+				74EF70392868508500DB0220 /* GameTextFieldView.swift in Sources */,
 				74D850CC289FC5460035AB52 /* Disabled.swift in Sources */,
 				747FC82E28678FAC00DFB23B /* WordsGameApp.swift in Sources */,
 				74EF70362868502200DB0220 /* MagicNumber.swift in Sources */,
@@ -702,6 +705,7 @@
 				74C5E46728958B1500E26C18 /* GameTabComponent.swift in Sources */,
 				74EF702B28684DCA00DB0220 /* GameView.swift in Sources */,
 				742D76A028B564C500773191 /* GameViewModel.swift in Sources */,
+				74FB86D028B909A4001BAA62 /* PlaceholderPlayerWordView.swift in Sources */,
 				74C5E4762895903900E26C18 /* TabButtonView.swift in Sources */,
 				7438DF5828AEB83C00A4DF88 /* RequestDescriptorProtocol.swift in Sources */,
 				74EF703C2868546100DB0220 /* StartButtonView.swift in Sources */,

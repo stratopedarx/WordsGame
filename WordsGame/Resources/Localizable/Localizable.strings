@@ -40,6 +40,10 @@
 "SAVE_GAME_ALERT" = "Сохранить игру?";
 "SAVE_GAME" = "Сохранить";
 "DOES_NOT_SAVE_GAME" = "Не сохранять";
+"PLAYER_WORD_PLACEHOLDER" = "Придумайте слово";
+"MINIMUM_TWO_LETTERS" = "Минимум 2 символа";
+"ALL_IS_GOOD" = "Всё введено корректно";
+"ARE_YOU_READY" = "Готовы проверить слово?";
 
 // MARK: - Settings Tab View
 

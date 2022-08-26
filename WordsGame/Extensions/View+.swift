@@ -32,8 +32,8 @@ extension View {
 }
 
 extension View {
-    func titleStyle() -> some View {
-        modifier(TitleModifier())
+    func titleStyle(fontSize: CGFloat = MagicNumber.x3, colorShadow: Color = .blue) -> some View {
+        modifier(TitleModifier(fontSize: fontSize, colorShadow: colorShadow))
     }
 }
 

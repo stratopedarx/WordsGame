@@ -19,12 +19,12 @@ struct GameTabView: View {
     var body: some View {
         VStack {
             TitleText()
-            GameTextView(
+            GameTextFieldView(
                 placeholder: Localizable.enterBigWord.localized,
                 text: $viewModel.mainWord
             )
             ForEach(Array(viewModel.players.enumerated()), id: \.offset) { index, player in
-                GameTextView(
+                GameTextFieldView(
                     placeholder: player.placeholder,
                     text: $viewModel.placeholderNames[index]
                 )
