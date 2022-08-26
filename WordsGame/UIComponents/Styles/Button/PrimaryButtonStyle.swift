@@ -12,7 +12,7 @@ struct PrimaryButtonStyle: ButtonStyle {
     var fontSize: CGFloat = MagicNumber.x4
     var minWidth: CGFloat = GWConstantsUI.Button.minWidthPrimary
     var maxWidth: CGFloat?
-    private var pressedBrightness: Double = -MagicNumber.x05 * 0.05
+    var pressedBrightness: Double = -MagicNumber.x05 * 0.05
     
     func makeBody(configuration: Configuration) -> some View {
         configuration.label

@@ -67,6 +67,8 @@
 		74EF70392868508500DB0220 /* GameTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF70382868508500DB0220 /* GameTextFieldView.swift */; };
 		74EF703C2868546100DB0220 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EF703B2868546100DB0220 /* StartButtonView.swift */; };
 		74FB86D028B909A4001BAA62 /* PlaceholderPlayerWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB86CF28B909A4001BAA62 /* PlaceholderPlayerWordView.swift */; };
+		74FB86D328B914DC001BAA62 /* GWProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB86D228B914DC001BAA62 /* GWProgressView.swift */; };
+		74FB86D528B9183C001BAA62 /* CheckPlayerWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB86D428B9183C001BAA62 /* CheckPlayerWordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +131,8 @@
 		74EF70382868508500DB0220 /* GameTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTextFieldView.swift; sourceTree = "<group>"; };
 		74EF703B2868546100DB0220 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
 		74FB86CF28B909A4001BAA62 /* PlaceholderPlayerWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderPlayerWordView.swift; sourceTree = "<group>"; };
+		74FB86D228B914DC001BAA62 /* GWProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWProgressView.swift; sourceTree = "<group>"; };
+		74FB86D428B9183C001BAA62 /* CheckPlayerWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPlayerWordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,7 @@
 				748902F828B6AF11004C0423 /* GameWordView.swift */,
 				7489030028B6C6CC004C0423 /* CurrentPlayerView.swift */,
 				74FB86CF28B909A4001BAA62 /* PlaceholderPlayerWordView.swift */,
+				74FB86D428B9183C001BAA62 /* CheckPlayerWordView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -532,6 +537,7 @@
 				74EF70382868508500DB0220 /* GameTextFieldView.swift */,
 				74C5E477289590F400E26C18 /* IconView.swift */,
 				7451692F28A0452A00AA0A48 /* TitleText.swift */,
+				74FB86D228B914DC001BAA62 /* GWProgressView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -679,6 +685,7 @@
 				74516923289FCCE400AA0A48 /* FontStyles.swift in Sources */,
 				747FC83028678FAC00DFB23B /* GameTabView.swift in Sources */,
 				7451692E28A03FBE00AA0A48 /* WrapInScrollWiewModifier.swift in Sources */,
+				74FB86D328B914DC001BAA62 /* GWProgressView.swift in Sources */,
 				7438DF5F28AEB9DA00A4DF88 /* NetworkError.swift in Sources */,
 				742D76A428B5653000773191 /* GameComponent.swift in Sources */,
 				74C5E452289582C700E26C18 /* MainView.swift in Sources */,
@@ -699,6 +706,7 @@
 				742D76AD28B57B0100773191 /* HeaderGameView.swift in Sources */,
 				7438DF6628AEBFA300A4DF88 /* NetworkGateway.swift in Sources */,
 				742D76A828B56B4900773191 /* NeedleGenerated.swift in Sources */,
+				74FB86D528B9183C001BAA62 /* CheckPlayerWordView.swift in Sources */,
 				74C5E47D2895933D00E26C18 /* GWConstants.swift in Sources */,
 				74D850C4289FBFA10035AB52 /* PrimaryButtonStyle.swift in Sources */,
 				74C5E4652895890500E26C18 /* MainViewModel.swift in Sources */,

@@ -13,6 +13,7 @@ final class GameViewModel: ObservableObject {
     @Published var playerWord: String = ""
     @Published var placeholderPlayerWord: String = ""
     @Published var showCloseAlert = false
+    @Published var isLoading = false
 
     var gameWord: String
     var players: [Player]
@@ -31,7 +32,11 @@ final class GameViewModel: ObservableObject {
         self.placeholderNames = placeholderNames
         playerWordObserve()
     }
-    
+}
+
+// MARK: - Actions
+
+extension GameViewModel {
     func cancelAction() {
         showCloseAlert = true
     }
@@ -41,12 +46,26 @@ final class GameViewModel: ObservableObject {
     }
     
     func validate(_ newWord: String) {
-        let value = newWord.replacingOccurrences(of: "\\W", with: "", options: .regularExpression)
+        let value = newWord.replacingOccurrences(of: "\\s", with: "", options: .regularExpression)
+                           .replacingOccurrences(of: "\\d", with: "", options: .regularExpression)
         if value != newWord {
             playerWord = value
         }
     }
     
+    func checkEnteredWord() {
+        print("!!! ")
+        self.isLoading = true
+        // ToDo: implement checking
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.isLoading = false
+        }
+    }
+}
+
+// MARK: - Observers
+
+extension GameViewModel {
     func playerWordObserve() {
         $playerWord
             .sink { [weak self] newWord in

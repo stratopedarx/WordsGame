@@ -11,6 +11,7 @@ struct GameTextFieldView: View {
     var placeholder: String
     @Binding var text: String
     var topPadding: CGFloat = MagicNumber.x
+    var disableAutocorrection = true
     private let horizontalPadding: CGFloat = MagicNumber.x3
     private let cornerRadius: CGFloat = MagicNumber.x2
 
@@ -21,6 +22,7 @@ struct GameTextFieldView: View {
             }
             .foregroundColor(Color.black)
             .showClearButton($text)
+            .disableAutocorrection(disableAutocorrection)
             .font(.title2)
             .padding(.all, MagicNumber.x)
             .background(.white)

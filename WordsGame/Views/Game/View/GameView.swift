@@ -34,10 +34,16 @@ struct GameView: View {
             CurrentPlayerView(name: viewModel.currentPlayer.name)
             
             GameTextFieldView(placeholder: Localizable.playerWordPlaceholder.localized, text: $viewModel.playerWord)
+                .disabled(viewModel.isLoading)
                 .onChange(of: viewModel.playerWord) { newWord in
                     viewModel.validate(newWord)
                 }
             PlaceholderPlayerWordView(placeholder: $viewModel.placeholderPlayerWord)
+            CheckPlayerWordView(
+                placeholderWord: viewModel.placeholderPlayerWord,
+                isDisabled: viewModel.isLoading,
+                action: viewModel.checkEnteredWord
+            )
         }
         .wrapInScroll()
         .background(Image("background"))
