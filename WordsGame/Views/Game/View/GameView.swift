@@ -38,7 +38,7 @@ struct GameView: View {
                 .onChange(of: viewModel.playerWord) { newWord in
                     viewModel.validate(newWord)
                 }
-            PlaceholderPlayerWordView(placeholder: $viewModel.placeholderPlayerWord)
+            PlaceholderPlayerWordView(placeholder: viewModel.placeholderPlayerWord)
             CheckPlayerWordView(
                 placeholderWord: viewModel.placeholderPlayerWord,
                 isDisabled: viewModel.isLoading,
@@ -60,6 +60,12 @@ struct GameView: View {
             cancel: {
                 presentationMode.wrappedValue.dismiss()
             }
+        )
+        .commonAlert(
+            isPresented: $viewModel.showAlertCheckedWord,
+            errorTitle: (viewModel.isCorrectWord ? Localizable.gameOkAlertTitle : Localizable.gameNotOkAlertTitle).localized,
+            errorDescription: (viewModel.isCorrectWord ? Localizable.gameOkAlertDescription : Localizable.gameNotOkAlertDescription).localized,
+            cancel: { viewModel.isCorrectWord ? viewModel.toNextPlayer() : viewModel.tryAgain() }
         )
     }
 }

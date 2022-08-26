@@ -59,3 +59,11 @@ extension View {
         }
     }
 }
+
+// MARK: - Shake modifier
+
+extension View {
+    func shake() -> some View {
+        modifier(CharacterModifier())
+    }
+}

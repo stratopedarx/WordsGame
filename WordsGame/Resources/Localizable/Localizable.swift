@@ -46,6 +46,10 @@ enum Localizable: String {
     case minimumTwoLetters = "MINIMUM_TWO_LETTERS"
     case allIsGood = "ALL_IS_GOOD"
     case areYouReady = "ARE_YOU_READY"
+    case gameOkAlertTitle = "GAME_OK_ALERT_TITLE"
+    case gameOkAlertDescription = "GAME_OK_ALERT_DESCRIPTION"
+    case gameNotOkAlertTitle = "GAME_NOT_OK_ALERT_TITLE"
+    case gameNotOkAlertDescription = "GAME_NOT_OK_ALERT_DESCRIPTION"
     
     // MARK: - Settings Tab View
 

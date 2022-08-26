@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PlaceholderPlayerWordView: View {
-    @Binding var placeholder: String
+    var placeholder: String
     
     var body: some View {
         if !placeholder.isEmpty {

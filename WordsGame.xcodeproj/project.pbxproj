@@ -69,6 +69,8 @@
 		74FB86D028B909A4001BAA62 /* PlaceholderPlayerWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB86CF28B909A4001BAA62 /* PlaceholderPlayerWordView.swift */; };
 		74FB86D328B914DC001BAA62 /* GWProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB86D228B914DC001BAA62 /* GWProgressView.swift */; };
 		74FB86D528B9183C001BAA62 /* CheckPlayerWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB86D428B9183C001BAA62 /* CheckPlayerWordView.swift */; };
+		74FB86D728B9195D001BAA62 /* ShakeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB86D628B9195D001BAA62 /* ShakeModifier.swift */; };
+		74FB86DA28B91B76001BAA62 /* WordStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB86D928B91B76001BAA62 /* WordStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,6 +135,8 @@
 		74FB86CF28B909A4001BAA62 /* PlaceholderPlayerWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderPlayerWordView.swift; sourceTree = "<group>"; };
 		74FB86D228B914DC001BAA62 /* GWProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWProgressView.swift; sourceTree = "<group>"; };
 		74FB86D428B9183C001BAA62 /* CheckPlayerWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPlayerWordView.swift; sourceTree = "<group>"; };
+		74FB86D628B9195D001BAA62 /* ShakeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeModifier.swift; sourceTree = "<group>"; };
+		74FB86D928B91B76001BAA62 /* WordStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -425,6 +429,7 @@
 				748902FA28B6B0E1004C0423 /* CharacterModifier.swift */,
 				748902FC28B6C30D004C0423 /* TitleModifier.swift */,
 				748902FE28B6C50E004C0423 /* GradientBackgroundModifier.swift */,
+				74FB86D628B9195D001BAA62 /* ShakeModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -453,6 +458,7 @@
 		74EF702628684D7F00DB0220 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				74FB86D828B91B66001BAA62 /* Shared */,
 				74EF702D28684DDA00DB0220 /* Model */,
 				74EF702C28684DCF00DB0220 /* ViewModel */,
 				74EF702928684DBD00DB0220 /* View */,
@@ -549,6 +555,14 @@
 				74EF703B2868546100DB0220 /* StartButtonView.swift */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		74FB86D828B91B66001BAA62 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				74FB86D928B91B76001BAA62 /* WordStatus.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -707,6 +721,7 @@
 				7438DF6628AEBFA300A4DF88 /* NetworkGateway.swift in Sources */,
 				742D76A828B56B4900773191 /* NeedleGenerated.swift in Sources */,
 				74FB86D528B9183C001BAA62 /* CheckPlayerWordView.swift in Sources */,
+				74FB86D728B9195D001BAA62 /* ShakeModifier.swift in Sources */,
 				74C5E47D2895933D00E26C18 /* GWConstants.swift in Sources */,
 				74D850C4289FBFA10035AB52 /* PrimaryButtonStyle.swift in Sources */,
 				74C5E4652895890500E26C18 /* MainViewModel.swift in Sources */,
@@ -723,6 +738,7 @@
 				748902FD28B6C30D004C0423 /* TitleModifier.swift in Sources */,
 				74C5E45C289585E700E26C18 /* TabComponentProtocol.swift in Sources */,
 				7438DF5028AEB30900A4DF88 /* NetworkAdapterProtocol.swift in Sources */,
+				74FB86DA28B91B76001BAA62 /* WordStatus.swift in Sources */,
 				74516925289FCEF000AA0A48 /* QuantityOfPlayersView.swift in Sources */,
 				74C5E45F289586B500E26C18 /* MainTabsSelection.swift in Sources */,
 				74C5E46C28958C2700E26C18 /* GameTabViewModel.swift in Sources */,

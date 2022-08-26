@@ -14,6 +14,8 @@ final class GameViewModel: ObservableObject {
     @Published var placeholderPlayerWord: String = ""
     @Published var showCloseAlert = false
     @Published var isLoading = false
+    @Published var wordStatus: WordStatus = .notChecked
+    @Published var showAlertCheckedWord = false
 
     var gameWord: String
     var players: [Player]
@@ -22,6 +24,9 @@ final class GameViewModel: ObservableObject {
     private var currentPlayerIndex: Int = 0
     var currentPlayer: Player {
         players[currentPlayerIndex]
+    }
+    var isCorrectWord: Bool {
+        wordStatus == .correct
     }
     
     private var cancellableSet: Set<AnyCancellable> = []
@@ -54,12 +59,30 @@ extension GameViewModel {
     }
     
     func checkEnteredWord() {
-        print("!!! ")
         self.isLoading = true
-        // ToDo: implement checking
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+//         ToDo: implement checking
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.isLoading = false
+            self.wordStatus = .notCorrect
+            self.showAlertCheckedWord = true
         }
+    }
+    
+    func toNextPlayer() {
+        resetState()
+    }
+    
+    func tryAgain() {
+        resetState()
+    }
+}
+
+// MARK: - private helpers
+
+private extension GameViewModel {
+    func resetState() {
+        playerWord.removeAll()
+        placeholderPlayerWord.removeAll()
     }
 }
 
