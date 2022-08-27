@@ -8,18 +8,16 @@
 import SwiftUI
 
 struct CheckPlayerWordView: View {
-    var placeholderWord: String
+    var placeholder: PlayerWordPlaceholders
     var isDisabled: Bool
     var action: () -> Void
     
     var body: some View {
-        if placeholderWord == Localizable.allIsGood.localized {
-            Button(Localizable.areYouReady.localized) {
-                action()
-            }
-            .buttonStyle(PrimaryButtonStyle(fontSize: MagicNumber.x2))
-            .modifier(Disabled(disabled: isDisabled))
-            .overlay(isDisabled ? GWProgressView() : nil)
+        Button(Localizable.areYouReady.localized) {
+            action()
         }
+        .buttonStyle(PrimaryButtonStyle(fontSize: MagicNumber.x2))
+        .modifier(Disabled(disabled: isDisabled || placeholder != .allIsGood))
+        .overlay(isDisabled ? GWProgressView() : nil)
     }
 }

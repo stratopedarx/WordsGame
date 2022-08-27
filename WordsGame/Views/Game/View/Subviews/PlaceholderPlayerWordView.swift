@@ -8,13 +8,10 @@
 import SwiftUI
 
 struct PlaceholderPlayerWordView: View {
-    var placeholder: String
+    var placeholder: PlayerWordPlaceholders
     
     var body: some View {
-        Text(placeholder)
-            .titleStyle(
-                fontSize: MagicNumber.x2,
-                colorShadow: placeholder == Localizable.allIsGood.localized ? .green : .red
-            )
+        Text(placeholder.value)
+            .titleStyle(fontSize: MagicNumber.x2, colorShadow: placeholder.color)
     }
 }

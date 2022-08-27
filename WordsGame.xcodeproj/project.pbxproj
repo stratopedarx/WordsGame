@@ -31,6 +31,7 @@
 		7451692C28A03FA800AA0A48 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7451692B28A03FA800AA0A48 /* View+.swift */; };
 		7451692E28A03FBE00AA0A48 /* WrapInScrollWiewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7451692D28A03FBE00AA0A48 /* WrapInScrollWiewModifier.swift */; };
 		7451693028A0452A00AA0A48 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7451692F28A0452A00AA0A48 /* TitleText.swift */; };
+		7459C76B28BA2146000ACE01 /* PlayerWordPlaceholders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459C76A28BA2146000ACE01 /* PlayerWordPlaceholders.swift */; };
 		747FC82E28678FAC00DFB23B /* WordsGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747FC82D28678FAC00DFB23B /* WordsGameApp.swift */; };
 		747FC83028678FAC00DFB23B /* GameTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747FC82F28678FAC00DFB23B /* GameTabView.swift */; };
 		747FC83228678FAE00DFB23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747FC83128678FAE00DFB23B /* Assets.xcassets */; };
@@ -97,6 +98,7 @@
 		7451692B28A03FA800AA0A48 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		7451692D28A03FBE00AA0A48 /* WrapInScrollWiewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapInScrollWiewModifier.swift; sourceTree = "<group>"; };
 		7451692F28A0452A00AA0A48 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
+		7459C76A28BA2146000ACE01 /* PlayerWordPlaceholders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWordPlaceholders.swift; sourceTree = "<group>"; };
 		747FC82A28678FAC00DFB23B /* WordsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		747FC82D28678FAC00DFB23B /* WordsGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsGameApp.swift; sourceTree = "<group>"; };
 		747FC82F28678FAC00DFB23B /* GameTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabView.swift; sourceTree = "<group>"; };
@@ -561,6 +563,7 @@
 			isa = PBXGroup;
 			children = (
 				74FB86D928B91B76001BAA62 /* WordStatus.swift */,
+				7459C76A28BA2146000ACE01 /* PlayerWordPlaceholders.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -696,6 +699,7 @@
 				74C5E478289590F400E26C18 /* IconView.swift in Sources */,
 				7438DF5428AEB75400A4DF88 /* NetworkGatewayProtocol.swift in Sources */,
 				748902FB28B6B0E1004C0423 /* CharacterModifier.swift in Sources */,
+				7459C76B28BA2146000ACE01 /* PlayerWordPlaceholders.swift in Sources */,
 				74516923289FCCE400AA0A48 /* FontStyles.swift in Sources */,
 				747FC83028678FAC00DFB23B /* GameTabView.swift in Sources */,
 				7451692E28A03FBE00AA0A48 /* WrapInScrollWiewModifier.swift in Sources */,

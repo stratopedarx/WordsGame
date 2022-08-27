@@ -43,6 +43,7 @@ enum Localizable: String {
     case saveGame = "SAVE_GAME"
     case doesNotSaveGame = "DOES_NOT_SAVE_GAME"
     case playerWordPlaceholder = "PLAYER_WORD_PLACEHOLDER"
+    case initGameWordPlaceholder = "INIT_GAME_WORD_PLACEHOLDER"
     case minimumTwoLetters = "MINIMUM_TWO_LETTERS"
     case allIsGood = "ALL_IS_GOOD"
     case areYouReady = "ARE_YOU_READY"

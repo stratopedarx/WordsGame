@@ -7,11 +7,10 @@
 
 import SwiftUI
 import Combine
-import Alamofire
 
 final class GameViewModel: ObservableObject {
     @Published var playerWord: String = ""
-    @Published var placeholderPlayerWord: String = ""
+    @Published var placeholderPlayerWord: PlayerWordPlaceholders = .initPlaceholder
     @Published var showCloseAlert = false
     @Published var isLoading = false
     @Published var wordStatus: WordStatus = .notChecked
@@ -82,7 +81,7 @@ extension GameViewModel {
 private extension GameViewModel {
     func resetState() {
         playerWord.removeAll()
-        placeholderPlayerWord.removeAll()
+        placeholderPlayerWord = .initPlaceholder
     }
 }
 
@@ -95,15 +94,15 @@ extension GameViewModel {
                 guard let self = self else { return }
                 
                 guard !newWord.isEmpty else {
-                    self.placeholderPlayerWord.removeAll()
+                    self.placeholderPlayerWord = .initPlaceholder
                     return
                 }
                 
                 guard !(newWord.count == 1) else {
-                    self.placeholderPlayerWord = Localizable.minimumTwoLetters.localized
+                    self.placeholderPlayerWord = .minimumTwoLetters
                     return
                 }
-                self.placeholderPlayerWord = Localizable.allIsGood.localized
+                self.placeholderPlayerWord = .allIsGood
             }
             .store(in: &cancellableSet)
     }
