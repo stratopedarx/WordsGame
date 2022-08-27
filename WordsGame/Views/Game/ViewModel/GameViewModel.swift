@@ -8,6 +8,16 @@
 import SwiftUI
 import Combine
 
+typealias PlayerName = String
+typealias PlayerWords = [String]
+typealias CurrunetGame = [PlayerName: PlayerWords]
+
+final class CacheManager {
+    static let shared = CacheManager()
+
+    var currentGame: CurrunetGame = [:]
+}
+
 final class GameViewModel: ObservableObject {
     @Published var playerWord: String = ""
     @Published var placeholderPlayerWord: PlayerWordPlaceholders = .initPlaceholder
@@ -16,10 +26,7 @@ final class GameViewModel: ObservableObject {
     @Published var wordStatus: WordStatus = .notChecked
     @Published var showAlertCheckedWord = false
 
-    var gameWord: String
-    var players: [Player]
-    var placeholderNames: [String]
-
+    private var cancellableSet: Set<AnyCancellable> = []
     private var currentPlayerIndex: Int = 0
     var currentPlayer: Player {
         players[currentPlayerIndex]
@@ -28,12 +35,12 @@ final class GameViewModel: ObservableObject {
         wordStatus == .correct
     }
     
-    private var cancellableSet: Set<AnyCancellable> = []
+    var gameWord: String
+    var players: [Player]
     
-    init(gameWord: String, players: [Player], placeholderNames: [String]) {
+    init(gameWord: String, players: [Player]) {
         self.gameWord = gameWord
         self.players = players
-        self.placeholderNames = placeholderNames
         playerWordObserve()
     }
 }
@@ -68,6 +75,9 @@ extension GameViewModel {
     }
     
     func toNextPlayer() {
+        currentPlayerIndex += 1
+//        let isIndexValid = .indices.contains(index)
+        
         resetState()
     }
     
@@ -82,6 +92,10 @@ private extension GameViewModel {
     func resetState() {
         playerWord.removeAll()
         placeholderPlayerWord = .initPlaceholder
+    }
+    
+    func chooseNextPlayer() {
+        
     }
 }
 
