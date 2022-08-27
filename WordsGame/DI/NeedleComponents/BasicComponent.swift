@@ -10,6 +10,10 @@ import SwiftUI
 
 final class BasicComponent: BootstrapComponent {
     
+    var cacheManager: CacheManagerProtocol {
+        shared { CacheManager.shared }
+    }
+    
     var mainViewModel: MainViewModel {
         MainViewModel()
     }

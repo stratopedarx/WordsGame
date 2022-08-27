@@ -8,16 +8,6 @@
 import SwiftUI
 import Combine
 
-typealias PlayerName = String
-typealias PlayerWords = [String]
-typealias CurrunetGame = [PlayerName: PlayerWords]
-
-final class CacheManager {
-    static let shared = CacheManager()
-
-    var currentGame: CurrunetGame = [:]
-}
-
 final class GameViewModel: ObservableObject {
     @Published var playerWord: String = ""
     @Published var placeholderPlayerWord: PlayerWordPlaceholders = .initPlaceholder
@@ -37,11 +27,22 @@ final class GameViewModel: ObservableObject {
     
     var gameWord: String
     var players: [Player]
+    var cacheManager: CacheManagerProtocol
     
-    init(gameWord: String, players: [Player]) {
+    init(gameWord: String, players: [Player], cacheManager: CacheManagerProtocol) {
+        print("!!! init GameViewModel")
         self.gameWord = gameWord
         self.players = players
+        self.cacheManager = cacheManager
+        initCache()
         playerWordObserve()
+    }
+    
+    func initCache() {
+        cacheManager.resetCurrentGame()
+        for player in players {
+            cacheManager.currentGame[player] = []
+        }
     }
 }
 
@@ -53,7 +54,11 @@ extension GameViewModel {
     }
     
     func saveGame() {
-        // Todo need to implement saving the game
+        cacheManager.saveCurrentGame()
+    }
+    
+    func resetGame() {
+        cacheManager.resetCurrentGame()
     }
     
     func validate(_ newWord: String) {
@@ -69,14 +74,15 @@ extension GameViewModel {
 //         ToDo: implement checking
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.isLoading = false
-            self.wordStatus = .notCorrect
+            self.wordStatus = .correct
             self.showAlertCheckedWord = true
         }
     }
     
     func toNextPlayer() {
-        currentPlayerIndex += 1
-//        let isIndexValid = .indices.contains(index)
+        saveWordForCurrentPlayer()
+        let nextIndex = currentPlayerIndex + 1
+        currentPlayerIndex = players.indices.contains(nextIndex) ? nextIndex : 0
         
         resetState()
     }
@@ -94,8 +100,9 @@ private extension GameViewModel {
         placeholderPlayerWord = .initPlaceholder
     }
     
-    func chooseNextPlayer() {
-        
+    func saveWordForCurrentPlayer() {
+        players[currentPlayerIndex].update(points: playerWord.count)
+        cacheManager.currentGame[currentPlayer]?.append(playerWord)
     }
 }
 

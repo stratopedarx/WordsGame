@@ -40,16 +40,18 @@ private class GameTabDependencyfb323e3bf81e8df98c74Provider: GameTabDependencyfb
     }
 }
 private class GameDependency8cb03860447bcd154348BaseProvider: GameDependency {
-
-
-    init() {
-
+    var cacheManager: CacheManagerProtocol {
+        return basicComponent.cacheManager
+    }
+    private let basicComponent: BasicComponent
+    init(basicComponent: BasicComponent) {
+        self.basicComponent = basicComponent
     }
 }
 /// ^->BasicComponent->GameTabComponent->GameComponent
 private class GameDependency8cb03860447bcd154348Provider: GameDependency8cb03860447bcd154348BaseProvider {
     init(component: NeedleFoundation.Scope) {
-        super.init()
+        super.init(basicComponent: component.parent.parent as! BasicComponent)
     }
 }
 private class SettingsTabDependency166628ee8677ad88f4ffBaseProvider: SettingsTabDependency {

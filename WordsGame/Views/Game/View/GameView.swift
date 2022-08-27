@@ -10,11 +10,10 @@ import SwiftUI
 struct GameView: View {
     @StateObject private var viewModel: GameViewModel
     @Environment(\.presentationMode) var presentationMode
-    var cacheManager: CacheManager
     
     init(viewModel: GameViewModel) {
+        print("!!! init GameView")
         self._viewModel = StateObject(wrappedValue: viewModel)
-        self.cacheManager = CacheManager.shared
     }
     
     private var headerGameView: some View {
@@ -29,6 +28,7 @@ struct GameView: View {
                     presentationMode.wrappedValue.dismiss()
                 },
                 cancel: {
+                    viewModel.resetGame()
                     presentationMode.wrappedValue.dismiss()
                 }
             )
@@ -52,7 +52,7 @@ struct GameView: View {
         VStack {
             headerGameView
             GameWordView(gameWord: viewModel.gameWord)
-            CurrentPlayerView(name: viewModel.currentPlayer.name)
+            InfoBoardView(name: viewModel.currentPlayer.name, players: viewModel.players)
             GameTextFieldView(placeholder: Localizable.playerWordPlaceholder.localized, text: $viewModel.playerWord)
                 .disabled(viewModel.isLoading)
                 .onChange(of: viewModel.playerWord) { newWord in
