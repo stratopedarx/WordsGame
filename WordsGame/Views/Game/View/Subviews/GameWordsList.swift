@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GameWordsList: View {
     var gameCells: [GameCell] = []
-    let widthTitleColumn: CGFloat = UIScreen.main.bounds.size.width * 0.25
+    let widthTitleColumn: CGFloat = UIScreen.main.bounds.size.width * 0.30
     
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -17,7 +17,9 @@ struct GameWordsList: View {
                 ForEach(gameCells) { cell in
                     HStack {
                         Text("\(cell.name): ")
-                            .frame(maxWidth: UIScreen.main.bounds.width * widthTitleColumn, alignment: .leading)
+                            .frame(maxWidth: widthTitleColumn, alignment: .leading)
+                            .lineLimit(1)
+                        
                         Text("\(cell.word) \(cell.word.count)")
                             .bold()
                         Spacer()
