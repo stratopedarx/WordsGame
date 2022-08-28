@@ -47,18 +47,18 @@ struct GameTabView: View {
         .onDisappear(perform: viewModel.resetState)
         .fullScreenCover(isPresented: $viewModel.isShowGameView) {
             // ToDo: try to use Needle components. The problem that view model creates two times
-            GameView(
-                viewModel: GameViewModel(
-                    gameWord: viewModel.mainWord.uppercased(),
-                    players: viewModel.players,
-                    cacheManager: CacheManager.shared
-                )
-            )
-//            gameComponent.buildView(
-//                gameWord: viewModel.mainWord.uppercased(),
-//                players: viewModel.players
+//            GameView(
+//                viewModel: GameViewModel(
+//                    gameWord: viewModel.mainWord.uppercased(),
+//                    players: viewModel.players,
+//                    cacheManager: CacheManager.shared
+//                )
 //            )
-//            .onAppear(perform: viewModel.resetState)
+            gameComponent.buildView(
+                gameWord: viewModel.mainWord.uppercased(),
+                players: viewModel.players
+            )
+            .onAppear(perform: viewModel.resetState)
         }
         .commonAlert(
             isPresented: $viewModel.isError,

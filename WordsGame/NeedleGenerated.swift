@@ -43,6 +43,9 @@ private class GameDependency8cb03860447bcd154348BaseProvider: GameDependency {
     var cacheManager: CacheManagerProtocol {
         return basicComponent.cacheManager
     }
+    var yandexDictAPI: YandexDictAPIProtocol {
+        return basicComponent.yandexDictAPI
+    }
     private let basicComponent: BasicComponent
     init(basicComponent: BasicComponent) {
         self.basicComponent = basicComponent

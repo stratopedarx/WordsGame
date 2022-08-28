@@ -14,12 +14,20 @@ protocol GameComponentProtocol {
 
 protocol GameDependency: Dependency {
     var cacheManager: CacheManagerProtocol { get }
+    var yandexDictAPI: YandexDictAPIProtocol { get }
 }
 
 final class GameComponent: Component<GameDependency>, GameComponentProtocol {
     func buildView(gameWord: String, players: [Player]) -> AnyView {
         AnyView(
-            GameView(viewModel: GameViewModel(gameWord: gameWord, players: players, cacheManager: dependency.cacheManager))
+            GameView(
+                viewModel: GameViewModel(
+                    gameWord: gameWord,
+                    players: players,
+                    cacheManager: dependency.cacheManager,
+                    yandexDictAPI: dependency.yandexDictAPI
+                )
+            )
         )
     }
 }

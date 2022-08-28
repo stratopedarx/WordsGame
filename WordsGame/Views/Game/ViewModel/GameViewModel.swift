@@ -30,12 +30,14 @@ final class GameViewModel: ObservableObject {
     var gameWord: String
     var players: [Player]
     var cacheManager: CacheManagerProtocol
+    var yandexDictAPI: YandexDictAPIProtocol
     
-    init(gameWord: String, players: [Player], cacheManager: CacheManagerProtocol) {
+    init(gameWord: String, players: [Player], cacheManager: CacheManagerProtocol, yandexDictAPI: YandexDictAPIProtocol) {
         print("!!! init GameViewModel")
         self.gameWord = gameWord
         self.players = players
         self.cacheManager = cacheManager
+        self.yandexDictAPI = yandexDictAPI
         initCache()
         playerWordObserve()
     }
@@ -73,12 +75,29 @@ extension GameViewModel {
     
     func checkEnteredWord() {
         self.isLoading = true
-//         ToDo: implement checking
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.isLoading = false
-            self.wordStatus = .correct
-            self.showAlertCheckedWord = true
-        }
+        yandexDictAPI.checkWord(text: playerWord)
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                switch completion {
+                case .failure(let error):
+                    print("!!! error \(error)")
+                case .finished:
+                    break
+                }
+            } receiveValue: { [weak self] response in
+                guard let self = self else { return }
+                self.isLoading = false
+                guard !response.def.isEmpty else {
+                    self.wordStatus = .notCorrect
+                    self.showAlertCheckedWord = true
+                    return
+                }
+                self.isLoading = false
+                self.wordStatus = .correct
+                self.showAlertCheckedWord = true
+            }
+            .store(in: &cancellableSet)
+
     }
     
     func toNextPlayer() {

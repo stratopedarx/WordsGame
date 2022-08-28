@@ -10,12 +10,17 @@
 		74082F8228BB504300ECC9CB /* GameWordsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F8128BB504300ECC9CB /* GameWordsList.swift */; };
 		74082F8528BB61BA00ECC9CB /* KeyboardReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F8428BB61BA00ECC9CB /* KeyboardReadable.swift */; };
 		74082F8728BB934400ECC9CB /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F8628BB934400ECC9CB /* GameCell.swift */; };
+		74082F8D28BBA49900ECC9CB /* CheckWordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F8C28BBA49900ECC9CB /* CheckWordRequest.swift */; };
+		74082F8F28BBA4A400ECC9CB /* CheckWordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F8E28BBA4A400ECC9CB /* CheckWordResponse.swift */; };
+		74082F9128BBAAA200ECC9CB /* YandexDictAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F9028BBAAA200ECC9CB /* YandexDictAPIProtocol.swift */; };
+		74082F9328BBABF200ECC9CB /* YandexDictAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F9228BBABF200ECC9CB /* YandexDictAPI.swift */; };
+		74082F9528BBAE9D00ECC9CB /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F9428BBAE9D00ECC9CB /* NeedleGenerated.swift */; };
 		742D76A028B564C500773191 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D769F28B564C500773191 /* GameViewModel.swift */; };
 		742D76A428B5653000773191 /* GameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A328B5653000773191 /* GameComponent.swift */; };
 		742D76AA28B56FD000773191 /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A928B56FD000773191 /* TextFieldClearButton.swift */; };
 		742D76AD28B57B0100773191 /* HeaderGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76AC28B57B0100773191 /* HeaderGameView.swift */; };
 		7438DF5028AEB30900A4DF88 /* NetworkAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF4F28AEB30900A4DF88 /* NetworkAdapterProtocol.swift */; };
-		7438DF5228AEB39200A4DF88 /* BaseRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5128AEB39200A4DF88 /* BaseRequestProtocol.swift */; };
+		7438DF5228AEB39200A4DF88 /* BaseResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5128AEB39200A4DF88 /* BaseResponseProtocol.swift */; };
 		7438DF5428AEB75400A4DF88 /* NetworkGatewayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5328AEB75400A4DF88 /* NetworkGatewayProtocol.swift */; };
 		7438DF5628AEB7D500A4DF88 /* NetworkRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5528AEB7D500A4DF88 /* NetworkRequestProtocol.swift */; };
 		7438DF5828AEB83C00A4DF88 /* RequestDescriptorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438DF5728AEB83C00A4DF88 /* RequestDescriptorProtocol.swift */; };
@@ -45,7 +50,6 @@
 		748902FD28B6C30D004C0423 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748902FC28B6C30D004C0423 /* TitleModifier.swift */; };
 		748902FF28B6C50E004C0423 /* GradientBackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748902FE28B6C50E004C0423 /* GradientBackgroundModifier.swift */; };
 		7489030128B6C6CC004C0423 /* InfoBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7489030028B6C6CC004C0423 /* InfoBoardView.swift */; };
-		749F8EAE28BA39BC00E13A82 /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749F8EAD28BA39BC00E13A82 /* NeedleGenerated.swift */; };
 		74C5E44B28957E2F00E26C18 /* NeedleFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 74C5E44A28957E2F00E26C18 /* NeedleFoundation */; };
 		74C5E452289582C700E26C18 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5E451289582C700E26C18 /* MainView.swift */; };
 		74C5E45C289585E700E26C18 /* TabComponentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5E45B289585E700E26C18 /* TabComponentProtocol.swift */; };
@@ -83,12 +87,17 @@
 		74082F8128BB504300ECC9CB /* GameWordsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWordsList.swift; sourceTree = "<group>"; };
 		74082F8428BB61BA00ECC9CB /* KeyboardReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardReadable.swift; sourceTree = "<group>"; };
 		74082F8628BB934400ECC9CB /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		74082F8C28BBA49900ECC9CB /* CheckWordRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckWordRequest.swift; sourceTree = "<group>"; };
+		74082F8E28BBA4A400ECC9CB /* CheckWordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckWordResponse.swift; sourceTree = "<group>"; };
+		74082F9028BBAAA200ECC9CB /* YandexDictAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexDictAPIProtocol.swift; sourceTree = "<group>"; };
+		74082F9228BBABF200ECC9CB /* YandexDictAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexDictAPI.swift; sourceTree = "<group>"; };
+		74082F9428BBAE9D00ECC9CB /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		742D769F28B564C500773191 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		742D76A328B5653000773191 /* GameComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameComponent.swift; sourceTree = "<group>"; };
 		742D76A928B56FD000773191 /* TextFieldClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
 		742D76AC28B57B0100773191 /* HeaderGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderGameView.swift; sourceTree = "<group>"; };
 		7438DF4F28AEB30900A4DF88 /* NetworkAdapterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapterProtocol.swift; sourceTree = "<group>"; };
-		7438DF5128AEB39200A4DF88 /* BaseRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestProtocol.swift; sourceTree = "<group>"; };
+		7438DF5128AEB39200A4DF88 /* BaseResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseProtocol.swift; sourceTree = "<group>"; };
 		7438DF5328AEB75400A4DF88 /* NetworkGatewayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGatewayProtocol.swift; sourceTree = "<group>"; };
 		7438DF5528AEB7D500A4DF88 /* NetworkRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestProtocol.swift; sourceTree = "<group>"; };
 		7438DF5728AEB83C00A4DF88 /* RequestDescriptorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDescriptorProtocol.swift; sourceTree = "<group>"; };
@@ -118,7 +127,6 @@
 		748902FC28B6C30D004C0423 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
 		748902FE28B6C50E004C0423 /* GradientBackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundModifier.swift; sourceTree = "<group>"; };
 		7489030028B6C6CC004C0423 /* InfoBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBoardView.swift; sourceTree = "<group>"; };
-		749F8EAD28BA39BC00E13A82 /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		74C5E451289582C700E26C18 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		74C5E45B289585E700E26C18 /* TabComponentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabComponentProtocol.swift; sourceTree = "<group>"; };
 		74C5E45E289586B500E26C18 /* MainTabsSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabsSelection.swift; sourceTree = "<group>"; };
@@ -170,6 +178,41 @@
 				74082F8428BB61BA00ECC9CB /* KeyboardReadable.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		74082F8828BBA41F00ECC9CB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				74082F8928BBA42D00ECC9CB /* YandexDictAPI */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		74082F8928BBA42D00ECC9CB /* YandexDictAPI */ = {
+			isa = PBXGroup;
+			children = (
+				74082F8A28BBA44500ECC9CB /* Requests */,
+				74082F8B28BBA44E00ECC9CB /* Responses */,
+				74082F9028BBAAA200ECC9CB /* YandexDictAPIProtocol.swift */,
+				74082F9228BBABF200ECC9CB /* YandexDictAPI.swift */,
+			);
+			path = YandexDictAPI;
+			sourceTree = "<group>";
+		};
+		74082F8A28BBA44500ECC9CB /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				74082F8C28BBA49900ECC9CB /* CheckWordRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		74082F8B28BBA44E00ECC9CB /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				74082F8E28BBA4A400ECC9CB /* CheckWordResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 		742D76A128B564F700773191 /* GameTabcomponents */ = {
@@ -227,7 +270,7 @@
 		7438DF4E28AEB2A300A4DF88 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				7438DF5128AEB39200A4DF88 /* BaseRequestProtocol.swift */,
+				7438DF5128AEB39200A4DF88 /* BaseResponseProtocol.swift */,
 				7438DF5528AEB7D500A4DF88 /* NetworkRequestProtocol.swift */,
 				7438DF5728AEB83C00A4DF88 /* RequestDescriptorProtocol.swift */,
 				7438DF4F28AEB30900A4DF88 /* NetworkAdapterProtocol.swift */,
@@ -288,13 +331,14 @@
 		747FC82C28678FAC00DFB23B /* WordsGame */ = {
 			isa = PBXGroup;
 			children = (
-				749F8EAD28BA39BC00E13A82 /* NeedleGenerated.swift */,
+				74082F9428BBAE9D00ECC9CB /* NeedleGenerated.swift */,
 				747FC82D28678FAC00DFB23B /* WordsGameApp.swift */,
 				74C5E47B2895931B00E26C18 /* Constants */,
 				74C5E4572895859B00E26C18 /* DI */,
 				7459C76E28BA35D7000ACE01 /* Managers */,
 				74D850C7289FC1DD0035AB52 /* Extensions */,
 				74EF702728684D9200DB0220 /* Resources */,
+				74082F8828BBA41F00ECC9CB /* Repository */,
 				7438DF4C28AEB20000A4DF88 /* Services */,
 				74EF70332868500900DB0220 /* UIComponents */,
 				74EF702428684D4F00DB0220 /* Views */,
@@ -733,11 +777,13 @@
 				742D76AA28B56FD000773191 /* TextFieldClearButton.swift in Sources */,
 				7451693028A0452A00AA0A48 /* TitleText.swift in Sources */,
 				7438DF6A28AEC55300A4DF88 /* Connectivity.swift in Sources */,
-				7438DF5228AEB39200A4DF88 /* BaseRequestProtocol.swift in Sources */,
+				7438DF5228AEB39200A4DF88 /* BaseResponseProtocol.swift in Sources */,
 				74C5E47028958DE600E26C18 /* SettingsTabView.swift in Sources */,
+				74082F9128BBAAA200ECC9CB /* YandexDictAPIProtocol.swift in Sources */,
 				74C5E478289590F400E26C18 /* IconView.swift in Sources */,
 				7438DF5428AEB75400A4DF88 /* NetworkGatewayProtocol.swift in Sources */,
 				748902FB28B6B0E1004C0423 /* CharacterModifier.swift in Sources */,
+				74082F8F28BBA4A400ECC9CB /* CheckWordResponse.swift in Sources */,
 				7459C76B28BA2146000ACE01 /* PlayerWordPlaceholders.swift in Sources */,
 				74516923289FCCE400AA0A48 /* FontStyles.swift in Sources */,
 				747FC83028678FAC00DFB23B /* GameTabView.swift in Sources */,
@@ -748,6 +794,7 @@
 				742D76A428B5653000773191 /* GameComponent.swift in Sources */,
 				74C5E452289582C700E26C18 /* MainView.swift in Sources */,
 				7438DF5628AEB7D500A4DF88 /* NetworkRequestProtocol.swift in Sources */,
+				74082F9328BBABF200ECC9CB /* YandexDictAPI.swift in Sources */,
 				7438DF6128AEBA9A00A4DF88 /* NetworkSuccessCodes.swift in Sources */,
 				74D850C9289FC1ED0035AB52 /* Font+.swift in Sources */,
 				74EF70392868508500DB0220 /* GameTextFieldView.swift in Sources */,
@@ -760,6 +807,8 @@
 				74C5E46928958B2100E26C18 /* SettingsTabComponent.swift in Sources */,
 				7459C77128BA35F7000ACE01 /* CacheManagerProtocol.swift in Sources */,
 				74EF703228684EF000DB0220 /* Localizable.swift in Sources */,
+				74082F9528BBAE9D00ECC9CB /* NeedleGenerated.swift in Sources */,
+				74082F8D28BBA49900ECC9CB /* CheckWordRequest.swift in Sources */,
 				7451692A289FEB6B00AA0A48 /* Player.swift in Sources */,
 				74516927289FE57900AA0A48 /* CommonAlert.swift in Sources */,
 				742D76AD28B57B0100773191 /* HeaderGameView.swift in Sources */,
@@ -789,7 +838,6 @@
 				74516925289FCEF000AA0A48 /* QuantityOfPlayersView.swift in Sources */,
 				74C5E45F289586B500E26C18 /* MainTabsSelection.swift in Sources */,
 				74C5E46C28958C2700E26C18 /* GameTabViewModel.swift in Sources */,
-				749F8EAE28BA39BC00E13A82 /* NeedleGenerated.swift in Sources */,
 				74D850C6289FC1160035AB52 /* GWConstantsUI.swift in Sources */,
 				748902F928B6AF11004C0423 /* GameWordView.swift in Sources */,
 				74C5E4612895872300E26C18 /* IconName.swift in Sources */,
