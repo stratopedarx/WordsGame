@@ -8,13 +8,6 @@
 import SwiftUI
 import Combine
 
-struct GameCell: Identifiable {
-    let id = UUID()
-    var name: String
-    var color: Color
-    var word: String
-}
-
 final class GameViewModel: ObservableObject {
     @Published var playerWord: String = ""
     @Published var placeholderPlayerWord: PlayerWordPlaceholders = .initPlaceholder

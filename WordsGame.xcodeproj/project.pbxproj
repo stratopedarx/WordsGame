@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		74082F8228BB504300ECC9CB /* GameWordsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F8128BB504300ECC9CB /* GameWordsList.swift */; };
 		74082F8528BB61BA00ECC9CB /* KeyboardReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F8428BB61BA00ECC9CB /* KeyboardReadable.swift */; };
+		74082F8728BB934400ECC9CB /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F8628BB934400ECC9CB /* GameCell.swift */; };
 		742D76A028B564C500773191 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D769F28B564C500773191 /* GameViewModel.swift */; };
 		742D76A428B5653000773191 /* GameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A328B5653000773191 /* GameComponent.swift */; };
 		742D76AA28B56FD000773191 /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A928B56FD000773191 /* TextFieldClearButton.swift */; };
@@ -81,6 +82,7 @@
 /* Begin PBXFileReference section */
 		74082F8128BB504300ECC9CB /* GameWordsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWordsList.swift; sourceTree = "<group>"; };
 		74082F8428BB61BA00ECC9CB /* KeyboardReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardReadable.swift; sourceTree = "<group>"; };
+		74082F8628BB934400ECC9CB /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
 		742D769F28B564C500773191 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		742D76A328B5653000773191 /* GameComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameComponent.swift; sourceTree = "<group>"; };
 		742D76A928B56FD000773191 /* TextFieldClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
@@ -541,6 +543,7 @@
 		74EF702D28684DDA00DB0220 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				74082F8628BB934400ECC9CB /* GameCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -740,6 +743,7 @@
 				747FC83028678FAC00DFB23B /* GameTabView.swift in Sources */,
 				7451692E28A03FBE00AA0A48 /* WrapInScrollWiewModifier.swift in Sources */,
 				74FB86D328B914DC001BAA62 /* GWProgressView.swift in Sources */,
+				74082F8728BB934400ECC9CB /* GameCell.swift in Sources */,
 				7438DF5F28AEB9DA00A4DF88 /* NetworkError.swift in Sources */,
 				742D76A428B5653000773191 /* GameComponent.swift in Sources */,
 				74C5E452289582C700E26C18 /* MainView.swift in Sources */,
