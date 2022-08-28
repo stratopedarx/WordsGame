@@ -17,7 +17,7 @@ struct GameView: View, KeyboardReadable {
     }
     
     private var headerGameView: some View {
-        HeaderGameView(action: viewModel.cancelAction)
+        HeaderGameView(action: viewModel.cancelAction, refresh: true, refreshAction: viewModel.refreshGame)
             .commonAlert(
                 isPresented: $viewModel.showCloseAlert,
                 errorDescription: Localizable.saveGameAlert.localized,

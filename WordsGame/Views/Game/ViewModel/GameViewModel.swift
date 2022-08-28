@@ -98,6 +98,10 @@ extension GameViewModel {
     func tryAgain() {
         resetState()
     }
+    
+    func refreshGame() {
+        print("!!! refreshGame")
+    }
 }
 
 // MARK: - private helpers

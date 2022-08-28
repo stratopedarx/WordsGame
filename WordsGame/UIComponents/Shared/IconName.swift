@@ -11,6 +11,7 @@ enum IconType {
 }
 
 enum IconName: String {
+    case arrow_clockwise = "arrow.clockwise"
     case gamecontroller
     case gear
     case minus = "minus.circle"
@@ -19,7 +20,8 @@ enum IconName: String {
     
     var type: IconType {
         switch self {
-        case .gamecontroller,
+        case .arrow_clockwise,
+            .gamecontroller,
             .gear,
             .minus,
             .multiply_circle_fill,
