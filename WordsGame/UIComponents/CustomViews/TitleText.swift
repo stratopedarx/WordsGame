@@ -16,5 +16,7 @@ struct TitleText: View {
             .frame(maxWidth: .infinity)
             .background(Color.black)
             .foregroundColor(.white)
+            .shadow(color: .blue.opacity(0.8), radius: 6)
+            .padding(.top, MagicNumber.x/2)
     }
 }

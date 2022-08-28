@@ -17,6 +17,7 @@ struct WordsGameApp: App {
     var body: some Scene {
         WindowGroup {
             BasicComponent().mainView
+                .preferredColorScheme(.dark)
         }
     }
 }

@@ -19,15 +19,23 @@ class GameTabViewModel: ObservableObject {
     var errorDescription = ""
     
     init() {
-        print("!!! init GameTabViewModel")
         for _ in 0..<GWConstants.minNumberOfPlayers {
             players.append(Player())
             placeholderNames.append("")
         }
     }
     
-    deinit {
-        print("!!! deinit GameTabViewModel")
+    func resetState() {
+        mainWord = ""
+        quantityOfPlayers = GWConstants.minNumberOfPlayers
+        placeholderNames.removeAll()
+        
+        players.removeAll()
+        Player.resetCountPlayers()
+        for _ in 0..<GWConstants.minNumberOfPlayers {
+            players.append(Player())
+            placeholderNames.append("")
+        }
     }
 }
 
@@ -40,16 +48,25 @@ extension GameTabViewModel {
             errorDescription = Localizable.mainWordInfo.localized
             return
         }
-        guard mainWord.count > GWConstants.minimumWordLength else {
+        guard mainWord.count >= GWConstants.minimumWordLength else {
             isError = true
             errorDescription = Localizable.minimumWordLengthInfo.localized
             return
         }
-        
-        guard !placeholderNames.contains("") else {
+        guard mainWord.count <= GWConstants.maximumWordLength else {
             isError = true
-            errorDescription = Localizable.enterPlayerNames.localized
+            errorDescription = Localizable.maximumWordLengthInfo.localized
             return
+        }
+        
+        guard mainWord.first(where: { !$0.isLetter }) == nil else {
+            isError = true
+            errorDescription = Localizable.bigWordContainsOnlyLettersInfo.localized
+            return
+        }
+        
+        _ = placeholderNames.enumerated().map { index, name in
+            players[index].name = name.isEmpty ? players[index].placeholder : name
         }
         isShowGameView = true
     }
