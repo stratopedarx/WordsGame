@@ -39,8 +39,8 @@ enum Localizable: String {
     
     // MARK: - Game View
 
-    case saveGameAlert = "SAVE_GAME_ALERT"
-    case saveGame = "SAVE_GAME"
+    case endGameAlert = "END_GAME_ALERT"
+    case endGameAlertDescription = "END_GAME_ALERT_DESCRIPTION"
     case doesNotSaveGame = "DOES_NOT_SAVE_GAME"
     case playerWordPlaceholder = "PLAYER_WORD_PLACEHOLDER"
     case initGameWordPlaceholder = "INIT_GAME_WORD_PLACEHOLDER"

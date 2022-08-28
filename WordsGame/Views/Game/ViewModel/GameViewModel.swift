@@ -57,10 +57,6 @@ extension GameViewModel {
         showCloseAlert = true
     }
     
-    func saveGame() {
-        cacheManager.saveCurrentGame()
-    }
-    
     func resetGame() {
         cacheManager.resetCurrentGame()
     }

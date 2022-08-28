@@ -37,9 +37,8 @@
 
 // MARK: - Game View
 
-"SAVE_GAME_ALERT" = "Сохранить игру?";
-"SAVE_GAME" = "Сохранить";
-"DOES_NOT_SAVE_GAME" = "Не сохранять";
+"END_GAME_ALERT" = "Завершить";
+"END_GAME_ALERT_DESCRIPTION" = "Вы уверены, что хотите завершить игру?";
 "PLAYER_WORD_PLACEHOLDER" = "Придумайте слово";
 "INIT_GAME_WORD_PLACEHOLDER" = "Давайте поиграем";
 "MINIMUM_TWO_LETTERS" = "Минимум 2 символа";

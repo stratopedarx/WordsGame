@@ -20,14 +20,11 @@ struct GameView: View, KeyboardReadable {
         HeaderGameView(action: viewModel.cancelAction, refresh: true, refreshAction: { viewModel.showAlertRefreshGame = true })
             .commonAlert(
                 isPresented: $viewModel.showCloseAlert,
-                errorDescription: Localizable.saveGameAlert.localized,
-                actionButtonTitle: Localizable.saveGame.localized,
-                cancelButtonTitle: Localizable.doesNotSaveGame.localized,
+                errorTitle: Localizable.endGameAlert.localized,
+                errorDescription: Localizable.endGameAlertDescription.localized,
+                actionButtonTitle: Localizable.endGameAlert.localized,
+                cancelButtonTitle: Localizable.cancel.localized,
                 action: {
-                    viewModel.saveGame()
-                    presentationMode.wrappedValue.dismiss()
-                },
-                cancel: {
                     viewModel.resetGame()
                     presentationMode.wrappedValue.dismiss()
                 }
@@ -41,6 +38,7 @@ struct GameView: View, KeyboardReadable {
                 errorTitle: Localizable.newGame.localized,
                 errorDescription: Localizable.newGameAlertDescription.localized,
                 actionButtonTitle: Localizable.newGame.localized,
+                cancelButtonTitle: Localizable.cancel.localized,
                 action: viewModel.refreshGame
             )
     }

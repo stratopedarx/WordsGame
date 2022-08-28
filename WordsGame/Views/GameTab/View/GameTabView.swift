@@ -46,14 +46,6 @@ struct GameTabView: View {
         .wrapInScroll()
         .onDisappear(perform: viewModel.resetState)
         .fullScreenCover(isPresented: $viewModel.isShowGameView) {
-            // ToDo: try to use Needle components. The problem that view model creates two times
-//            GameView(
-//                viewModel: GameViewModel(
-//                    gameWord: viewModel.mainWord.uppercased(),
-//                    players: viewModel.players,
-//                    cacheManager: CacheManager.shared
-//                )
-//            )
             gameComponent.buildView(
                 gameWord: viewModel.mainWord.uppercased(),
                 players: viewModel.players
