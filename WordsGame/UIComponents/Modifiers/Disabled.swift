@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Disabled: ViewModifier {
     var disabled: Bool
-    var opacityValue: Double = MagicNumber.x * 0.01
+    var opacityValue: Double = MagicNumber.x * 0.05
     
     func body(content: Content) -> some View {
         content

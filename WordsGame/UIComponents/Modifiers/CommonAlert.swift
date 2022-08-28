@@ -16,6 +16,7 @@ extension View {
         errorDescription: String,
         actionIsDestructive: Bool = false,
         actionButtonTitle: String = Localizable.retry.localized,
+        cancelButtonTitle: String? = nil,
         action: (() -> Void)? = nil,
         cancel: (() -> Void)? = nil
     ) -> some View {
@@ -25,6 +26,7 @@ extension View {
             errorDescription: errorDescription,
             actionIsDestructive: actionIsDestructive,
             actionButtonTitle: actionButtonTitle,
+            cancelButtonTitle: cancelButtonTitle,
             action: action,
             cancel: cancel
         ))
@@ -39,6 +41,7 @@ struct CommonAlertModifier: ViewModifier {
     var errorDescription: String
     var actionIsDestructive: Bool
     var actionButtonTitle: String
+    var cancelButtonTitle: String?
     var action: (() -> Void)?
     var cancel: (() -> Void)?
 
@@ -49,7 +52,9 @@ struct CommonAlertModifier: ViewModifier {
                     return Alert(
                         title: Text(errorTitle),
                         message: Text(errorDescription),
-                        primaryButton: .cancel(),
+                        primaryButton: cancelButtonTitle != nil ? .default(
+                            Text(cancelButtonTitle ?? Localizable.cancel.localized), action: cancelAction)
+                        : .cancel(),
                         secondaryButton: actionIsDestructive ? .destructive(
                             Text(actionButtonTitle), action: cancelAction)
                         : .default(

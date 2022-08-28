@@ -9,20 +9,22 @@ import SwiftUI
 
 struct GameTabView: View {
     @StateObject private var viewModel: GameTabViewModel
+    private let gameComponent: GameComponentProtocol
     
-    init(viewModel: GameTabViewModel) {
+    init(viewModel: GameTabViewModel, gameComponent: GameComponentProtocol) {
         self._viewModel = StateObject(wrappedValue: viewModel)
+        self.gameComponent = gameComponent
     }
 
     var body: some View {
         VStack {
             TitleText()
-            GameTextView(
+            GameTextFieldView(
                 placeholder: Localizable.enterBigWord.localized,
                 text: $viewModel.mainWord
             )
             ForEach(Array(viewModel.players.enumerated()), id: \.offset) { index, player in
-                GameTextView(
+                GameTextFieldView(
                     placeholder: player.placeholder,
                     text: $viewModel.placeholderNames[index]
                 )
@@ -42,8 +44,13 @@ struct GameTabView: View {
             }
         }
         .wrapInScroll()
+        .onDisappear(perform: viewModel.resetState)
         .fullScreenCover(isPresented: $viewModel.isShowGameView) {
-            GameView()
+            gameComponent.buildView(
+                gameWord: viewModel.mainWord.uppercased(),
+                players: viewModel.players
+            )
+            .onAppear(perform: viewModel.resetState)
         }
         .commonAlert(
             isPresented: $viewModel.isError,

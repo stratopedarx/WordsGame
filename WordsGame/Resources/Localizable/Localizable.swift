@@ -32,11 +32,30 @@ enum Localizable: String {
     case minimumNumberOfPlayers = "MINIMUM_NUMBER_OF_PLAYERS"
     case mainWordInfo = "MAIN_WORD_INFO"
     case minimumWordLengthInfo = "MINIMUM_WORD_LENGTH_INFO"
+    case maximumWordLengthInfo = "MAXIMUM_WORD_LENGTH_INFO"
+    case bigWordContainsOnlyLettersInfo = "BIG_WORD_CONTAINS_ONLY_LETTERS_INFO"
     case enterPlayerNames = "ENTER_PLAYER_NAMES"
+    case currentPlayerInfo = "CURRENT_PLAYER_INFO"
+    
+    // MARK: - Game View
+
+    case endGameAlert = "END_GAME_ALERT"
+    case endGameAlertDescription = "END_GAME_ALERT_DESCRIPTION"
+    case doesNotSaveGame = "DOES_NOT_SAVE_GAME"
+    case playerWordPlaceholder = "PLAYER_WORD_PLACEHOLDER"
+    case initGameWordPlaceholder = "INIT_GAME_WORD_PLACEHOLDER"
+    case minimumTwoLetters = "MINIMUM_TWO_LETTERS"
+    case allIsGood = "ALL_IS_GOOD"
+    case areYouReady = "ARE_YOU_READY"
+    case gameOkAlertTitle = "GAME_OK_ALERT_TITLE"
+    case gameOkAlertDescription = "GAME_OK_ALERT_DESCRIPTION"
+    case gameNotOkAlertTitle = "GAME_NOT_OK_ALERT_TITLE"
+    case gameNotOkAlertDescription = "GAME_NOT_OK_ALERT_DESCRIPTION"
+    case newGame = "NEW_GAME"
+    case newGameAlertDescription = "NEW_GAME_ALERT_DESCRIPTION"
     
     // MARK: - Settings Tab View
 
-    
     // MARK: - General Network Errors
     case alamofireError = "ALAMOFIRE_ERROR"
     case custom = "CUSTOM"
