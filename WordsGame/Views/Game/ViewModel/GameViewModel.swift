@@ -22,6 +22,7 @@ final class GameViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var wordStatus: WordStatus = .notChecked
     @Published var showAlertCheckedWord = false
+    @Published var showAlertRefreshGame = false
     @Published var allWordsForCurrentGame: [GameCell] = []
 
     private var cancellableSet: Set<AnyCancellable> = []
@@ -100,7 +101,12 @@ extension GameViewModel {
     }
     
     func refreshGame() {
-        print("!!! refreshGame")
+        resetState()
+        resetGame()
+        allWordsForCurrentGame.removeAll()
+        for index in 0..<players.count {
+            players[index].resetPoints()
+        }
     }
 }
 

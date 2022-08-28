@@ -51,6 +51,8 @@ enum Localizable: String {
     case gameOkAlertDescription = "GAME_OK_ALERT_DESCRIPTION"
     case gameNotOkAlertTitle = "GAME_NOT_OK_ALERT_TITLE"
     case gameNotOkAlertDescription = "GAME_NOT_OK_ALERT_DESCRIPTION"
+    case newGame = "NEW_GAME"
+    case newGameAlertDescription = "NEW_GAME_ALERT_DESCRIPTION"
     
     // MARK: - Settings Tab View
 

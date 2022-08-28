@@ -30,6 +30,10 @@ struct Player: Identifiable, Equatable, Hashable {
     mutating func update(points: Int) {
         self.points += points
     }
+    
+    mutating func resetPoints() {
+        self.points = 0
+    }
 }
 
 extension Player {

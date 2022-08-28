@@ -17,7 +17,7 @@ struct GameView: View, KeyboardReadable {
     }
     
     private var headerGameView: some View {
-        HeaderGameView(action: viewModel.cancelAction, refresh: true, refreshAction: viewModel.refreshGame)
+        HeaderGameView(action: viewModel.cancelAction, refresh: true, refreshAction: { viewModel.showAlertRefreshGame = true })
             .commonAlert(
                 isPresented: $viewModel.showCloseAlert,
                 errorDescription: Localizable.saveGameAlert.localized,
@@ -31,6 +31,17 @@ struct GameView: View, KeyboardReadable {
                     viewModel.resetGame()
                     presentationMode.wrappedValue.dismiss()
                 }
+            )
+    }
+    
+    private var gameWordView: some View {
+        GameWordView(gameWord: viewModel.gameWord)
+            .commonAlert(
+                isPresented: $viewModel.showAlertRefreshGame,
+                errorTitle: Localizable.newGame.localized,
+                errorDescription: Localizable.newGameAlertDescription.localized,
+                actionButtonTitle: Localizable.newGame.localized,
+                action: viewModel.refreshGame
             )
     }
     
@@ -51,7 +62,7 @@ struct GameView: View, KeyboardReadable {
     var body: some View {
         VStack {
             headerGameView
-            GameWordView(gameWord: viewModel.gameWord)
+            gameWordView
             InfoBoardView(name: viewModel.currentPlayer.name, players: viewModel.players)
             GameTextFieldView(placeholder: Localizable.playerWordPlaceholder.localized, text: $viewModel.playerWord)
                 .disabled(viewModel.isLoading)
