@@ -17,6 +17,8 @@ final class GameViewModel: ObservableObject {
     @Published var showAlertCheckedWord = false
     @Published var showAlertRefreshGame = false
     @Published var allWordsForCurrentGame: [GameCell] = []
+    @Published var isError = false
+    var errorDescription = ""
 
     private var cancellableSet: Set<AnyCancellable> = []
     private var currentPlayerIndex: Int = 0
@@ -71,12 +73,22 @@ extension GameViewModel {
     
     func checkEnteredWord() {
         self.isLoading = true
+
+        guard playerWord.lowercased().map({ gameWord.lowercased().contains($0) }).allSatisfy({$0}) else {
+            self.isLoading = false
+            self.wordStatus = .notCorrect
+            self.showAlertCheckedWord = true
+            return
+        }
+        
         yandexDictAPI.checkWord(text: playerWord)
             .receive(on: DispatchQueue.main)
-            .sink { completion in
+            .sink { [weak self] completion in
+                guard let self = self else { return }
                 switch completion {
                 case .failure(let error):
-                    print("!!! error \(error)")
+                    self.isError = true
+                    self.errorDescription = error.localizedDescription
                 case .finished:
                     break
                 }

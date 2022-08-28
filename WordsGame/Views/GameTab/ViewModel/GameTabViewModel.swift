@@ -48,7 +48,7 @@ extension GameTabViewModel {
             errorDescription = Localizable.mainWordInfo.localized
             return
         }
-        guard mainWord.count > GWConstants.minimumWordLength else {
+        guard mainWord.count >= GWConstants.minimumWordLength else {
             isError = true
             errorDescription = Localizable.minimumWordLengthInfo.localized
             return
