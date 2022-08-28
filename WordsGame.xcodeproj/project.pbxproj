@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74082F8228BB504300ECC9CB /* GameWordsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F8128BB504300ECC9CB /* GameWordsList.swift */; };
 		742D76A028B564C500773191 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D769F28B564C500773191 /* GameViewModel.swift */; };
 		742D76A428B5653000773191 /* GameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A328B5653000773191 /* GameComponent.swift */; };
 		742D76AA28B56FD000773191 /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A928B56FD000773191 /* TextFieldClearButton.swift */; };
@@ -77,6 +78,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74082F8128BB504300ECC9CB /* GameWordsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWordsList.swift; sourceTree = "<group>"; };
 		742D769F28B564C500773191 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		742D76A328B5653000773191 /* GameComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameComponent.swift; sourceTree = "<group>"; };
 		742D76A928B56FD000773191 /* TextFieldClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				7489030028B6C6CC004C0423 /* InfoBoardView.swift */,
 				74FB86CF28B909A4001BAA62 /* PlaceholderPlayerWordView.swift */,
 				74FB86D428B9183C001BAA62 /* CheckPlayerWordView.swift */,
+				74082F8128BB504300ECC9CB /* GameWordsList.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -765,6 +768,7 @@
 				748902FD28B6C30D004C0423 /* TitleModifier.swift in Sources */,
 				74C5E45C289585E700E26C18 /* TabComponentProtocol.swift in Sources */,
 				7438DF5028AEB30900A4DF88 /* NetworkAdapterProtocol.swift in Sources */,
+				74082F8228BB504300ECC9CB /* GameWordsList.swift in Sources */,
 				74FB86DA28B91B76001BAA62 /* WordStatus.swift in Sources */,
 				74516925289FCEF000AA0A48 /* QuantityOfPlayersView.swift in Sources */,
 				74C5E45F289586B500E26C18 /* MainTabsSelection.swift in Sources */,

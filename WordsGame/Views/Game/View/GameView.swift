@@ -60,6 +60,7 @@ struct GameView: View {
                 }
             PlaceholderPlayerWordView(placeholder: viewModel.placeholderPlayerWord)
             checkPlayerWordView
+            GameWordsList(gameCells: viewModel.allWordsForCurrentGame)
         }
         .wrapInScroll()
         .background(Image("background"))

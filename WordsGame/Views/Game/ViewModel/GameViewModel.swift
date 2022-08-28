@@ -8,6 +8,13 @@
 import SwiftUI
 import Combine
 
+struct GameCell: Identifiable {
+    let id = UUID()
+    var name: String
+    var color: Color
+    var word: String
+}
+
 final class GameViewModel: ObservableObject {
     @Published var playerWord: String = ""
     @Published var placeholderPlayerWord: PlayerWordPlaceholders = .initPlaceholder
@@ -15,6 +22,7 @@ final class GameViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var wordStatus: WordStatus = .notChecked
     @Published var showAlertCheckedWord = false
+    @Published var allWordsForCurrentGame: [GameCell] = []
 
     private var cancellableSet: Set<AnyCancellable> = []
     private var currentPlayerIndex: Int = 0
@@ -103,6 +111,7 @@ private extension GameViewModel {
     func saveWordForCurrentPlayer() {
         players[currentPlayerIndex].update(points: playerWord.count)
         cacheManager.currentGame[currentPlayer]?.append(playerWord)
+        allWordsForCurrentGame.append(GameCell(name: currentPlayer.name, color: currentPlayer.color, word: playerWord))
     }
 }
 
