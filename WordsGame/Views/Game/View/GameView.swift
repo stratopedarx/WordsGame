@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct GameView: View {
+struct GameView: View, KeyboardReadable {
     @StateObject private var viewModel: GameViewModel
     @Environment(\.presentationMode) var presentationMode
+    @State var keyboardOffset: CGFloat = .zero
     
     init(viewModel: GameViewModel) {
-        print("!!! init GameView")
         self._viewModel = StateObject(wrappedValue: viewModel)
     }
     
@@ -63,6 +63,14 @@ struct GameView: View {
             GameWordsList(gameCells: viewModel.allWordsForCurrentGame)
         }
         .wrapInScroll()
+        .onReceive(keyboardPublisher, perform: { newIsKeyboardVisible in
+            if UIScreen.main.bounds.height < 670 {
+                withAnimation {
+                    keyboardOffset = newIsKeyboardVisible ? -120 : .zero
+                }
+            }
+        })
+        .offset(y: keyboardOffset)
         .background(Image("background"))
         .edgesIgnoringSafeArea(.all)
     }

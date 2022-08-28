@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		74082F8228BB504300ECC9CB /* GameWordsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F8128BB504300ECC9CB /* GameWordsList.swift */; };
+		74082F8528BB61BA00ECC9CB /* KeyboardReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F8428BB61BA00ECC9CB /* KeyboardReadable.swift */; };
 		742D76A028B564C500773191 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D769F28B564C500773191 /* GameViewModel.swift */; };
 		742D76A428B5653000773191 /* GameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A328B5653000773191 /* GameComponent.swift */; };
 		742D76AA28B56FD000773191 /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A928B56FD000773191 /* TextFieldClearButton.swift */; };
@@ -79,6 +80,7 @@
 
 /* Begin PBXFileReference section */
 		74082F8128BB504300ECC9CB /* GameWordsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWordsList.swift; sourceTree = "<group>"; };
+		74082F8428BB61BA00ECC9CB /* KeyboardReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardReadable.swift; sourceTree = "<group>"; };
 		742D769F28B564C500773191 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		742D76A328B5653000773191 /* GameComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameComponent.swift; sourceTree = "<group>"; };
 		742D76A928B56FD000773191 /* TextFieldClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
@@ -160,6 +162,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74082F8328BB61AD00ECC9CB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				74082F8428BB61BA00ECC9CB /* KeyboardReadable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		742D76A128B564F700773191 /* GameTabcomponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -547,6 +557,7 @@
 		74EF70332868500900DB0220 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				74082F8328BB61AD00ECC9CB /* Helpers */,
 				74EF70372868507100DB0220 /* CustomViews */,
 				74D850CA289FC5260035AB52 /* Modifiers */,
 				74EF70342868501700DB0220 /* Shared */,
@@ -764,6 +775,7 @@
 				74EF703C2868546100DB0220 /* StartButtonView.swift in Sources */,
 				74C5E463289588A600E26C18 /* BasicComponent.swift in Sources */,
 				74C5E47228958E2100E26C18 /* SettingsTabViewModel.swift in Sources */,
+				74082F8528BB61BA00ECC9CB /* KeyboardReadable.swift in Sources */,
 				7438DF6428AEBDB600A4DF88 /* BaseDataResponseSerializer.swift in Sources */,
 				748902FD28B6C30D004C0423 /* TitleModifier.swift in Sources */,
 				74C5E45C289585E700E26C18 /* TabComponentProtocol.swift in Sources */,
