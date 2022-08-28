@@ -65,13 +65,9 @@ extension GameTabViewModel {
             return
         }
         
-        guard !placeholderNames.contains("") else {
-            isError = true
-            errorDescription = Localizable.enterPlayerNames.localized
-            return
+        _ = placeholderNames.enumerated().map { index, name in
+            players[index].name = name.isEmpty ? players[index].placeholder : name
         }
-        
-        _ = placeholderNames.enumerated().map { index, name in players[index].name = name }
         isShowGameView = true
     }
 }
