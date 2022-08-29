@@ -12,9 +12,9 @@ import NeedleFoundation
 struct WordsGameApp: App {
     init() {
         registerProviderFactories()
-        let keyValueManager = KeyValueManager()
-
+        
         // set initial number of players for the first launch
+        let keyValueManager = KeyValueManager()
         guard keyValueManager.getValue(.numberOfPlayers) != nil else {
             keyValueManager.setValue(key: .numberOfPlayers, value: GWConstants.minNumberOfPlayers)
             return

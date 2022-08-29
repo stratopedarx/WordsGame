@@ -22,7 +22,12 @@ final class SettingsTabComponent: Component<SettingsTabDependency>, SettingsTabC
     }
     
     var settingsTabView: AnyView {
-        AnyView(SettingsTabView(viewModel: settingsTabViewModel))
+        AnyView(
+            SettingsTabView(
+                viewModel: settingsTabViewModel,
+                exclusionWordsComponent: ExclusionWordsComponent(parent: self)
+            )
+        )
     }
 }
 

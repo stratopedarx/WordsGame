@@ -9,9 +9,11 @@ import SwiftUI
 
 struct SettingsTabView: View {
     @ObservedObject private var viewModel: SettingsTabViewModel
+    private let exclusionWordsComponent: ExclusionWordsComponentProtocol
 
-    init(viewModel: SettingsTabViewModel) {
+    init(viewModel: SettingsTabViewModel, exclusionWordsComponent: ExclusionWordsComponentProtocol) {
         self.viewModel = viewModel
+        self.exclusionWordsComponent = exclusionWordsComponent
     }
     
     var body: some View {
@@ -30,7 +32,8 @@ struct SettingsTabView: View {
             Spacer()
         }
         .sheet(isPresented: $viewModel.showExclusionWordsSheet) {
-            ExclusionWordsView(viewModel: ExclusionWordsViewModel())
+            exclusionWordsComponent.buildView()
+//            ExclusionWordsView(viewModel: ExclusionWordsViewModel())
         }
     }
 }
