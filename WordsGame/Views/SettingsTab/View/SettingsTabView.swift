@@ -18,8 +18,19 @@ struct SettingsTabView: View {
         VStack {
             TitleText(title: .settings)
             NumberOfPlayersCell(numberOfPlayers: $viewModel.numberOfPlayers)
+
+            HStack {
+                Button {
+                    viewModel.showExclusionWordsSheet = true
+                } label: {
+                    Text(Localizable.exclusionWords.localized)
+                }
+            }
+            .titleStyle()
             Spacer()
         }
-        
+        .sheet(isPresented: $viewModel.showExclusionWordsSheet) {
+            ExclusionWordsView(viewModel: ExclusionWordsViewModel())
+        }
     }
 }

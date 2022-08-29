@@ -14,6 +14,7 @@ class SettingsTabViewModel: ObservableObject {
             keyValueManager.setValue(key: .numberOfPlayers, value: numberOfPlayers)
         }
     }
+    @Published var showExclusionWordsSheet = false
     
     init() {
         self.keyValueManager = KeyValueManager()

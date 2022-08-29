@@ -9,4 +9,5 @@ import Foundation
 
 enum KeyTitle: String {
     case numberOfPlayers
+    case exclusionWords
 }

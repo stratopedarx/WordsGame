@@ -59,6 +59,12 @@ enum Localizable: String {
     case settings = "SETTINGS"
     case quantity = "QUANTITY"
     case players = "PLAYERS"
+    case exclusionWords = "EXCLUSION_WORDS"
+    case exclusionWord = "EXCLUSION_WORD"
+    case emptyListOfExclusionWords = "EMPTY_LIST_OF_EXCLUSION_WORDS"
+    case addWord = "ADD_WORD"
+    case add = "ADD"
+    case removeAllWords = "REMOVE_ALL_WORDS"
     
     // MARK: - General Network Errors
     case alamofireError = "ALAMOFIRE_ERROR"
