@@ -10,7 +10,12 @@ import SwiftUI
 class GameTabViewModel: ObservableObject {
     @Published var mainWord = ""
     @Published var players: [Player] = []
-    @Published var quantityOfPlayers: Int = GWConstants.minNumberOfPlayers
+    @Published var quantityOfPlayers: Int = {
+        guard let numberOfPlayers = KeyValueManager().getValue(.numberOfPlayers) as? Int else {
+            return GWConstants.minNumberOfPlayers
+        }
+        return numberOfPlayers
+    }()
     @Published var placeholderNames: [String] = []
     @Published var isDisabledMinusButton: Bool = false
     @Published var isDisabledPlusButton: Bool = false
@@ -19,7 +24,7 @@ class GameTabViewModel: ObservableObject {
     var errorDescription = ""
     
     init() {
-        for _ in 0..<GWConstants.minNumberOfPlayers {
+        for _ in 0..<quantityOfPlayers {
             players.append(Player())
             placeholderNames.append("")
         }

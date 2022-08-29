@@ -14,7 +14,16 @@
 		74082F8F28BBA4A400ECC9CB /* CheckWordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F8E28BBA4A400ECC9CB /* CheckWordResponse.swift */; };
 		74082F9128BBAAA200ECC9CB /* YandexDictAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F9028BBAAA200ECC9CB /* YandexDictAPIProtocol.swift */; };
 		74082F9328BBABF200ECC9CB /* YandexDictAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F9228BBABF200ECC9CB /* YandexDictAPI.swift */; };
-		74082F9528BBAE9D00ECC9CB /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F9428BBAE9D00ECC9CB /* NeedleGenerated.swift */; };
+		741E1DCD28BD4FCA00A076B6 /* KeyValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DCC28BD4FCA00A076B6 /* KeyValueManager.swift */; };
+		741E1DCF28BD4FF700A076B6 /* KeyValueManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DCE28BD4FF700A076B6 /* KeyValueManagerProtocol.swift */; };
+		741E1DD228BD512100A076B6 /* KeyTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DD128BD512100A076B6 /* KeyTitle.swift */; };
+		741E1DD528BD567200A076B6 /* NumberOfPlayersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DD428BD567200A076B6 /* NumberOfPlayersCell.swift */; };
+		741E1DD728BD5A4B00A076B6 /* ExclusionWordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DD628BD5A4B00A076B6 /* ExclusionWordsView.swift */; };
+		741E1DD928BD5A9200A076B6 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DD828BD5A9200A076B6 /* PlaceholderView.swift */; };
+		741E1DDE28BD5B5A00A076B6 /* ExclusionWordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DDD28BD5B5A00A076B6 /* ExclusionWordsViewModel.swift */; };
+		741E1DE128BD6B0400A076B6 /* ExclusionWordsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DE028BD6B0400A076B6 /* ExclusionWordsButtonView.swift */; };
+		741E1DE528BD6BA700A076B6 /* ExclusionWordsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DE428BD6BA700A076B6 /* ExclusionWordsComponent.swift */; };
+		741E1DE728BD6CAB00A076B6 /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DE628BD6CAB00A076B6 /* NeedleGenerated.swift */; };
 		742D76A028B564C500773191 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D769F28B564C500773191 /* GameViewModel.swift */; };
 		742D76A428B5653000773191 /* GameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A328B5653000773191 /* GameComponent.swift */; };
 		742D76AA28B56FD000773191 /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A928B56FD000773191 /* TextFieldClearButton.swift */; };
@@ -91,7 +100,16 @@
 		74082F8E28BBA4A400ECC9CB /* CheckWordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckWordResponse.swift; sourceTree = "<group>"; };
 		74082F9028BBAAA200ECC9CB /* YandexDictAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexDictAPIProtocol.swift; sourceTree = "<group>"; };
 		74082F9228BBABF200ECC9CB /* YandexDictAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexDictAPI.swift; sourceTree = "<group>"; };
-		74082F9428BBAE9D00ECC9CB /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
+		741E1DCC28BD4FCA00A076B6 /* KeyValueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueManager.swift; sourceTree = "<group>"; };
+		741E1DCE28BD4FF700A076B6 /* KeyValueManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueManagerProtocol.swift; sourceTree = "<group>"; };
+		741E1DD128BD512100A076B6 /* KeyTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyTitle.swift; sourceTree = "<group>"; };
+		741E1DD428BD567200A076B6 /* NumberOfPlayersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfPlayersCell.swift; sourceTree = "<group>"; };
+		741E1DD628BD5A4B00A076B6 /* ExclusionWordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusionWordsView.swift; sourceTree = "<group>"; };
+		741E1DD828BD5A9200A076B6 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
+		741E1DDD28BD5B5A00A076B6 /* ExclusionWordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusionWordsViewModel.swift; sourceTree = "<group>"; };
+		741E1DE028BD6B0400A076B6 /* ExclusionWordsButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusionWordsButtonView.swift; sourceTree = "<group>"; };
+		741E1DE428BD6BA700A076B6 /* ExclusionWordsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusionWordsComponent.swift; sourceTree = "<group>"; };
+		741E1DE628BD6CAB00A076B6 /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		742D769F28B564C500773191 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		742D76A328B5653000773191 /* GameComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameComponent.swift; sourceTree = "<group>"; };
 		742D76A928B56FD000773191 /* TextFieldClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
@@ -215,6 +233,76 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
+		741E1DCB28BD4FBB00A076B6 /* KeyValueManager */ = {
+			isa = PBXGroup;
+			children = (
+				741E1DCE28BD4FF700A076B6 /* KeyValueManagerProtocol.swift */,
+				741E1DCC28BD4FCA00A076B6 /* KeyValueManager.swift */,
+				741E1DD128BD512100A076B6 /* KeyTitle.swift */,
+			);
+			path = KeyValueManager;
+			sourceTree = "<group>";
+		};
+		741E1DD328BD565A00A076B6 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				741E1DDA28BD5B3900A076B6 /* ExclusionWords */,
+				741E1DD428BD567200A076B6 /* NumberOfPlayersCell.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		741E1DDA28BD5B3900A076B6 /* ExclusionWords */ = {
+			isa = PBXGroup;
+			children = (
+				741E1DDC28BD5B4300A076B6 /* ViewModel */,
+				741E1DDB28BD5B3F00A076B6 /* View */,
+			);
+			path = ExclusionWords;
+			sourceTree = "<group>";
+		};
+		741E1DDB28BD5B3F00A076B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				741E1DDF28BD6AFB00A076B6 /* Subviews */,
+				741E1DD628BD5A4B00A076B6 /* ExclusionWordsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		741E1DDC28BD5B4300A076B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				741E1DDD28BD5B5A00A076B6 /* ExclusionWordsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		741E1DDF28BD6AFB00A076B6 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				741E1DE028BD6B0400A076B6 /* ExclusionWordsButtonView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		741E1DE228BD6B7500A076B6 /* SettingsTabComponents */ = {
+			isa = PBXGroup;
+			children = (
+				741E1DE328BD6B9300A076B6 /* ExclusionWordsComponent */,
+				74C5E46828958B2100E26C18 /* SettingsTabComponent.swift */,
+			);
+			path = SettingsTabComponents;
+			sourceTree = "<group>";
+		};
+		741E1DE328BD6B9300A076B6 /* ExclusionWordsComponent */ = {
+			isa = PBXGroup;
+			children = (
+				741E1DE428BD6BA700A076B6 /* ExclusionWordsComponent.swift */,
+			);
+			path = ExclusionWordsComponent;
+			sourceTree = "<group>";
+		};
 		742D76A128B564F700773191 /* GameTabcomponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +386,7 @@
 		7459C76E28BA35D7000ACE01 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				741E1DCB28BD4FBB00A076B6 /* KeyValueManager */,
 				7459C76F28BA35E2000ACE01 /* CacheManager */,
 			);
 			path = Managers;
@@ -331,7 +420,7 @@
 		747FC82C28678FAC00DFB23B /* WordsGame */ = {
 			isa = PBXGroup;
 			children = (
-				74082F9428BBAE9D00ECC9CB /* NeedleGenerated.swift */,
+				741E1DE628BD6CAB00A076B6 /* NeedleGenerated.swift */,
 				747FC82D28678FAC00DFB23B /* WordsGameApp.swift */,
 				74C5E47B2895931B00E26C18 /* Constants */,
 				74C5E4572895859B00E26C18 /* DI */,
@@ -430,7 +519,7 @@
 			isa = PBXGroup;
 			children = (
 				742D76A128B564F700773191 /* GameTabcomponents */,
-				74C5E46828958B2100E26C18 /* SettingsTabComponent.swift */,
+				741E1DE228BD6B7500A076B6 /* SettingsTabComponents */,
 			);
 			path = TabComponents;
 			sourceTree = "<group>";
@@ -462,6 +551,7 @@
 		74C5E46E28958DDB00E26C18 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				741E1DD328BD565A00A076B6 /* Subviews */,
 				74C5E46F28958DE600E26C18 /* SettingsTabView.swift */,
 			);
 			path = View;
@@ -629,6 +719,7 @@
 				74C5E477289590F400E26C18 /* IconView.swift */,
 				7451692F28A0452A00AA0A48 /* TitleText.swift */,
 				74FB86D228B914DC001BAA62 /* GWProgressView.swift */,
+				741E1DD828BD5A9200A076B6 /* PlaceholderView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -773,8 +864,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7451692C28A03FA800AA0A48 /* View+.swift in Sources */,
+				741E1DE128BD6B0400A076B6 /* ExclusionWordsButtonView.swift in Sources */,
+				741E1DE728BD6CAB00A076B6 /* NeedleGenerated.swift in Sources */,
 				7489030128B6C6CC004C0423 /* InfoBoardView.swift in Sources */,
 				742D76AA28B56FD000773191 /* TextFieldClearButton.swift in Sources */,
+				741E1DD728BD5A4B00A076B6 /* ExclusionWordsView.swift in Sources */,
 				7451693028A0452A00AA0A48 /* TitleText.swift in Sources */,
 				7438DF6A28AEC55300A4DF88 /* Connectivity.swift in Sources */,
 				7438DF5228AEB39200A4DF88 /* BaseResponseProtocol.swift in Sources */,
@@ -786,9 +880,12 @@
 				74082F8F28BBA4A400ECC9CB /* CheckWordResponse.swift in Sources */,
 				7459C76B28BA2146000ACE01 /* PlayerWordPlaceholders.swift in Sources */,
 				74516923289FCCE400AA0A48 /* FontStyles.swift in Sources */,
+				741E1DE528BD6BA700A076B6 /* ExclusionWordsComponent.swift in Sources */,
 				747FC83028678FAC00DFB23B /* GameTabView.swift in Sources */,
+				741E1DCF28BD4FF700A076B6 /* KeyValueManagerProtocol.swift in Sources */,
 				7451692E28A03FBE00AA0A48 /* WrapInScrollWiewModifier.swift in Sources */,
 				74FB86D328B914DC001BAA62 /* GWProgressView.swift in Sources */,
+				741E1DD528BD567200A076B6 /* NumberOfPlayersCell.swift in Sources */,
 				74082F8728BB934400ECC9CB /* GameCell.swift in Sources */,
 				7438DF5F28AEB9DA00A4DF88 /* NetworkError.swift in Sources */,
 				742D76A428B5653000773191 /* GameComponent.swift in Sources */,
@@ -807,7 +904,6 @@
 				74C5E46928958B2100E26C18 /* SettingsTabComponent.swift in Sources */,
 				7459C77128BA35F7000ACE01 /* CacheManagerProtocol.swift in Sources */,
 				74EF703228684EF000DB0220 /* Localizable.swift in Sources */,
-				74082F9528BBAE9D00ECC9CB /* NeedleGenerated.swift in Sources */,
 				74082F8D28BBA49900ECC9CB /* CheckWordRequest.swift in Sources */,
 				7451692A289FEB6B00AA0A48 /* Player.swift in Sources */,
 				74516927289FE57900AA0A48 /* CommonAlert.swift in Sources */,
@@ -823,8 +919,10 @@
 				7459C77328BA36A9000ACE01 /* CacheManager.swift in Sources */,
 				742D76A028B564C500773191 /* GameViewModel.swift in Sources */,
 				74FB86D028B909A4001BAA62 /* PlaceholderPlayerWordView.swift in Sources */,
+				741E1DD228BD512100A076B6 /* KeyTitle.swift in Sources */,
 				74C5E4762895903900E26C18 /* TabButtonView.swift in Sources */,
 				7438DF5828AEB83C00A4DF88 /* RequestDescriptorProtocol.swift in Sources */,
+				741E1DDE28BD5B5A00A076B6 /* ExclusionWordsViewModel.swift in Sources */,
 				74EF703C2868546100DB0220 /* StartButtonView.swift in Sources */,
 				74C5E463289588A600E26C18 /* BasicComponent.swift in Sources */,
 				74C5E47228958E2100E26C18 /* SettingsTabViewModel.swift in Sources */,
@@ -836,11 +934,13 @@
 				74082F8228BB504300ECC9CB /* GameWordsList.swift in Sources */,
 				74FB86DA28B91B76001BAA62 /* WordStatus.swift in Sources */,
 				74516925289FCEF000AA0A48 /* QuantityOfPlayersView.swift in Sources */,
+				741E1DD928BD5A9200A076B6 /* PlaceholderView.swift in Sources */,
 				74C5E45F289586B500E26C18 /* MainTabsSelection.swift in Sources */,
 				74C5E46C28958C2700E26C18 /* GameTabViewModel.swift in Sources */,
 				74D850C6289FC1160035AB52 /* GWConstantsUI.swift in Sources */,
 				748902F928B6AF11004C0423 /* GameWordView.swift in Sources */,
 				74C5E4612895872300E26C18 /* IconName.swift in Sources */,
+				741E1DCD28BD4FCA00A076B6 /* KeyValueManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

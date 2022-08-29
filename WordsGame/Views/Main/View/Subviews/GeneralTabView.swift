@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct GeneralTabView: View {
-    @State var selectedTab: MainTabsSelection = GWConstants.initialSelectedTab
+    @State var selectedTab: MainTabsSelection = .settings
     var tabComponents: [TabComponentProtocol]
     
     init(tabComponents: [TabComponentProtocol]) {
         self.tabComponents = tabComponents
-        UITabBar.appearance().backgroundColor = UIColor.white
+        UITabBar.appearance().backgroundColor = UIColor.black
     }
     
     var body: some View {

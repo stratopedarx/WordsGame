@@ -53,6 +53,16 @@
 
 // MARK: - Settings Tab View
 
+"SETTINGS" = "Настройки";
+"QUANTITY" = "Количество";
+"PLAYERS" = "Игроков";
+"EXCLUSION_WORDS" = "Cлова-исключения";
+"EXCLUSION_WORD" = "Cлово-исключение";
+"EMPTY_LIST_OF_EXCLUSION_WORDS" = "Не найдено слов-исключений";
+"ADD_WORD" = "Добавить слово";
+"ADD" = "Добавить";
+"REMOVE_ALL_WORDS" = "Удалить все слова";
+
 // MARK: - General Network Errors
 
 "ALAMOFIRE_ERROR" = "Alamofire error: ";
