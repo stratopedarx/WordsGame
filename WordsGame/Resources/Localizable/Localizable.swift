@@ -55,7 +55,11 @@ enum Localizable: String {
     case newGameAlertDescription = "NEW_GAME_ALERT_DESCRIPTION"
     
     // MARK: - Settings Tab View
-
+    
+    case settings = "SETTINGS"
+    case quantity = "QUANTITY"
+    case players = "PLAYERS"
+    
     // MARK: - General Network Errors
     case alamofireError = "ALAMOFIRE_ERROR"
     case custom = "CUSTOM"

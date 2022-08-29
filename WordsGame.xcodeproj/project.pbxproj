@@ -15,6 +15,10 @@
 		74082F9128BBAAA200ECC9CB /* YandexDictAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F9028BBAAA200ECC9CB /* YandexDictAPIProtocol.swift */; };
 		74082F9328BBABF200ECC9CB /* YandexDictAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F9228BBABF200ECC9CB /* YandexDictAPI.swift */; };
 		74082F9528BBAE9D00ECC9CB /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F9428BBAE9D00ECC9CB /* NeedleGenerated.swift */; };
+		741E1DCD28BD4FCA00A076B6 /* KeyValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DCC28BD4FCA00A076B6 /* KeyValueManager.swift */; };
+		741E1DCF28BD4FF700A076B6 /* KeyValueManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DCE28BD4FF700A076B6 /* KeyValueManagerProtocol.swift */; };
+		741E1DD228BD512100A076B6 /* KeyTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DD128BD512100A076B6 /* KeyTitle.swift */; };
+		741E1DD528BD567200A076B6 /* NumberOfPlayersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DD428BD567200A076B6 /* NumberOfPlayersCell.swift */; };
 		742D76A028B564C500773191 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D769F28B564C500773191 /* GameViewModel.swift */; };
 		742D76A428B5653000773191 /* GameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A328B5653000773191 /* GameComponent.swift */; };
 		742D76AA28B56FD000773191 /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A928B56FD000773191 /* TextFieldClearButton.swift */; };
@@ -92,6 +96,10 @@
 		74082F9028BBAAA200ECC9CB /* YandexDictAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexDictAPIProtocol.swift; sourceTree = "<group>"; };
 		74082F9228BBABF200ECC9CB /* YandexDictAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexDictAPI.swift; sourceTree = "<group>"; };
 		74082F9428BBAE9D00ECC9CB /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
+		741E1DCC28BD4FCA00A076B6 /* KeyValueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueManager.swift; sourceTree = "<group>"; };
+		741E1DCE28BD4FF700A076B6 /* KeyValueManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueManagerProtocol.swift; sourceTree = "<group>"; };
+		741E1DD128BD512100A076B6 /* KeyTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyTitle.swift; sourceTree = "<group>"; };
+		741E1DD428BD567200A076B6 /* NumberOfPlayersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfPlayersCell.swift; sourceTree = "<group>"; };
 		742D769F28B564C500773191 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		742D76A328B5653000773191 /* GameComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameComponent.swift; sourceTree = "<group>"; };
 		742D76A928B56FD000773191 /* TextFieldClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
@@ -215,6 +223,24 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
+		741E1DCB28BD4FBB00A076B6 /* KeyValueManager */ = {
+			isa = PBXGroup;
+			children = (
+				741E1DCE28BD4FF700A076B6 /* KeyValueManagerProtocol.swift */,
+				741E1DCC28BD4FCA00A076B6 /* KeyValueManager.swift */,
+				741E1DD128BD512100A076B6 /* KeyTitle.swift */,
+			);
+			path = KeyValueManager;
+			sourceTree = "<group>";
+		};
+		741E1DD328BD565A00A076B6 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				741E1DD428BD567200A076B6 /* NumberOfPlayersCell.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		742D76A128B564F700773191 /* GameTabcomponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +324,7 @@
 		7459C76E28BA35D7000ACE01 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				741E1DCB28BD4FBB00A076B6 /* KeyValueManager */,
 				7459C76F28BA35E2000ACE01 /* CacheManager */,
 			);
 			path = Managers;
@@ -462,6 +489,7 @@
 		74C5E46E28958DDB00E26C18 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				741E1DD328BD565A00A076B6 /* Subviews */,
 				74C5E46F28958DE600E26C18 /* SettingsTabView.swift */,
 			);
 			path = View;
@@ -787,8 +815,10 @@
 				7459C76B28BA2146000ACE01 /* PlayerWordPlaceholders.swift in Sources */,
 				74516923289FCCE400AA0A48 /* FontStyles.swift in Sources */,
 				747FC83028678FAC00DFB23B /* GameTabView.swift in Sources */,
+				741E1DCF28BD4FF700A076B6 /* KeyValueManagerProtocol.swift in Sources */,
 				7451692E28A03FBE00AA0A48 /* WrapInScrollWiewModifier.swift in Sources */,
 				74FB86D328B914DC001BAA62 /* GWProgressView.swift in Sources */,
+				741E1DD528BD567200A076B6 /* NumberOfPlayersCell.swift in Sources */,
 				74082F8728BB934400ECC9CB /* GameCell.swift in Sources */,
 				7438DF5F28AEB9DA00A4DF88 /* NetworkError.swift in Sources */,
 				742D76A428B5653000773191 /* GameComponent.swift in Sources */,
@@ -823,6 +853,7 @@
 				7459C77328BA36A9000ACE01 /* CacheManager.swift in Sources */,
 				742D76A028B564C500773191 /* GameViewModel.swift in Sources */,
 				74FB86D028B909A4001BAA62 /* PlaceholderPlayerWordView.swift in Sources */,
+				741E1DD228BD512100A076B6 /* KeyTitle.swift in Sources */,
 				74C5E4762895903900E26C18 /* TabButtonView.swift in Sources */,
 				7438DF5828AEB83C00A4DF88 /* RequestDescriptorProtocol.swift in Sources */,
 				74EF703C2868546100DB0220 /* StartButtonView.swift in Sources */,
@@ -841,6 +872,7 @@
 				74D850C6289FC1160035AB52 /* GWConstantsUI.swift in Sources */,
 				748902F928B6AF11004C0423 /* GameWordView.swift in Sources */,
 				74C5E4612895872300E26C18 /* IconName.swift in Sources */,
+				741E1DCD28BD4FCA00A076B6 /* KeyValueManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GeneralTabView: View {
-    @State var selectedTab: MainTabsSelection = GWConstants.initialSelectedTab
+    @State var selectedTab: MainTabsSelection = .settings
     var tabComponents: [TabComponentProtocol]
     
     init(tabComponents: [TabComponentProtocol]) {

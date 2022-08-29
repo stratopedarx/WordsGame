@@ -53,6 +53,10 @@
 
 // MARK: - Settings Tab View
 
+"SETTINGS" = "Настройки";
+"QUANTITY" = "Количество";
+"PLAYERS" = "Игроков";
+
 // MARK: - General Network Errors
 
 "ALAMOFIRE_ERROR" = "Alamofire error: ";

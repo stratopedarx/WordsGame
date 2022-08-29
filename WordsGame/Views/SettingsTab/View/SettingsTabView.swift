@@ -9,12 +9,17 @@ import SwiftUI
 
 struct SettingsTabView: View {
     @ObservedObject private var viewModel: SettingsTabViewModel
-    
+
     init(viewModel: SettingsTabViewModel) {
         self.viewModel = viewModel
     }
     
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            TitleText(title: .settings)
+            NumberOfPlayersCell(numberOfPlayers: $viewModel.numberOfPlayers)
+            Spacer()
+        }
+        
     }
 }

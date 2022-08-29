@@ -8,5 +8,18 @@
 import SwiftUI
 
 class SettingsTabViewModel: ObservableObject {
+    var keyValueManager: KeyValueManagerProtocol
+    @Published var numberOfPlayers: Int = GWConstants.minNumberOfPlayers {
+        didSet {
+            keyValueManager.setValue(key: .numberOfPlayers, value: numberOfPlayers)
+        }
+    }
     
+    init() {
+        self.keyValueManager = KeyValueManager()
+        guard let numberOfPlayers = keyValueManager.getValue(.numberOfPlayers) as? Int else {
+            return
+        }
+        self.numberOfPlayers = numberOfPlayers
+    }
 }
