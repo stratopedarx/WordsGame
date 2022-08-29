@@ -35,7 +35,6 @@ final class GameViewModel: ObservableObject {
     var yandexDictAPI: YandexDictAPIProtocol
     
     init(gameWord: String, players: [Player], cacheManager: CacheManagerProtocol, yandexDictAPI: YandexDictAPIProtocol) {
-        print("!!! init GameViewModel")
         self.gameWord = gameWord
         self.players = players
         self.cacheManager = cacheManager
