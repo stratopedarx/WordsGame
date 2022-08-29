@@ -14,6 +14,7 @@ enum IconName: String {
     case arrow_clockwise = "arrow.clockwise"
     case gamecontroller
     case gear
+    case exclamationmark_bubble = "exclamationmark.bubble"
     case minus = "minus.circle"
     case multiply_circle_fill = "multiply.circle.fill"
     case plus = "plus.circle"
@@ -23,6 +24,7 @@ enum IconName: String {
         case .arrow_clockwise,
             .gamecontroller,
             .gear,
+            .exclamationmark_bubble,
             .minus,
             .multiply_circle_fill,
             .plus:
