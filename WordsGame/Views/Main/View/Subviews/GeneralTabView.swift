@@ -13,7 +13,7 @@ struct GeneralTabView: View {
     
     init(tabComponents: [TabComponentProtocol]) {
         self.tabComponents = tabComponents
-        UITabBar.appearance().backgroundColor = UIColor.white
+        UITabBar.appearance().backgroundColor = UIColor.black
     }
     
     var body: some View {
