@@ -29,16 +29,25 @@ final class GameViewModel: ObservableObject {
         wordStatus == .correct
     }
     
+    private var alreadyUsedWord: Bool {
+        for cell in allWordsForCurrentGame where cell.word == playerWord {
+            return true
+        }
+        return false
+    }
+    
     var gameWord: String
     var players: [Player]
     var cacheManager: CacheManagerProtocol
     var yandexDictAPI: YandexDictAPIProtocol
+    var keyValueManager: KeyValueManagerProtocol
     
     init(gameWord: String, players: [Player], cacheManager: CacheManagerProtocol, yandexDictAPI: YandexDictAPIProtocol) {
         self.gameWord = gameWord
         self.players = players
         self.cacheManager = cacheManager
         self.yandexDictAPI = yandexDictAPI
+        self.keyValueManager = KeyValueManager()
         initCache()
         playerWordObserve()
     }
@@ -69,13 +78,27 @@ extension GameViewModel {
             playerWord = value
         }
     }
-    
+
     func checkEnteredWord() {
         self.isLoading = true
 
         guard playerWord.lowercased().map({ gameWord.lowercased().contains($0) }).allSatisfy({$0}) else {
             self.isLoading = false
             self.wordStatus = .notCorrect
+            self.showAlertCheckedWord = true
+            return
+        }
+
+        if alreadyUsedWord {
+            self.isLoading = false
+            self.wordStatus = .notCorrect
+            self.showAlertCheckedWord = true
+            return
+        }
+        
+        if checkInExclusionWords(gameWord: playerWord) {
+            self.isLoading = false
+            self.wordStatus = .correct
             self.showAlertCheckedWord = true
             return
         }
@@ -141,6 +164,20 @@ private extension GameViewModel {
         players[currentPlayerIndex].update(points: playerWord.count)
         cacheManager.currentGame[currentPlayer]?.append(playerWord)
         allWordsForCurrentGame.append(GameCell(name: currentPlayer.name, color: currentPlayer.color, word: playerWord))
+    }
+    
+    func loadExclusionWords() -> [String] {
+        guard let exclusionWords = keyValueManager.getValue(.exclusionWords) as? [String] else {
+            return [String]()
+        }
+        return exclusionWords
+    }
+    
+    func checkInExclusionWords(gameWord: String) -> Bool {
+        for exclusionWord in loadExclusionWords() where exclusionWord == gameWord.lowercased() {
+            return true
+        }
+        return false
     }
 }
 
