@@ -18,6 +18,7 @@ enum IconName: String {
     case minus = "minus.circle"
     case multiply_circle_fill = "multiply.circle.fill"
     case plus = "plus.circle"
+    case scribble_variable = "scribble.variable"
     
     var type: IconType {
         switch self {
@@ -27,7 +28,8 @@ enum IconName: String {
             .exclamationmark_bubble,
             .minus,
             .multiply_circle_fill,
-            .plus:
+            .plus,
+            .scribble_variable:
             return .system
         }
     }
