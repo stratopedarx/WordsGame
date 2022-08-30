@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7401848E28BDE26000ADEA8C /* WordsGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401848D28BDE26000ADEA8C /* WordsGameTests.swift */; };
+		7401849728BDE2AC00ADEA8C /* GameViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401849628BDE2AC00ADEA8C /* GameViewModelTests.swift */; };
+		7401849A28BDE4FB00ADEA8C /* CacheManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401849928BDE4FB00ADEA8C /* CacheManagerMock.swift */; };
+		7401849C28BDE53000ADEA8C /* YandexDictAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401849B28BDE53000ADEA8C /* YandexDictAPIMock.swift */; };
+		7401849E28BDE5AF00ADEA8C /* MockNetworkGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401849D28BDE5AF00ADEA8C /* MockNetworkGateway.swift */; };
+		740184A028BDE6D100ADEA8C /* WordResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401849F28BDE6D100ADEA8C /* WordResponseMock.swift */; };
 		74082F8228BB504300ECC9CB /* GameWordsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F8128BB504300ECC9CB /* GameWordsList.swift */; };
 		74082F8528BB61BA00ECC9CB /* KeyboardReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F8428BB61BA00ECC9CB /* KeyboardReadable.swift */; };
 		74082F8728BB934400ECC9CB /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74082F8628BB934400ECC9CB /* GameCell.swift */; };
@@ -92,7 +98,24 @@
 		74FB86DA28B91B76001BAA62 /* WordStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB86D928B91B76001BAA62 /* WordStatus.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7401848F28BDE26000ADEA8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 747FC82228678FAC00DFB23B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 747FC82928678FAC00DFB23B;
+			remoteInfo = WordsGame;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		7401848B28BDE26000ADEA8C /* WordsGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordsGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7401848D28BDE26000ADEA8C /* WordsGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsGameTests.swift; sourceTree = "<group>"; };
+		7401849628BDE2AC00ADEA8C /* GameViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelTests.swift; sourceTree = "<group>"; };
+		7401849928BDE4FB00ADEA8C /* CacheManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManagerMock.swift; sourceTree = "<group>"; };
+		7401849B28BDE53000ADEA8C /* YandexDictAPIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexDictAPIMock.swift; sourceTree = "<group>"; };
+		7401849D28BDE5AF00ADEA8C /* MockNetworkGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkGateway.swift; sourceTree = "<group>"; };
+		7401849F28BDE6D100ADEA8C /* WordResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordResponseMock.swift; sourceTree = "<group>"; };
 		74082F8128BB504300ECC9CB /* GameWordsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWordsList.swift; sourceTree = "<group>"; };
 		74082F8428BB61BA00ECC9CB /* KeyboardReadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardReadable.swift; sourceTree = "<group>"; };
 		74082F8628BB934400ECC9CB /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
@@ -178,6 +201,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7401848828BDE26000ADEA8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		747FC82728678FAC00DFB23B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,6 +220,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7401848C28BDE26000ADEA8C /* WordsGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				7401849828BDE4E900ADEA8C /* Mocks */,
+				7401849428BDE27600ADEA8C /* GameTests */,
+				7401848D28BDE26000ADEA8C /* WordsGameTests.swift */,
+			);
+			path = WordsGameTests;
+			sourceTree = "<group>";
+		};
+		7401849428BDE27600ADEA8C /* GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				7401849628BDE2AC00ADEA8C /* GameViewModelTests.swift */,
+			);
+			path = GameTests;
+			sourceTree = "<group>";
+		};
+		7401849828BDE4E900ADEA8C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				7401849928BDE4FB00ADEA8C /* CacheManagerMock.swift */,
+				7401849B28BDE53000ADEA8C /* YandexDictAPIMock.swift */,
+				7401849D28BDE5AF00ADEA8C /* MockNetworkGateway.swift */,
+				7401849F28BDE6D100ADEA8C /* WordResponseMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		74082F8328BB61AD00ECC9CB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				747FC82C28678FAC00DFB23B /* WordsGame */,
+				7401848C28BDE26000ADEA8C /* WordsGameTests */,
 				747FC82B28678FAC00DFB23B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -413,6 +473,7 @@
 			isa = PBXGroup;
 			children = (
 				747FC82A28678FAC00DFB23B /* WordsGame.app */,
+				7401848B28BDE26000ADEA8C /* WordsGameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -745,6 +806,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7401848A28BDE26000ADEA8C /* WordsGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7401849328BDE26000ADEA8C /* Build configuration list for PBXNativeTarget "WordsGameTests" */;
+			buildPhases = (
+				7401848728BDE26000ADEA8C /* Sources */,
+				7401848828BDE26000ADEA8C /* Frameworks */,
+				7401848928BDE26000ADEA8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7401849028BDE26000ADEA8C /* PBXTargetDependency */,
+			);
+			name = WordsGameTests;
+			productName = WordsGameTests;
+			productReference = 7401848B28BDE26000ADEA8C /* WordsGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		747FC82928678FAC00DFB23B /* WordsGame */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 747FC83828678FAE00DFB23B /* Build configuration list for PBXNativeTarget "WordsGame" */;
@@ -778,6 +857,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					7401848A28BDE26000ADEA8C = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 747FC82928678FAC00DFB23B;
+					};
 					747FC82928678FAC00DFB23B = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -802,11 +885,19 @@
 			projectRoot = "";
 			targets = (
 				747FC82928678FAC00DFB23B /* WordsGame */,
+				7401848A28BDE26000ADEA8C /* WordsGameTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7401848928BDE26000ADEA8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		747FC82828678FAC00DFB23B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -859,6 +950,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7401848728BDE26000ADEA8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740184A028BDE6D100ADEA8C /* WordResponseMock.swift in Sources */,
+				7401849728BDE2AC00ADEA8C /* GameViewModelTests.swift in Sources */,
+				7401849A28BDE4FB00ADEA8C /* CacheManagerMock.swift in Sources */,
+				7401848E28BDE26000ADEA8C /* WordsGameTests.swift in Sources */,
+				7401849E28BDE5AF00ADEA8C /* MockNetworkGateway.swift in Sources */,
+				7401849C28BDE53000ADEA8C /* YandexDictAPIMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		747FC82628678FAC00DFB23B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -946,7 +1050,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7401849028BDE26000ADEA8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 747FC82928678FAC00DFB23B /* WordsGame */;
+			targetProxy = 7401848F28BDE26000ADEA8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		7401849128BDE26000ADEA8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8G3XGRSC8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WordsGame.WordsGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordsGame.app/WordsGame";
+			};
+			name = Debug;
+		};
+		7401849228BDE26000ADEA8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8G3XGRSC8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = WordsGame.WordsGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordsGame.app/WordsGame";
+			};
+			name = Release;
+		};
 		747FC83628678FAE00DFB23B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1128,6 +1276,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7401849328BDE26000ADEA8C /* Build configuration list for PBXNativeTarget "WordsGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7401849128BDE26000ADEA8C /* Debug */,
+				7401849228BDE26000ADEA8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		747FC82528678FAC00DFB23B /* Build configuration list for PBXProject "WordsGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
