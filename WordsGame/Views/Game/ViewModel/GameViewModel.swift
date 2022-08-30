@@ -36,6 +36,10 @@ final class GameViewModel: ObservableObject {
         return false
     }
     
+    private var wordСonsistsLettersFromGameWord: Bool {
+        playerWord.lowercased().map({ gameWord.lowercased().contains($0) }).allSatisfy({$0})
+    }
+    
     var gameWord: String
     var players: [Player]
     var cacheManager: CacheManagerProtocol
@@ -81,8 +85,8 @@ extension GameViewModel {
 
     func checkEnteredWord() {
         self.isLoading = true
-
-        guard playerWord.lowercased().map({ gameWord.lowercased().contains($0) }).allSatisfy({$0}) else {
+        
+        guard wordСonsistsLettersFromGameWord else {
             self.isLoading = false
             self.wordStatus = .notCorrect
             self.showAlertCheckedWord = true
