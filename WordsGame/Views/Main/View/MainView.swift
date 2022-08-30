@@ -17,6 +17,8 @@ struct MainView: View {
     }
     
     var body: some View {
-        GeneralTabView(tabComponents: tabComponents)
+        SplashScreenView {
+            GeneralTabView(tabComponents: tabComponents)
+        }
     }
 }

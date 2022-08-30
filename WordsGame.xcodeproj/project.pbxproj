@@ -31,6 +31,8 @@
 		741E1DE728BD6CAB00A076B6 /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DE628BD6CAB00A076B6 /* NeedleGenerated.swift */; };
 		7425154328BE5B5F00323D49 /* ConstantsForTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7425154228BE5B5F00323D49 /* ConstantsForTests.swift */; };
 		7425154628BE5DDC00323D49 /* GameTabViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7425154528BE5DDC00323D49 /* GameTabViewModelTests.swift */; };
+		7425154928BE671100323D49 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7425154828BE671100323D49 /* SplashScreenView.swift */; };
+		7425154B28BE69D700323D49 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7425154A28BE69D700323D49 /* Launch Screen.storyboard */; };
 		742D76A028B564C500773191 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D769F28B564C500773191 /* GameViewModel.swift */; };
 		742D76A428B5653000773191 /* GameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A328B5653000773191 /* GameComponent.swift */; };
 		742D76AA28B56FD000773191 /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A928B56FD000773191 /* TextFieldClearButton.swift */; };
@@ -135,6 +137,8 @@
 		741E1DE628BD6CAB00A076B6 /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		7425154228BE5B5F00323D49 /* ConstantsForTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsForTests.swift; sourceTree = "<group>"; };
 		7425154528BE5DDC00323D49 /* GameTabViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabViewModelTests.swift; sourceTree = "<group>"; };
+		7425154828BE671100323D49 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		7425154A28BE69D700323D49 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		742D769F28B564C500773191 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		742D76A328B5653000773191 /* GameComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameComponent.swift; sourceTree = "<group>"; };
 		742D76A928B56FD000773191 /* TextFieldClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
@@ -371,6 +375,14 @@
 				7425154528BE5DDC00323D49 /* GameTabViewModelTests.swift */,
 			);
 			path = GameTabTests;
+			sourceTree = "<group>";
+		};
+		7425154728BE66F600323D49 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7425154828BE671100323D49 /* SplashScreenView.swift */,
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 		742D76A128B564F700773191 /* GameTabcomponents */ = {
@@ -682,6 +694,7 @@
 		74EF702428684D4F00DB0220 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7425154728BE66F600323D49 /* SplashScreen */,
 				74C5E44C2895826800E26C18 /* Main */,
 				74EF702628684D7F00DB0220 /* Game */,
 				74EF702528684D6800DB0220 /* GameTab */,
@@ -714,8 +727,9 @@
 		74EF702728684D9200DB0220 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				747FC83128678FAE00DFB23B /* Assets.xcassets */,
 				74EF702E28684E0400DB0220 /* Localizable */,
+				747FC83128678FAE00DFB23B /* Assets.xcassets */,
+				7425154A28BE69D700323D49 /* Launch Screen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -915,6 +929,7 @@
 			files = (
 				747FC83528678FAE00DFB23B /* Preview Assets.xcassets in Resources */,
 				74EF703028684EDE00DB0220 /* Localizable.strings in Resources */,
+				7425154B28BE69D700323D49 /* Launch Screen.storyboard in Resources */,
 				747FC83228678FAE00DFB23B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1043,6 +1058,7 @@
 				74C5E463289588A600E26C18 /* BasicComponent.swift in Sources */,
 				74C5E47228958E2100E26C18 /* SettingsTabViewModel.swift in Sources */,
 				74082F8528BB61BA00ECC9CB /* KeyboardReadable.swift in Sources */,
+				7425154928BE671100323D49 /* SplashScreenView.swift in Sources */,
 				7438DF6428AEBDB600A4DF88 /* BaseDataResponseSerializer.swift in Sources */,
 				748902FD28B6C30D004C0423 /* TitleModifier.swift in Sources */,
 				74C5E45C289585E700E26C18 /* TabComponentProtocol.swift in Sources */,
@@ -1226,6 +1242,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WordsGame/Preview Content\"";
@@ -1235,6 +1252,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1258,6 +1276,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WordsGame/Preview Content\"";
@@ -1267,6 +1286,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
