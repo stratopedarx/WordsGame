@@ -10,15 +10,10 @@ import SwiftUI
 class GameTabViewModel: ObservableObject {
     @Published var mainWord = ""
     @Published var players: [Player] = []
-    @Published var quantityOfPlayers: Int = {
-        guard let numberOfPlayers = KeyValueManager().getValue(.numberOfPlayers) as? Int else {
-            return GWConstants.minNumberOfPlayers
-        }
-        return numberOfPlayers
-    }()
+    @Published var quantityOfPlayers: Int = { KeyValueManager.numberOfPlayers }()
     @Published var placeholderNames: [String] = []
-    @Published var isDisabledMinusButton: Bool = false
-    @Published var isDisabledPlusButton: Bool = false
+    @Published var isDisabledMinusButton = false
+    @Published var isDisabledPlusButton = false
     @Published var isShowGameView = false
     @Published var isError = false
     var errorDescription = ""
@@ -32,12 +27,12 @@ class GameTabViewModel: ObservableObject {
     
     func resetState() {
         mainWord = ""
-        quantityOfPlayers = GWConstants.minNumberOfPlayers
+        quantityOfPlayers = KeyValueManager.numberOfPlayers
         placeholderNames.removeAll()
         
         players.removeAll()
         Player.resetCountPlayers()
-        for _ in 0..<GWConstants.minNumberOfPlayers {
+        for _ in 0..<quantityOfPlayers {
             players.append(Player())
             placeholderNames.append("")
         }

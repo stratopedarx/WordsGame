@@ -23,3 +23,12 @@ class KeyValueManager: KeyValueManagerProtocol {
         UserDefaults.standard.removeObject(forKey: key.rawValue)
     }
 }
+
+extension KeyValueManager {
+    static var numberOfPlayers: Int {
+        guard let numberOfPlayers = KeyValueManager().getValue(.numberOfPlayers) as? Int else {
+            return GWConstants.minNumberOfPlayers
+        }
+        return numberOfPlayers
+    }
+}
