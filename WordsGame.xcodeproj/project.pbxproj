@@ -30,6 +30,7 @@
 		741E1DE128BD6B0400A076B6 /* ExclusionWordsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DE028BD6B0400A076B6 /* ExclusionWordsButtonView.swift */; };
 		741E1DE528BD6BA700A076B6 /* ExclusionWordsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DE428BD6BA700A076B6 /* ExclusionWordsComponent.swift */; };
 		741E1DE728BD6CAB00A076B6 /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E1DE628BD6CAB00A076B6 /* NeedleGenerated.swift */; };
+		7425154328BE5B5F00323D49 /* ConstantsForTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7425154228BE5B5F00323D49 /* ConstantsForTests.swift */; };
 		742D76A028B564C500773191 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D769F28B564C500773191 /* GameViewModel.swift */; };
 		742D76A428B5653000773191 /* GameComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A328B5653000773191 /* GameComponent.swift */; };
 		742D76AA28B56FD000773191 /* TextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742D76A928B56FD000773191 /* TextFieldClearButton.swift */; };
@@ -133,6 +134,7 @@
 		741E1DE028BD6B0400A076B6 /* ExclusionWordsButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusionWordsButtonView.swift; sourceTree = "<group>"; };
 		741E1DE428BD6BA700A076B6 /* ExclusionWordsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExclusionWordsComponent.swift; sourceTree = "<group>"; };
 		741E1DE628BD6CAB00A076B6 /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
+		7425154228BE5B5F00323D49 /* ConstantsForTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsForTests.swift; sourceTree = "<group>"; };
 		742D769F28B564C500773191 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		742D76A328B5653000773191 /* GameComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameComponent.swift; sourceTree = "<group>"; };
 		742D76A928B56FD000773191 /* TextFieldClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClearButton.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				7401849828BDE4E900ADEA8C /* Mocks */,
 				7401849428BDE27600ADEA8C /* GameTests */,
 				7401848D28BDE26000ADEA8C /* WordsGameTests.swift */,
+				7425154228BE5B5F00323D49 /* ConstantsForTests.swift */,
 			);
 			path = WordsGameTests;
 			sourceTree = "<group>";
@@ -958,6 +961,7 @@
 				7401849728BDE2AC00ADEA8C /* GameViewModelTests.swift in Sources */,
 				7401849A28BDE4FB00ADEA8C /* CacheManagerMock.swift in Sources */,
 				7401848E28BDE26000ADEA8C /* WordsGameTests.swift in Sources */,
+				7425154328BE5B5F00323D49 /* ConstantsForTests.swift in Sources */,
 				7401849E28BDE5AF00ADEA8C /* MockNetworkGateway.swift in Sources */,
 				7401849C28BDE53000ADEA8C /* YandexDictAPIMock.swift in Sources */,
 			);
