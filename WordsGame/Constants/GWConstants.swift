@@ -17,5 +17,6 @@ struct GWConstants {
         static let lookUpPath = "lookup"
         static let publicKey = "dict.1.1.20220828T131515Z.68a463f211909cd6.8cdfb6f6fcc1c558e30312c6bd0078af65bd7c43"
         static let langFromRuToRu = "ru-ru"
+        static let langFromEnToEn = "en-en"
     }
 }

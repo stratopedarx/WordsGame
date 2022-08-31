@@ -39,7 +39,7 @@ final class GameViewModel: ObservableObject {
     private var wordСonsistsLettersFromGameWord: Bool {
         playerWord.lowercased().map({ gameWord.lowercased().contains($0) }).allSatisfy({$0})
     }
-    
+
     var gameWord: String
     var players: [Player]
     var cacheManager: CacheManagerProtocol
