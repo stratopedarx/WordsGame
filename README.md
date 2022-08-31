@@ -20,11 +20,17 @@ Player 2: versa
 Player 1: ...
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/15280020/187610754-09c97200-7685-4ab5-9c59-7e2d49ddedc6.png"  width="300" height="500">
+  <img src="https://user-images.githubusercontent.com/15280020/187610754-09c97200-7685-4ab5-9c59-7e2d49ddedc6.png"  width="300" height="700">
 </p>
 
 # Example (Russian language)
+
 Main big word: частнопредпринимательский
+
 Player 1: часть
+
 Player 1: предприниматель
-![Example ru](https://user-images.githubusercontent.com/15280020/187610129-f713a820-b4fe-4df8-bb89-a74eadfc5bae.png)
+
+<p align="center">
+  <img src="[https://user-images.githubusercontent.com/15280020/187610754-09c97200-7685-4ab5-9c59-7e2d49ddedc6.png](https://user-images.githubusercontent.com/15280020/187610129-f713a820-b4fe-4df8-bb89-a74eadfc5bae.png)"  width="300" height="700">
+</p>
