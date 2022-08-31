@@ -55,6 +55,12 @@ Swift Package Manager
 
 Yandex Dictionary API
 
+# Project structure
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/15280020/187616039-b3d78d23-4a3b-4efc-b8d3-b65172ecb297.png">
+</p>
+
 # Future plans
 
 Add the ability to save the сurrent game.
