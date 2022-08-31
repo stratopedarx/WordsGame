@@ -42,6 +42,7 @@ Player 1: предприниматель
 # Video Demo
 
 https://user-images.githubusercontent.com/15280020/187619797-a0a83120-2dc4-4992-9176-54b8663d3f54.mp4
+
 https://user-images.githubusercontent.com/15280020/187619814-afcf25ac-a1a4-47c9-a717-2b020a85c16d.mp4
 
 # Installation For Developers
