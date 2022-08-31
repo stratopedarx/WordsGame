@@ -25,7 +25,7 @@ extension YandexDictAPI: YandexDictAPIProtocol {
         networking
             .json(
                 CheckWordRequest(
-                    fromLanguageToLanguage: fromLanguageToLanguage,
+                    fromLanguageToLanguage: text.isLatin ? GWConstants.YandexAPI.langFromEnToEn : GWConstants.YandexAPI.langFromRuToRu,
                     text: text
                 )
             )
