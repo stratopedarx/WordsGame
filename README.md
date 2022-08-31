@@ -5,6 +5,14 @@
   
 Words Game is a simple word game in which you collect words from letters from a large main word for 2-4 people.
 
+# Features
+
+It is possible to play 2, 3 or 4 people
+
+It is possible to add exclusion words
+
+We use Yandex Dictionary API to check the correctnes of player words
+
 # Example (English language)
 
 Main big word: Tergiversation
@@ -30,6 +38,13 @@ Player 1: предприниматель
 <p align="center">
   <img src="https://user-images.githubusercontent.com/15280020/187614914-2fc4f947-7723-4d95-90b4-1e1eefd1fed8.png"  width="300" height="700">
 </p>
+
+# Video Demo
+
+https://user-images.githubusercontent.com/15280020/187619797-a0a83120-2dc4-4992-9176-54b8663d3f54.mp4
+
+https://user-images.githubusercontent.com/15280020/187619814-afcf25ac-a1a4-47c9-a717-2b020a85c16d.mp4
+
 
 # Installation For Developers
 
